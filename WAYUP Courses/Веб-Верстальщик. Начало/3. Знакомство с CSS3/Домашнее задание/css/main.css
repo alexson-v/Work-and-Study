@@ -1,0 +1,41 @@
+h1{
+    color: red;
+}
+
+h2{
+    color: white;
+    background: green;
+}
+
+.logo{
+    width: 150px;
+
+}
+
+.hometask{
+    width: 100px;
+    background: blue;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.highlighter{
+    color: red;
+}
+
+.next{
+    padding: 7px 0px 7px 7px;
+}
+
+.whatmedo{
+    padding: 50px 0 50px 50px;
+}
+
+.pretable{
+    margin-left: 105px;
+}
+
+.list li{
+    font-size: 30px;
+    border: 1px solid black;
+}

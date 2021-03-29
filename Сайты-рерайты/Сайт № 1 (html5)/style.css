@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+body{
+    font-family: 'Raleway', sans-serif;
+    background: url(https://utemplates.net/wp-content/uploads/2017/07/White-Textured-Background.jpg);
+    padding: 100px 0;
+}
+h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.container{
+    width: 800px;
+    min-height: 550px;
+    border: 10px solid white;
+    margin: 0 auto;
+    background: #fff;
+}
+.header{
+    display: flex;
+    height: 150px;
+}
+.title-block{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background: url("https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80") no-repeat center center / cover;
+    color: #fff;
+    position: relative;
+    margin-right: 10px;
+}
+.title-block::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+}
+.title{
+    position: relative;
+    z-index: 3;
+}
+.userpic{
+    display: flex;
+    width: 20%;
+    background: url("https://images-na.ssl-images-amazon.com/images/I/61uk%2Bu%2BsjtL._AC_SX522_.jpg") no-repeat center center / cover;  
+}
+.nav ul{
+    display: flex;
+    background: rgb(230, 230, 230);
+    margin: 10px 0;
+}
+.nav li a{
+    padding: 20px;
+    display: flex;
+    text-decoration: none;
+    color: #404040;
+    font-weight: bold;
+    border-right: 1px solid #d1d1d1;
+    transition: background .3s ease;
+}
+.nav li a:hover{
+    background: rgb(196, 196, 196);
+}
+.content-wrapper{
+    display: flex;
+}
+.content{
+    width: 70%;
+    padding: 20px;
+}
+.content p{
+    line-height: 20px;
+}
+.sidebar{
+    width: 30%;
+    padding: 20px;
+}
+.skills li{
+    padding: 10px 0;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+.skills li:hover{
+    transform: translateX(10px);
+}

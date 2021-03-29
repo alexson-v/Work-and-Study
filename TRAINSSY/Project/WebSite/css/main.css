@@ -1,0 +1,351 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #EDECF2;
+    font-size: 12px;
+}
+  
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 800;
+    font-size: 48px;
+    margin-top: 19px;
+    margin-bottom: 45px;
+}
+
+h3 {
+    font-size: 27px;
+    font-weight: 900;
+}
+
+h4 {
+    color: #000;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+h5 {
+    font-size: 17px;
+    font-weight: 900;
+}
+
+h6 {
+    font-size: 15px;
+    font-weight: 900;
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.header .header_additional {
+    background: #373540;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.header_additional_pickup {
+    font-weight: 700;
+}
+
+.header_additional_phone a{
+    font-weight: 700;
+    color: #fff;
+}
+
+.header .header_main {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.header .header_main .header_logo_image {
+    max-width: 100%;
+}
+
+.header .header_main .header_logo_text {
+    margin-top: 2px;
+    font-size: 11px;
+}
+
+.nav_main {
+    padding-top: 10px;
+}
+
+.nav_main .navbar li a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.175em;
+    position: relative;
+    padding: 1.75rem 0.3rem;
+}
+
+.nav_main .navbar li a:after {
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background-color: #02810E;
+	content: "";
+    transform: scale(0);
+	transition: all .3s;
+}
+
+.nav_main .navbar li a:hover:after,
+.navbar li a:focus:after {
+	width: 100%;
+    transform: scale(1);
+}
+
+.header .header_phone_number {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 1px;
+}
+
+.header .header_phone_text {
+    display: none;
+}
+
+.header .cart {
+    font-weight: 700;
+    flex-direction: row;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.cart .cart_summary {
+    margin-left: 16px;
+    margin-top: 3px;
+}
+
+.cart .cart_rolldown {
+    margin-left: 16px;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: block;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    width: auto;
+}
+
+.swiper-pagination {
+    text-align: left;
+    padding-left: 80px;
+    padding-bottom: 30px;
+}
+
+.swiper-pagination-bullet {
+    border-radius: 0;
+    width: 65px;
+    height: 7px;
+    background-color: #fff;
+    margin-left: 40px !important;
+
+}
+
+
+.image-slider__image img{
+    max-width: 100%;
+}
+
+#swiper-slide_1 {
+    background-image: url(../img/caorusel-image-1.jpg);
+    background-size: cover;
+    width: 1170px;
+    padding-left: 120px;
+}
+
+#swiper-slide_2 {
+    background-image: url(../img/caorusel-image-2.jpg);
+    background-size: cover;
+    width: 1170px;
+    padding-left: 120px;
+}
+
+#swiper-slide_3 {
+    background-image: url(../img/caorusel-image-3.jpg);
+    background-size: cover;
+    width: 1170px;
+    padding-left: 120px;
+}
+
+#swiper-slide_4 {
+    background-image: url(../img/caorusel-image-4.jpg);
+    background-size: cover;
+    width: 1170px;
+    padding-left: 120px;
+}
+
+.before_heading_offer {
+    color: #fff;
+    font-weight: 500;
+    font-size: 32px;
+    margin-top: 119px;
+}
+
+.btn {
+    width: 267px;
+    height: 55px;
+    background: #02810E;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 16px;
+    margin-bottom: 150px;
+}
+
+.btn:hover {
+    background: #00A810;
+    color: #fff;
+    filter: drop-shadow(0px 7px 35px rgba(2, 129, 14, 0.35));
+}
+
+.offer_content {
+    position: static;
+}
+.arrivals {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.arrivals_nav .navbar li a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.175em;
+    position: relative;
+    padding: 1.75rem 0.3rem;
+}
+
+.arrivals_nav .navbar li a:after {
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background-color: #02810E;
+	content: "";
+    transform: scale(0);
+	transition: all .3s;
+}
+
+.arrivals_nav .navbar li a:hover:after,
+.navbar li a:focus:after {
+	width: 100%;
+    transform: scale(1);
+}
+
+.arrivals_cards {
+    padding-top: 50px;
+}
+
+.card_main {
+    background-color: #fff;
+    color: #000;
+    font-weight: 300;
+    font-size: 12px;
+    width: 270px;
+    height: 437px;
+    box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.08);
+    display: block;
+    opacity: 1;
+    transition: all 1s ease;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.card_main:hover {
+    box-shadow: -30px 80px 200px rgba(0, 0, 0, 0.10);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.card_name {
+    padding: 31px 40px 22px 40px;
+}
+
+.card_image {
+    margin: 0px 40px 25px 40px;
+    border: 1px solid #EBEBEB;
+}
+
+.card_description {
+    padding: 0 51px 20px 51px;
+    color: #7D7D7D;
+}
+
+.card_description ul li {
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+.card_description_attribute {
+    padding-right: 10px;
+    color: #000;
+}
+
+.card_goodsvalue {
+    font-size: 15px;
+    font-weight: 900;
+    padding: 0 50px 10px 51px;
+}
+
+.card_cta {
+    padding-left: 12px;
+}
+
+.news_post {
+    width: 570px;
+    height: 427px;
+    position: relative;
+}
+
+.news_image {
+    
+    width: 100%;
+}
+
+.news_plus {
+    position: absolute;
+}
