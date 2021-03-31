@@ -242,7 +242,7 @@ ul, li {
 }
 .arrivals {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
 }
 
 .arrivals_nav .navbar li a {
@@ -334,6 +334,10 @@ ul, li {
     padding-left: 12px;
 }
 
+.news {
+    padding-bottom: 80px;
+}
+
 .news_post {
     position: relative;
     box-shadow: 0px 10px 50px rgba(45, 47, 94, 0.3);
@@ -366,14 +370,17 @@ ul, li {
     font-weight: 400;
 }
 
-.overlayed{
-    background: #FFF;
-    background: rgba(135,49,205,0.53);
-    background: -moz-linear-gradient(-45deg, rgba(135,49,205,0.53) 0%, rgba(68,10,194,0.91) 100%);
-    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(135,49,205,0.53)), color-stop(100%, rgba(68,10,194,0.91)));
-    background: -webkit-linear-gradient(-45deg, rgba(135,49,205,0.53) 0%, rgba(68,10,194,0.91) 100%);
-    background: -o-linear-gradient(-45deg, rgba(135,49,205,0.53) 0%, rgba(68,10,194,0.91) 100%);
-    background: -ms-linear-gradient(-45deg, rgba(135,49,205,0.53) 0%, rgba(68,10,194,0.91) 100%);
-    background: linear-gradient(135deg, rgba(135,49,205,0.53) 0%, rgba(68,10,194,0.91) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8731cd', endColorstr='#440ac2', GradientType=1 );
+.special_offers {
+    background: #373540;
+    color: #fff;
+    padding-top: 34px;
+    padding-bottom: 40px;
+}
+
+.special_offers_title {
+    color: #fff;
+}
+
+.special_offers_line {
+    padding-top: 50px;
 }
