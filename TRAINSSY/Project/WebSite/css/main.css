@@ -415,6 +415,7 @@ ul, li {
 
 .reviews {
     background: #373540;
+    padding-bottom: 50px;
 }
 
 .reviews_title {
@@ -477,7 +478,7 @@ ul, li {
 }
 
 .slider2 .swiper-pagination {
-    padding-right: 13px !important;
+    padding-left: 6px !important;
 }
 
 .slider2 .swiper-pagination-bullet {
