@@ -83,6 +83,10 @@ ul, li {
     padding-top: 10px;
 }
 
+.dropdown_menu {
+    padding-bottom: 3px;
+}
+
 .nav_main .navbar li a {
     text-decoration: none;
     color: #000;
