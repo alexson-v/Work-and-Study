@@ -390,7 +390,7 @@ ul, li {
     padding-bottom: 40px;
 }
 
-.special_offers_title {
+.black_theme_title {
     color: #fff;
 }
 
@@ -411,4 +411,42 @@ ul, li {
 
 .card_cta_special {
     padding: 17px 0 0 18px;
+}
+
+.reviews {
+    background: #373540;
+}
+
+.reviews_title {
+    padding-bottom: 43px;
+}
+
+.reviews_slider_layout {
+    background: #202125;
+    padding: 67px 0 50px 0;
+    margin: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.review_button_back {
+    background: url('../img/button-back.svg');
 }
