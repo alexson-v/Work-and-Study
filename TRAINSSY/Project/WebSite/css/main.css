@@ -427,7 +427,6 @@ ul, li {
 }
 
 .slider2 {
-
     padding: 67px 67px 123px 67px;
 }
 
@@ -488,4 +487,56 @@ ul, li {
     background-color: #fff;
     margin-bottom: 20px !important;
     margin-right: 10px !important;
+}
+
+.form {
+    padding-top: 49px;
+}
+
+.form_paragraph_first {
+    padding-top: 37px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.form_paragraph_second {
+    padding-top: 27px;
+    padding-bottom: 46px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.form_input {
+    width: 403px;
+    height: 50px;
+    border: 0.01 solid #000;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    padding-left: 18px;
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid #bbbbbb;
+}
+
+.form_btn {
+    width: 403px;
+    height: 63px;
+    background: #02810E;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 900;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding-top: 18px;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    margin-top: 0;
+}
+
+.form_btn:hover {
+    background: #00A810;
+    color: #fff;
+    filter: drop-shadow(0px 7px 35px rgba(2, 129, 14, 0.35));
 }
