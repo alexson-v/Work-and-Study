@@ -17,7 +17,7 @@ h1 {
     font-weight: 800;
     font-size: 48px;
     margin-top: 19px;
-    margin-bottom: 45px;
+    margin-bottom: 19px;
 }
 
 h3 {
@@ -163,9 +163,7 @@ ul, li {
 }
 
 .swiper-pagination {
-    text-align: left;
-    padding-left: 80px;
-    padding-bottom: 30px;
+    padding-right: 37px !important;
 }
 
 .swiper-pagination-bullet {
@@ -174,7 +172,7 @@ ul, li {
     height: 7px;
     background-color: #fff;
     margin-left: 40px !important;
-
+    margin-bottom: 40px !important;
 }
 
 .image-slider__image img{
@@ -185,38 +183,49 @@ ul, li {
     background-image: url(../img/caorusel-image-1.jpg);
     background-size: cover;
     width: 1170px;
-    padding-left: 120px;
 }
 
 #swiper-slide_2 {
     background-image: url(../img/caorusel-image-2.jpg);
     background-size: cover;
     width: 1170px;
-    padding-left: 120px;
 }
 
 #swiper-slide_3 {
     background-image: url(../img/caorusel-image-3.jpg);
     background-size: cover;
     width: 1170px;
-    padding-left: 120px;
 }
 
 #swiper-slide_4 {
     background-image: url(../img/caorusel-image-4.jpg);
     background-size: cover;
     width: 1170px;
-    padding-left: 120px;
+}
+
+.offer_content {
+    text-align: center;
+    margin-top: 150px;
+    padding-bottom: 200px;
 }
 
 .before_heading_offer {
     color: #fff;
     font-weight: 500;
     font-size: 32px;
-    margin-top: 119px;
+}
+
+.after_heading_offer {
+    color: #fff;
+    margin-bottom: 19px;
+}
+
+.tag_highlighter {
+    font-weight: 700;
 }
 
 .btn {
+    margin-top: 25px;
     width: 267px;
     height: 55px;
     background: #02810E;
@@ -228,7 +237,6 @@ ul, li {
     justify-content: center;
     text-decoration: none;
     padding: 16px;
-    margin-bottom: 150px;
 }
 
 .btn:hover {
@@ -240,6 +248,7 @@ ul, li {
 .offer_content {
     position: static;
 }
+
 .arrivals {
     padding-top: 80px;
     padding-bottom: 50px;
