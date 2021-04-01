@@ -384,3 +384,18 @@ ul, li {
 .special_offers_line {
     padding-top: 50px;
 }
+
+.card_description_special {
+    padding: 0 51px 5px 51px;
+    color: #7D7D7D;
+}
+
+.card_striked_goodsvalue {
+    font-size: 11px;
+    text-decoration: line-through;
+    padding: 0 0 0 135px;
+}
+
+.card_cta_special {
+    padding: 17px 0 0 18px;
+}
