@@ -144,12 +144,12 @@ ul, li {
     padding: 0;
 }
 
-.swiper-container {
+.slider1 .swiper-container {
     width: 100%;
     height: 100%;
 }
 
-.swiper-slide {
+.slider1 .swiper-slide {
     font-size: 18px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -166,11 +166,11 @@ ul, li {
     width: auto;
 }
 
-.swiper-pagination {
+.slider1 .swiper-pagination {
     padding-right: 37px !important;
 }
 
-.swiper-pagination-bullet {
+.slider1 .swiper-pagination-bullet {
     border-radius: 0;
     width: 65px;
     height: 7px;
@@ -179,7 +179,7 @@ ul, li {
     margin-bottom: 40px !important;
 }
 
-.image-slider__image img{
+.slider1 .image-slider__image img{
     max-width: 100%;
 }
 
@@ -423,16 +423,14 @@ ul, li {
 
 .reviews_slider_layout {
     background: #202125;
-    padding: 67px 0 50px 0;
-    margin: 0;
 }
 
-.swiper-container {
-    width: 100%;
-    height: 100%;
+.slider2 {
+
+    padding: 67px 67px 123px 67px;
 }
 
-.swiper-slide {
+.slider2 .swiper-slide {
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -445,8 +443,48 @@ ul, li {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+    transition: 0.5s;
+    opacity: 0.25; 
 }
 
-.review_button_back {
-    background: url('../img/button-back.svg');
+.slider2 .swiper-slide-active {
+    transition: 0.5s;
+    transform: scale(1.120);
+    opacity: 1; 
+}
+
+.slider2 .swiper-button-prev,
+.slider2 .swiper-button-next {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slider2 .swiper-button-prev::after,
+.slider2 .swiper-button-next::after {
+    display: none;
+}
+
+.slider2 .swiper-button-prev {
+    background-image: url('../img/button-back.svg');
+    width: 53px;
+    height: 53px;
+}
+
+.slider2 .swiper-button-next {
+    background-image: url('../img/button-forward.svg');
+    width: 53px;
+    height: 53px;
+}
+
+.slider2 .swiper-pagination {
+    padding-right: 13px !important;
+}
+
+.slider2 .swiper-pagination-bullet {
+    border-radius: 0;
+    width: 32px;
+    height: 4px;
+    background-color: #fff;
+    margin-bottom: 20px !important;
+    margin-right: 10px !important;
 }

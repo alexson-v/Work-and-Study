@@ -3,7 +3,10 @@ let swiper1 = new Swiper('.slider1', {
       el: '.swiper-pagination',
       type: 'bullets',
     },
+    simulateTouch: true,
+    touchAngle: 45,
     slidesPerView: 1,
+    draggable: true,
     loop: true,
     autoplay: {
         delay: 5000,
@@ -26,18 +29,19 @@ let swiper1 = new Swiper('.slider1', {
 
 let swiper2 = new Swiper('.slider2', {
   pagination: {
-    el: '.review_nav',
+    el: '.swiper-pagination',
     type: 'bullets',
     clickable: true,
   },
   navigation: {
-    nextEl: '.review_button_back',
-    prevEl: '.review_button_forward',
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
     clickable: true,
   },
-  slidesPerView: 3.5,
-  spaceBetween: 25,
+  lazy: true,
   centeredSlides: true,
+  slidesPerView: 3.5,
+  spaceBetween: 100,
   breakpoints: {
       576: {
 
