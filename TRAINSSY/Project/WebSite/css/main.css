@@ -114,17 +114,8 @@ ul, li {
     transform: scale(1);
 }
 
-.header .header_phone_number {
-    font-size: 12px;
-    font-weight: 700;
-    margin-bottom: 1px;
-}
-
-.header .header_phone_text {
-    display: none;
-}
-
 .header .cart {
+    font-size: 14px;
     font-weight: 700;
     flex-direction: row;
     text-align: center;
@@ -133,11 +124,12 @@ ul, li {
 
 .cart .cart_summary {
     margin-left: 16px;
-    margin-top: 3px;
+    margin-top: 1.5px;
 }
 
 .cart .cart_rolldown {
     margin-left: 16px;
+    margin-top: 2px;
 }
 
 .container-fluid {
@@ -301,7 +293,8 @@ ul, li {
     opacity: 1;
     transition: all 1s ease;
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    cursor: pointer;
 }
 
 .card_main:hover {
@@ -354,6 +347,18 @@ ul, li {
 .news_post {
     position: relative;
     box-shadow: 0px 10px 50px rgba(45, 47, 94, 0.3);
+    opacity: 1;
+    transition: all 1s ease;
+    display: block;
+}
+
+.news_post:hover {
+    box-shadow: -30px 80px 200px rgba(45, 47, 94, 0.50);
+    -moz-transform: scale(1.050);
+    -webkit-transform: scale(1.050);
+    -o-transform: scale(1.050);
+    -ms-transform: scale(1.050);
+    transform: scale(1.050);
 }
 
 .news_plus {
@@ -573,4 +578,115 @@ ul, li {
 
 .brand_image_nb {
     padding-top: 40px;
+}
+
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #373540;
+    color: #fff;
+}
+
+.header .header_main .header_logo_image {
+    max-width: 100%;
+}
+
+.footer_logo_text {
+    margin-top: 2px;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.footer_nav {
+    padding-top: 10px;
+}
+
+.dropdown_menu {
+    padding-bottom: 3px;
+}
+
+.footer_nav .navbar li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.175em;
+    position: relative;
+    padding: 1.75rem 0.3rem;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.footer_nav .navbar li a:after {
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background-color: #fff;
+	content: "";
+    transform: scale(0);
+	transition: all .3s;
+}
+
+.footer_nav .navbar li a:hover:after,
+.navbar li a:focus:after {
+	width: 100%;
+    transform: scale(1);
+}
+
+.footer_button_up {
+    cursor: pointer;
+    padding-top: 4px;
+    padding-left: 5px;
+}
+
+.footer_phone {
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer_phone:hover {
+    color: #fff;
+}
+
+.footer_phone_text {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.form_phone_wrapper {
+    justify-content: space-between;
+}
+
+.footer_under {
+    padding-top: 34px;
+}
+
+.footer_pickup {
+    font-size: 11px;
+    font-weight: 700;
+    margin-left: 75px;
+    margin-right: 29px;
+}
+
+.footer_schedule {
+    font-size: 11px;
+    font-weight: 400;
+    width: 800px;
+}
+
+.footer_under_wrapper {
+    padding-top: 4px;
+    padding-right: 0;
+}
+
+.footer_bank_option_1 {
+    padding-right: 30px;
+}
+
+.footer_bank_option_2 {
+    padding-bottom: 3px;
 }

@@ -58,5 +58,22 @@ let swiper2 = new Swiper('.slider2', {
   }
 });
 
+
 let scene = document.getElementById('scene');
 let parallaxInstance = new Parallax(scene);
+
+
+jQuery(document).ready(function() {
+  let btn = $('#btnUp');  
+  $(window).scroll(function() {     
+    if ($(window).scrollTop() > 300) {
+       btn.addClass('show');
+     } else {
+       btn.removeClass('show');
+     }
+   });
+   btn.on('click', function(e) {
+     e.preventDefault();
+     $('html, body').animate({scrollTop:0}, '300');
+   });
+});
