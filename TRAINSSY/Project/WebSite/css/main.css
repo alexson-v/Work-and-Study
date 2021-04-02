@@ -603,6 +603,7 @@ ul, li {
 
 .dropdown_menu {
     padding-bottom: 3px;
+    position: relative;
 }
 
 .footer_nav .navbar li a {
