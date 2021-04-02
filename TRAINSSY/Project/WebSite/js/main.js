@@ -57,3 +57,6 @@ let swiper2 = new Swiper('.slider2', {
       }
   }
 });
+
+let scene = document.getElementById('scene');
+let parallaxInstance = new Parallax(scene);

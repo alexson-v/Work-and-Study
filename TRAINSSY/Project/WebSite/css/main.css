@@ -419,7 +419,7 @@ ul, li {
 }
 
 .reviews_title {
-    padding-bottom: 43px;
+    padding-bottom: 50px;
 }
 
 .reviews_slider_layout {
@@ -493,17 +493,11 @@ ul, li {
     padding-top: 49px;
 }
 
-.form_paragraph_first {
+.form_paragraph {
     padding-top: 37px;
     font-size: 17px;
     font-weight: 300;
-}
-
-.form_paragraph_second {
-    padding-top: 27px;
     padding-bottom: 46px;
-    font-size: 17px;
-    font-weight: 300;
 }
 
 .form_input {
@@ -539,4 +533,27 @@ ul, li {
     background: #00A810;
     color: #fff;
     filter: drop-shadow(0px 7px 35px rgba(2, 129, 14, 0.35));
+}
+
+.images {
+    position: relative;
+    background: url('../img/form-main.png');
+    width: 100%;
+    width: 531px;
+    height: 549px;
+}
+
+.form_image_additional_red,
+.form_image_additional_grey {
+    position: absolute;
+}
+
+.form_image_additional_red {
+    margin-left: 60px;
+    margin-top: 65px;
+}
+
+.form_image_additional_grey {
+    margin-left: 300px;
+    margin-top: 160px;
 }
