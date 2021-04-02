@@ -255,7 +255,7 @@ ul, li {
 
 .arrivals {
     padding-top: 80px;
-    padding-bottom: 50px;
+    padding-bottom: 52px;
 }
 
 .arrivals_nav .navbar li a {
@@ -556,4 +556,21 @@ ul, li {
 .form_image_additional_grey {
     margin-left: 300px;
     margin-top: 160px;
+}
+
+.brands {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.brand_image_uu {
+    padding-top: 30px;
+}
+
+.brand_image_n {
+    padding-top: 48px;
+}
+
+.brand_image_nb {
+    padding-top: 40px;
 }
