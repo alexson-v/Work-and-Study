@@ -83,10 +83,6 @@ ul, li {
     padding-top: 10px;
 }
 
-.dropdown_menu {
-    padding-bottom: 3px;
-}
-
 .nav_main .navbar li a {
     text-decoration: none;
     color: #000;
@@ -112,6 +108,113 @@ ul, li {
 .navbar li a:focus:after {
 	width: 100%;
     transform: scale(1);
+}
+
+.dropdown_menu {
+    padding-bottom: 15px;
+}
+
+.header_full_menu_wrapper {
+    background: #EDECF2 100%;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 43%;
+
+}
+
+.header_full_menu {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 50%;
+    padding-top: 2px;
+}
+
+.header_full_navbar {
+    border-right: 1px solid #7D7D7D;
+    width: 158px;
+}
+
+.header_full_navbar li {
+    margin-bottom: 10px;
+}
+
+.header_full_navbar li a{
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.1em;
+    padding: 0.1rem 0.1rem;
+}
+
+.header_full_navbar .option_bold {
+    font-weight: 600;
+}
+
+.header_full_navbar .option_green {
+    color: #02810E;
+    font-weight: 600;
+}
+
+.menu_icons {
+    padding-left: 6px;
+    padding-bottom: 2px;
+}
+
+.goods_preview a {
+    color: #000;
+}
+
+.good_preview {
+    position: relative;
+    border: 1px solid #EBEBEB;
+    padding-right: 25px;
+    padding-top: 20px;
+}
+
+.under_armour_preview_title {
+    position: absolute;
+    padding: 12px 0 0 60px;
+}
+
+.jordan_preview_title {
+    position: absolute;
+    padding: 12px 0 0 97px;
+}
+
+.nike_preview_title {
+    position: absolute;
+    padding: 12px 0 0 150px;
+}
+
+.timberland_preview_title {
+    position: absolute;
+    padding: 12px 0 0 72px;
+}
+
+.good_preview_cta {
+    position: absolute;
+    padding: 36px 0 0 117px;
+    text-decoration: underline;
+}
+
+.timberland_preview_cta {
+    position: absolute;
+    padding: 36px 0 0 103px;
+    text-decoration: underline;
+}
+
+.slider {
+    position: relative;
+}
+
+.dropdown_menu_holder {
+    background: #fff;
+    width: 600px;
+    height: 300px;
+    position: relative;
 }
 
 .header .cart {
