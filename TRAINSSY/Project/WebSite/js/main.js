@@ -1,3 +1,4 @@
+// SWIPER JS in offer construction
 let swiper1 = new Swiper('.slider1', {
     pagination: {
       el: '.swiper-pagination',
@@ -27,6 +28,8 @@ let swiper1 = new Swiper('.slider1', {
     }
   });
 
+
+// SWIPER JS in reviews section
 let swiper2 = new Swiper('.slider2', {
   pagination: {
     el: '.swiper-pagination',
@@ -58,11 +61,11 @@ let swiper2 = new Swiper('.slider2', {
   }
 });
 
-
+// PARALLAX effect
 let scene = document.getElementById('scene');
 let parallaxInstance = new Parallax(scene);
 
-
+// Main anchor
 jQuery(document).ready(function() {
   let btn = $('#btnUp');  
   $(window).scroll(function() {     
@@ -76,4 +79,20 @@ jQuery(document).ready(function() {
      e.preventDefault();
      $('html, body').animate({scrollTop:0}, '300');
    });
+});
+
+
+// Dropdown menu of main header
+$('#dropDownMenu').on('mouseover', function () {
+  $("#openFullMenu").slideDown(400);
+});
+$('.horizontal_line').on('mouseover', function(e) {
+  if (!$('#dropDownMenu').is(e.target) && !$('#openFullMenu').is(e.target)) {
+    $("#openFullMenu").slideUp(400);
+  }
+});
+$('#cart').on('mouseover', function(e) {
+  if (!$('#dropDownMenu').is(e.target) && !$('#openFullMenu').is(e.target)) {
+    $("#openFullMenu").slideUp(400);
+  }
 });
