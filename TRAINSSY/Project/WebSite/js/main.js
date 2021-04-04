@@ -93,6 +93,6 @@ $('.horizontal_line').on('mouseover', function(e) {
 });
 $('#cart').on('mouseover', function(e) {
   if (!$('#dropDownMenu').is(e.target) && !$('#openFullMenu').is(e.target)) {
-    $("#openFullMenu").slideUp(400);
+    $("#openFullMenu").slideUp(200);
   }
 });
