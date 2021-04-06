@@ -56,7 +56,7 @@
                         <div class="cart d-flex" id="cart">
                             <img src="img/cart-icon.svg" class="cart-icon" alt="Корзина">
                             <p class="cart_summary"><span id="sumValue">10 000</span> грн.</p>
-                            <img class="cart_rolldown" src="img/cart-triangle.svg" alt=">">
+                            <img class="cart_arrow" src="img/cart-arrow.svg" alt=">">
                         </div>
                     </div>
                 </div>
@@ -120,6 +120,7 @@
                 </div>
             <div class="horizontal_line"></div>
             </div>
+
         <div class="container-fluid">
             <div class="swiper-container slider1 swiper-no-swiping">
                 <div class="swiper-wrapper">
@@ -168,7 +169,7 @@
             </div>
         </div>
     </section>
-    <section class="arrivals">
+    <section class="arrivals" id="arrivals">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -177,15 +178,15 @@
                 <div class="col-md-7">
                     <div class="arrivals_nav">
                         <ul class="navbar">
-                            <li><a href="#">Мужская обувь</a></li>
-                            <li><a href="#">Женская обувь</a></li>
-                            <li><a href="#">Одежда</a></li>
-                            <li><a href="#">Аксессуары</a></li>
+                            <li><a class="arrivals-tab-trigger active" data-tab="1">Мужская обувь</a></li>
+                            <li><a class="arrivals-tab-trigger" data-tab="2">Женская обувь</a></li>
+                            <li><a class="arrivals-tab-trigger" data-tab="3">Одежда</a></li>
+                            <li><a class="arrivals-tab-trigger" data-tab="4">Аксессуары</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="arrivals_cards">
+            <div class="arrivals_cards arrivals-tab-content active" data-tab="1">
                 <div class="row firstline">
                     <div class="col-md-3">
                         <div class="card_main">
@@ -385,6 +386,624 @@
                             </div>
                             <div class="goods_wrapper_down d-flex">
                                 <div class="card_goodsvalue"><h5><span id="cardGoodsValue">3 200</span> грн</h5></div>
+                                <a href="#" id="cardGoodsLink"><div class="card_cta"><img src="img/card-cta.svg" alt="-->"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrivals_cards arrivals-tab-content" data-tab="2">
+                <div class="row firstline">
+                    <div class="col-md-3">
+                        <div class="card_main">
+                            <div class="card_name">
+                                <h5 class="card_brandname" id="cardBrandName">Rebook</h5>
+                                <h5 class="card_goodsname" id="cardGoodsName">Classic leather</h5>
+                            </div>
+                            <img src="img/Goods_img/card_13.jpg" class="card_image" id="cardImage" alt="Photo">
+                            <div class="card_description d-flex">
+                                <ul class="card_description_attribute">
+                                    <li>Цвет:</li>
+                                    <li>Материал:</li>
+                                    <li>Код товара:</li>
+                                </ul>
+                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                    <li id="cardGoodsColor">undefined</li> 
+                                    <li id="cardGoodsMaterial">undefined</li>
+                                    <li id="cardGoodsCode">EF3276</li>
+                                </ul>
+                            </div>
+                            <div class="goods_wrapper_down d-flex">
+                                <div class="card_goodsvalue"><h5><span id="cardGoodsValue">2 100</span> грн</h5></div>
+                                <a href="#" id="cardGoodsLink"><div class="card_cta"><img src="img/card-cta.svg" alt="-->"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card_main">
+                            <div class="card_name">
+                                <h5 class="card_brandname" id="cardBrandName">Nike</h5>
+                                <h5 class="card_goodsname" id="cardGoodsName">AF1 Shadow</h5>
+                            </div>
+                            <img src="img/Goods_img/card_14.jpg" class="card_image" id="cardImage" alt="Photo">
+                            <div class="card_description d-flex">
+                                <ul class="card_description_attribute">
+                                    <li>Цвет:</li>
+                                    <li>Материал:</li>
+                                    <li>Код товара:</li>
+                                </ul>
+                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                    <li id="cardGoodsColor">undefined</li> 
+                                    <li id="cardGoodsMaterial">undefined</li>
+                                    <li id="cardGoodsCode">DD9684-100</li>
+                                </ul>
+                            </div>
+                            <div class="goods_wrapper_down d-flex">
+                                <div class="card_goodsvalue"><h5><span id="cardGoodsValue">3 200</span> грн</h5></div>
+                                <a href="#" id="cardGoodsLink"><div class="card_cta"><img src="img/card-cta.svg" alt="-->"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card_main">
+                            <div class="card_name">
+                                <h5 class="card_brandname" id="cardBrandName">Nike</h5>
+                                <h5 class="card_goodsname" id="cardGoodsName">Air Force 1 07</h5>
+                            </div>
+                            <img src="img/Goods_img/card_15.jpg" class="card_image" id="cardImage" alt="Photo">
+                            <div class="card_description d-flex">
+                                <ul class="card_description_attribute">
+                                    <li>Цвет:</li>
+                                    <li>Материал:</li>
+                                    <li>Код товара:</li>
+                                </ul>
+                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                    <li id="cardGoodsColor">undefined</li> 
+                                    <li id="cardGoodsMaterial">undefined</li>
+                                    <li id="cardGoodsCode">DD9683-100</li>
+                                </ul>
+                            </div>
+                            <div class="goods_wrapper_down d-flex">
+                                <div class="card_goodsvalue"><h5><span id="cardGoodsValue">3 200</span> грн</h5></div>
+                                <a href="#" id="cardGoodsLink"><div class="card_cta"><img src="img/card-cta.svg" alt="-->"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card_main">
+                            <div class="card_name">
+                                <h5 class="card_brandname" id="cardBrandName">Nike</h5>
+                                <h5 class="card_goodsname" id="cardGoodsName">AF1 Pixel</h5>
+                            </div>
+                            <img src="img/Goods_img/card_16.jpg" class="card_image" id="cardImage" alt="Photo">
+                            <div class="card_description d-flex">
+                                <ul class="card_description_attribute">
+                                    <li>Цвет:</li>
+                                    <li>Материал:</li>
+                                    <li>Код товара:</li>
+                                </ul>
+                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                    <li id="cardGoodsColor">undefined</li> 
+                                    <li id="cardGoodsMaterial">undefined</li>
+                                    <li id="cardGoodsCode">CK6649-200</li>
+                                </ul>
+                            </div>
+                            <div class="goods_wrapper_down d-flex">
+                                <div class="card_goodsvalue"><h5><span id="cardGoodsValue">3 200</span> грн</h5></div>
+                                <a href="#" id="cardGoodsLink"><div class="card_cta"><img src="img/card-cta.svg" alt="-->"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card_main">
+                            <div class="card_name">
+                                <h5 class="card_brandname" id="cardBrandName">Nike</h5>
+                                <h5 class="card_goodsname" id="cardGoodsName">Air Force 1 VDAY</h5>
+                            </div>
+                            <img src="img/Goods_img/card_17.jpg" class="card_image" id="cardImage" alt="Photo">
+                            <div class="card_description d-flex">
+                                <ul class="card_description_attribute">
+                                    <li>Цвет:</li>
+                                    <li>Материал:</li>
+                                    <li>Код товара:</li>
+                                </ul>
+                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                    <li id="cardGoodsColor">undefined</li> 
+                                    <li id="cardGoodsMaterial">undefined</li>
+                                    <li id="cardGoodsCode">BQ6980-600</li>
+                                </ul>
+                            </div>
+                            <div class="goods_wrapper_down d-flex">
+                                <div class="card_goodsvalue"><h5><span id="cardGoodsValue">2 400</span> грн</h5></div>
+                                <a href="#" id="cardGoodsLink"><div class="card_cta"><img src="img/card-cta.svg" alt="-->"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card_main">
+                            <div class="card_name">
+                                <h5 class="card_brandname" id="cardBrandName">Nike</h5>
+                                <h5 class="card_goodsname" id="cardGoodsName">Air Zoom spiridon</h5>
+                            </div>
+                            <img src="img/Goods_img/card_18.jpg" class="card_image" id="cardImage" alt="Photo">
+                            <div class="card_description d-flex">
+                                <ul class="card_description_attribute">
+                                    <li>Цвет:</li>
+                                    <li>Материал:</li>
+                                    <li>Код товара:</li>
+                                </ul>
+                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                    <li id="cardGoodsColor">undefined</li> 
+                                    <li id="cardGoodsMaterial">undefined</li>
+                                    <li id="cardGoodsCode">CD3613-002</li>
+                                </ul>
+                            </div>
+                            <div class="goods_wrapper_down d-flex">
+                                <div class="card_goodsvalue"><h5><span id="cardGoodsValue">3 500</span> грн</h5></div>
+                                <a href="#" id="cardGoodsLink"><div class="card_cta"><img src="img/card-cta.svg" alt="-->"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card_main">
+                            <div class="card_name">
+                                <h5 class="card_brandname" id="cardBrandName">Nike</h5>
+                                <h5 class="card_goodsname" id="cardGoodsName">Zoom gravity</h5>
+                            </div>
+                            <img src="img/Goods_img/card_19.jpg" class="card_image" id="cardImage" alt="Photo">
+                            <div class="card_description d-flex">
+                                <ul class="card_description_attribute">
+                                    <li>Цвет:</li>
+                                    <li>Материал:</li>
+                                    <li>Код товара:</li>
+                                </ul>
+                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                    <li id="cardGoodsColor">undefined</li> 
+                                    <li id="cardGoodsMaterial">undefined</li>
+                                    <li id="cardGoodsCode">CT1192-600</li>
+                                </ul>
+                            </div>
+                            <div class="goods_wrapper_down d-flex">
+                                <div class="card_goodsvalue"><h5><span id="cardGoodsValue">1 950</span> грн</h5></div>
+                                <a href="#" id="cardGoodsLink"><div class="card_cta"><img src="img/card-cta.svg" alt="-->"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card_main">
+                            <div class="card_name">
+                                <h5 class="card_brandname" id="cardBrandName">Adidas</h5>
+                                <h5 class="card_goodsname" id="cardGoodsName">Superstar Slip-on</h5>
+                            </div>
+                            <img src="img/Goods_img/card_20.jpg" class="card_image" id="cardImage" alt="Photo">
+                            <div class="card_description d-flex">
+                                <ul class="card_description_attribute">
+                                    <li>Цвет:</li>
+                                    <li>Материал:</li>
+                                    <li>Код товара:</li>
+                                </ul>
+                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                    <li id="cardGoodsColor">undefined</li> 
+                                    <li id="cardGoodsMaterial">undefined</li>
+                                    <li id="cardGoodsCode">FV3187</li>
+                                </ul>
+                            </div>
+                            <div class="goods_wrapper_down d-flex">
+                                <div class="card_goodsvalue"><h5><span id="cardGoodsValue">1 800</span> грн</h5></div>
+                                <a href="#" id="cardGoodsLink"><div class="card_cta"><img src="img/card-cta.svg" alt="-->"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrivals_cards arrivals-tab-content" data-tab="3">
+                <div class="row firstline">
+                    <div class="col-md-3">
+                        <div class="card_main">
+                            <div class="card_name">
+                                <h5 class="card_brandname" id="cardBrandName">Stone Island</h5>
+                                <h5 class="card_goodsname" id="cardGoodsName">Ветровка</h5>
+                            </div>
+                            <img src="img/Goods_img/card_21.jpg" class="card_image" id="cardImage" alt="Photo">
+                            <div class="card_description d-flex">
+                                <ul class="card_description_attribute">
+                                    <li>Цвет:</li>
+                                    <li>Материал:</li>
+                                    <li>Код товара:</li>
+                                </ul>
+                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                    <li id="cardGoodsColor">undefined</li> 
+                                    <li id="cardGoodsMaterial">undefined</li>
+                                    <li id="cardGoodsCode">701544731</li>
+                                </ul>
+                            </div>
+                            <div class="goods_wrapper_down d-flex">
+                                <div class="card_goodsvalue"><h5><span id="cardGoodsValue">9 000</span> грн</h5></div>
+                                <a href="#" id="cardGoodsLink"><div class="card_cta"><img src="img/card-cta.svg" alt="-->"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card_main">
+                            <div class="card_name">
+                                <h5 class="card_brandname" id="cardBrandName">Stone Island</h5>
+                                <h5 class="card_goodsname" id="cardGoodsName">Плавки-шорты</h5>
+                            </div>
+                            <img src="img/Goods_img/card_22.jpg" class="card_image" id="cardImage" alt="Photo">
+                            <div class="card_description d-flex">
+                                <ul class="card_description_attribute">
+                                    <li>Цвет:</li>
+                                    <li>Материал:</li>
+                                    <li>Код товара:</li>
+                                </ul>
+                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                    <li id="cardGoodsColor">undefined</li> 
+                                    <li id="cardGoodsMaterial">undefined</li>
+                                    <li id="cardGoodsCode">7015B0146</li>
+                                </ul>
+                            </div>
+                            <div class="goods_wrapper_down d-flex">
+                                <div class="card_goodsvalue"><h5><span id="cardGoodsValue">3 000</span> грн</h5></div>
+                                <a href="#" id="cardGoodsLink"><div class="card_cta"><img src="img/card-cta.svg" alt="-->"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card_main">
+                            <div class="card_name">
+                                <h5 class="card_brandname" id="cardBrandName">The North Face</h5>
+                                <h5 class="card_goodsname" id="cardGoodsName">1996 Retro Nuptse</h5>
+                            </div>
+                            <img src="img/Goods_img/card_23.jpg" class="card_image" id="cardImage" alt="Photo">
+                            <div class="card_description d-flex">
+                                <ul class="card_description_attribute">
+                                    <li>Цвет:</li>
+                                    <li>Материал:</li>
+                                    <li>Код товара:</li>
+                                </ul>
+                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                    <li id="cardGoodsColor">undefined</li> 
+                                    <li id="cardGoodsMaterial">undefined</li>
+                                    <li id="cardGoodsCode">nf0a3c8ddw9</li>
+                                </ul>
+                            </div>
+                            <div class="goods_wrapper_down d-flex">
+                                <div class="card_goodsvalue"><h5><span id="cardGoodsValue">6 000</span> грн</h5></div>
+                                <a href="#" id="cardGoodsLink"><div class="card_cta"><img src="img/card-cta.svg" alt="-->"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card_main">
+                            <div class="card_name">
+                                <h5 class="card_brandname" id="cardBrandName">Jordan</h5>
+                                <h5 class="card_goodsname" id="cardGoodsName">Legacy 1 Pullover</h5>
+                            </div>
+                            <img src="img/Goods_img/card_24.jpg" class="card_image" id="cardImage" alt="Photo">
+                            <div class="card_description d-flex">
+                                <ul class="card_description_attribute">
+                                    <li>Цвет:</li>
+                                    <li>Материал:</li>
+                                    <li>Код товара:</li>
+                                </ul>
+                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                    <li id="cardGoodsColor">undefined</li> 
+                                    <li id="cardGoodsMaterial">undefined</li>
+                                    <li id="cardGoodsCode">CZ1160-010</li>
+                                </ul>
+                            </div>
+                            <div class="goods_wrapper_down d-flex">
+                                <div class="card_goodsvalue"><h5><span id="cardGoodsValue">2 500</span> грн</h5></div>
+                                <a href="#" id="cardGoodsLink"><div class="card_cta"><img src="img/card-cta.svg" alt="-->"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card_main">
+                            <div class="card_name">
+                                <h5 class="card_brandname" id="cardBrandName">Jordan</h5>
+                                <h5 class="card_goodsname" id="cardGoodsName">Jumpman Air Fleece</h5>
+                            </div>
+                            <img src="img/Goods_img/card_25.jpg" class="card_image" id="cardImage" alt="Photo">
+                            <div class="card_description d-flex">
+                                <ul class="card_description_attribute">
+                                    <li>Цвет:</li>
+                                    <li>Материал:</li>
+                                    <li>Код товара:</li>
+                                </ul>
+                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                    <li id="cardGoodsColor">undefined</li> 
+                                    <li id="cardGoodsMaterial">undefined</li>
+                                    <li id="cardGoodsCode">СК6694-010</li>
+                                </ul>
+                            </div>
+                            <div class="goods_wrapper_down d-flex">
+                                <div class="card_goodsvalue"><h5><span id="cardGoodsValue">1 500</span> грн</h5></div>
+                                <a href="#" id="cardGoodsLink"><div class="card_cta"><img src="img/card-cta.svg" alt="-->"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card_main">
+                            <div class="card_name">
+                                <h5 class="card_brandname" id="cardBrandName">Jordan</h5>
+                                <h5 class="card_goodsname" id="cardGoodsName">Jumpman Classics</h5>
+                            </div>
+                            <img src="img/Goods_img/card_26.jpg" class="card_image" id="cardImage" alt="Photo">
+                            <div class="card_description d-flex">
+                                <ul class="card_description_attribute">
+                                    <li>Цвет:</li>
+                                    <li>Материал:</li>
+                                    <li>Код товара:</li>
+                                </ul>
+                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                    <li id="cardGoodsColor">undefined</li> 
+                                    <li id="cardGoodsMaterial">undefined</li>
+                                    <li id="cardGoodsCode">CV2244-091</li>
+                                </ul>
+                            </div>
+                            <div class="goods_wrapper_down d-flex">
+                                <div class="card_goodsvalue"><h5><span id="cardGoodsValue">1 800</span> грн</h5></div>
+                                <a href="#" id="cardGoodsLink"><div class="card_cta"><img src="img/card-cta.svg" alt="-->"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card_main">
+                            <div class="card_name">
+                                <h5 class="card_brandname" id="cardBrandName">Jordan</h5>
+                                <h5 class="card_goodsname" id="cardGoodsName">Jumpman Classics</h5>
+                            </div>
+                            <img src="img/Goods_img/card_27.jpg" class="card_image" id="cardImage" alt="Photo">
+                            <div class="card_description d-flex">
+                                <ul class="card_description_attribute">
+                                    <li>Цвет:</li>
+                                    <li>Материал:</li>
+                                    <li>Код товара:</li>
+                                </ul>
+                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                    <li id="cardGoodsColor">undefined</li> 
+                                    <li id="cardGoodsMaterial">undefined</li>
+                                    <li id="cardGoodsCode">CV2244-010</li>
+                                </ul>
+                            </div>
+                            <div class="goods_wrapper_down d-flex">
+                                <div class="card_goodsvalue"><h5><span id="cardGoodsValue">1 800</span> грн</h5></div>
+                                <a href="#" id="cardGoodsLink"><div class="card_cta"><img src="img/card-cta.svg" alt="-->"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card_main">
+                            <div class="card_name">
+                                <h5 class="card_brandname" id="cardBrandName">The North Face</h5>
+                                <h5 class="card_goodsname" id="cardGoodsName">McMurdo parka III</h5>
+                            </div>
+                            <img src="img/Goods_img/card_28.jpg" class="card_image" id="cardImage" alt="Photo">
+                            <div class="card_description d-flex">
+                                <ul class="card_description_attribute">
+                                    <li>Цвет:</li>
+                                    <li>Материал:</li>
+                                    <li>Код товара:</li>
+                                </ul>
+                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                    <li id="cardGoodsColor">undefined</li> 
+                                    <li id="cardGoodsMaterial">undefined</li>
+                                    <li id="cardGoodsCode">NF0A33RFTLY</li>
+                                </ul>
+                            </div>
+                            <div class="goods_wrapper_down d-flex">
+                                <div class="card_goodsvalue"><h5><span id="cardGoodsValue">6 000</span> грн</h5></div>
+                                <a href="#" id="cardGoodsLink"><div class="card_cta"><img src="img/card-cta.svg" alt="-->"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrivals_cards arrivals-tab-content" data-tab="4">
+                <div class="row firstline">
+                    <div class="col-md-3">
+                        <div class="card_main">
+                            <div class="card_name">
+                                <h5 class="card_brandname" id="cardBrandName">Louis Vuitton</h5>
+                                <h5 class="card_goodsname" id="cardGoodsName">District PM</h5>
+                            </div>
+                            <img src="img/Goods_img/card_29.jpg" class="card_image" id="cardImage" alt="Photo">
+                            <div class="card_description d-flex">
+                                <ul class="card_description_attribute">
+                                    <li>Цвет:</li>
+                                    <li>Материал:</li>
+                                    <li>Код товара:</li>
+                                </ul>
+                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                    <li id="cardGoodsColor">undefined</li> 
+                                    <li id="cardGoodsMaterial">undefined</li>
+                                    <li id="cardGoodsCode">М45272</li>
+                                </ul>
+                            </div>
+                            <div class="goods_wrapper_down d-flex">
+                                <div class="card_goodsvalue"><h5><span id="cardGoodsValue">22 000</span> грн</h5></div>
+                                <a href="#" id="cardGoodsLink"><div class="card_cta"><img src="img/card-cta.svg" alt="-->"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card_main">
+                            <div class="card_name">
+                                <h5 class="card_brandname" id="cardBrandName">Stone Island</h5>
+                                <h5 class="card_goodsname" id="cardGoodsName">Шерстяной шарф</h5>
+                            </div>
+                            <img src="img/Goods_img/card_30.jpg" class="card_image" id="cardImage" alt="Photo">
+                            <div class="card_description d-flex">
+                                <ul class="card_description_attribute">
+                                    <li>Цвет:</li>
+                                    <li>Материал:</li>
+                                    <li>Код товара:</li>
+                                </ul>
+                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                    <li id="cardGoodsColor">undefined</li> 
+                                    <li id="cardGoodsMaterial">undefined</li>
+                                    <li id="cardGoodsCode">6915N14C</li>
+                                </ul>
+                            </div>
+                            <div class="goods_wrapper_down d-flex">
+                                <div class="card_goodsvalue"><h5><span id="cardGoodsValue">3 000</span> грн</h5></div>
+                                <a href="#" id="cardGoodsLink"><div class="card_cta"><img src="img/card-cta.svg" alt="-->"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card_main">
+                            <div class="card_name">
+                                <h5 class="card_brandname" id="cardBrandName">Stone Island</h5>
+                                <h5 class="card_goodsname" id="cardGoodsName">Шерстяной шарф</h5>
+                            </div>
+                            <img src="img/Goods_img/card_31.jpg" class="card_image" id="cardImage" alt="Photo">
+                            <div class="card_description d-flex">
+                                <ul class="card_description_attribute">
+                                    <li>Цвет:</li>
+                                    <li>Материал:</li>
+                                    <li>Код товара:</li>
+                                </ul>
+                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                    <li id="cardGoodsColor">undefined</li> 
+                                    <li id="cardGoodsMaterial">undefined</li>
+                                    <li id="cardGoodsCode">7115N15B5</li>
+                                </ul>
+                            </div>
+                            <div class="goods_wrapper_down d-flex">
+                                <div class="card_goodsvalue"><h5><span id="cardGoodsValue">2 500</span> грн</h5></div>
+                                <a href="#" id="cardGoodsLink"><div class="card_cta"><img src="img/card-cta.svg" alt="-->"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card_main">
+                            <div class="card_name">
+                                <h5 class="card_brandname" id="cardBrandName">Stone Island</h5>
+                                <h5 class="card_goodsname" id="cardGoodsName">Colli e Sciarpe</h5>
+                            </div>
+                            <img src="img/Goods_img/card_32.jpg" class="card_image" id="cardImage" alt="Photo">
+                            <div class="card_description d-flex">
+                                <ul class="card_description_attribute">
+                                    <li>Цвет:</li>
+                                    <li>Материал:</li>
+                                    <li>Код товара:</li>
+                                </ul>
+                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                    <li id="cardGoodsColor">undefined</li> 
+                                    <li id="cardGoodsMaterial">undefined</li>
+                                    <li id="cardGoodsCode">7115N01D6</li>
+                                </ul>
+                            </div>
+                            <div class="goods_wrapper_down d-flex">
+                                <div class="card_goodsvalue"><h5><span id="cardGoodsValue">3 000</span> грн</h5></div>
+                                <a href="#" id="cardGoodsLink"><div class="card_cta"><img src="img/card-cta.svg" alt="-->"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card_main">
+                            <div class="card_name">
+                                <h5 class="card_brandname" id="cardBrandName">Heron Preston</h5>
+                                <h5 class="card_goodsname" id="cardGoodsName">CTNMB Dots</h5>
+                            </div>
+                            <img src="img/Goods_img/card_33.jpg" class="card_image" id="cardImage" alt="Photo">
+                            <div class="card_description d-flex">
+                                <ul class="card_description_attribute">
+                                    <li>Цвет:</li>
+                                    <li>Материал:</li>
+                                    <li>Код товара:</li>
+                                </ul>
+                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                    <li id="cardGoodsColor">undefined</li> 
+                                    <li id="cardGoodsMaterial">undefined</li>
+                                    <li id="cardGoodsCode">HMMA002F1</li>
+                                </ul>
+                            </div>
+                            <div class="goods_wrapper_down d-flex">
+                                <div class="card_goodsvalue"><h5><span id="cardGoodsValue">2 500</span> грн</h5></div>
+                                <a href="#" id="cardGoodsLink"><div class="card_cta"><img src="img/card-cta.svg" alt="-->"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card_main">
+                            <div class="card_name">
+                                <h5 class="card_brandname" id="cardBrandName">Michael Kors</h5>
+                                <h5 class="card_goodsname" id="cardGoodsName">Женские часы</h5>
+                            </div>
+                            <img src="img/Goods_img/card_34.jpg" class="card_image" id="cardImage" alt="Photo">
+                            <div class="card_description d-flex">
+                                <ul class="card_description_attribute">
+                                    <li>Цвет:</li>
+                                    <li>Материал:</li>
+                                    <li>Код товара:</li>
+                                </ul>
+                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                    <li id="cardGoodsColor">undefined</li> 
+                                    <li id="cardGoodsMaterial">undefined</li>
+                                    <li id="cardGoodsCode">MK4361</li>
+                                </ul>
+                            </div>
+                            <div class="goods_wrapper_down d-flex">
+                                <div class="card_goodsvalue"><h5><span id="cardGoodsValue">4 000</span> грн</h5></div>
+                                <a href="#" id="cardGoodsLink"><div class="card_cta"><img src="img/card-cta.svg" alt="-->"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card_main">
+                            <div class="card_name">
+                                <h5 class="card_brandname" id="cardBrandName">Michael Kors</h5>
+                                <h5 class="card_goodsname" id="cardGoodsName">Женские часы</h5>
+                            </div>
+                            <img src="img/Goods_img/card_35.jpg" class="card_image" id="cardImage" alt="Photo">
+                            <div class="card_description d-flex">
+                                <ul class="card_description_attribute">
+                                    <li>Цвет:</li>
+                                    <li>Материал:</li>
+                                    <li>Код товара:</li>
+                                </ul>
+                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                    <li id="cardGoodsColor">undefined</li> 
+                                    <li id="cardGoodsMaterial">undefined</li>
+                                    <li id="cardGoodsCode">MK3682</li>
+                                </ul>
+                            </div>
+                            <div class="goods_wrapper_down d-flex">
+                                <div class="card_goodsvalue"><h5><span id="cardGoodsValue">3 250</span> грн</h5></div>
+                                <a href="#" id="cardGoodsLink"><div class="card_cta"><img src="img/card-cta.svg" alt="-->"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card_main">
+                            <div class="card_name">
+                                <h5 class="card_brandname" id="cardBrandName">Michael Kors</h5>
+                                <h5 class="card_goodsname" id="cardGoodsName">Мужские часы</h5>
+                            </div>
+                            <img src="img/Goods_img/card_36.jpg" class="card_image" id="cardImage" alt="Photo">
+                            <div class="card_description d-flex">
+                                <ul class="card_description_attribute">
+                                    <li>Цвет:</li>
+                                    <li>Материал:</li>
+                                    <li>Код товара:</li>
+                                </ul>
+                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                    <li id="cardGoodsColor">undefined</li> 
+                                    <li id="cardGoodsMaterial">undefined</li>
+                                    <li id="cardGoodsCode">MK8621</li>
+                                </ul>
+                            </div>
+                            <div class="goods_wrapper_down d-flex">
+                                <div class="card_goodsvalue"><h5><span id="cardGoodsValue">3 750</span> грн</h5></div>
                                 <a href="#" id="cardGoodsLink"><div class="card_cta"><img src="img/card-cta.svg" alt="-->"></div></a>
                             </div>
                         </div>

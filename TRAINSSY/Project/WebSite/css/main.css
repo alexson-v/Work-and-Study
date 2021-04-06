@@ -121,7 +121,6 @@ ul, li {
     z-index: 100;
     width: 100%;
     height: 43%;
-    cursor: pointer;
     display: none;
 }
 
@@ -231,9 +230,17 @@ ul, li {
     margin-top: 1.5px;
 }
 
-.cart .cart_rolldown {
+.cart .cart_arrow {
     margin-left: 16px;
-    margin-top: 2px;
+    margin-bottom: 1px;
+}
+
+.cart_rolldown_window {
+    z-index: 150;
+    width: 300px;
+    height: 500px;
+    margin-left: auto;
+    background: #fff;
 }
 
 .container-fluid {
@@ -361,6 +368,7 @@ ul, li {
     letter-spacing: 0.175em;
     position: relative;
     padding: 1.75rem 0.3rem;
+    cursor: pointer;
 }
 
 .arrivals_nav .navbar li a:after {
@@ -383,6 +391,14 @@ ul, li {
 
 .arrivals_cards {
     padding-top: 50px;
+}
+
+.arrivals-tab-content {
+    display: none;
+}
+
+.arrivals-tab-content.active {
+    display: block;
 }
 
 .card_main {
