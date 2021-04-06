@@ -59,22 +59,13 @@ jsTriggers.forEach(function(trigger) {
 });
 
 
-// SWIPER JS in reviews section
-let swiper2 = new Swiper('.slider2', {
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-    clickable: true,
-  },
-  lazy: true,
-  centeredSlides: true,
-  slidesPerView: 3.5,
-  spaceBetween: 100,
+// SWIPER JS in news section (992 x 1200)
+let swiper3 = new Swiper('.slider3', {
+  simulateTouch: true,
+  spaceBetween: 30,
+  touchAngle: 45,
+  slidesPerView: 2,
+  draggable: true,
   breakpoints: {
       576: {
 
@@ -87,6 +78,39 @@ let swiper2 = new Swiper('.slider2', {
       },
       1200: {
 
+      }
+  }
+});
+
+
+// SWIPER JS in reviews section
+let swiper2 = new Swiper('.slider2', {
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    clickable: true,
+  },
+  centeredSlides: true,
+  slidesPerView: 3.5,
+  simulateTouch: true,
+  spaceBetween: 100,
+  breakpoints: {
+      576: {
+
+      },
+      768: {
+
+      },
+      992: {
+        spaceBetween: 300,
+      },
+      1200: {
+        spaceBetween: 100,
       }
   }
 });
