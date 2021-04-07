@@ -136,3 +136,10 @@ jQuery(document).ready(function() {
      $('html, body').animate({scrollTop:0}, '300');
    });
 });
+
+
+// Mobile menu
+$('.hamburger_menu').on('click', function() {
+  $('.menu_mobile').toggleClass('menu_mobile_active');
+  $('.content').toggleClass('content_active');
+})

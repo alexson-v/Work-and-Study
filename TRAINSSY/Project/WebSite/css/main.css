@@ -222,6 +222,22 @@ ul, li {
     position: relative;
 }
 
+.header_phone {
+    font-size: 13px;
+    font-weight: 700;
+    color: #000;
+}
+
+.header_phone:hover {
+    color: #000;
+}
+
+.header_phone_text {
+    font-size: 12px;
+    font-weight: 400;
+    color: #000;
+}
+
 .header .cart {
     font-size: 14px;
     font-weight: 700;
@@ -247,6 +263,10 @@ ul, li {
     height: 500px;
     margin-left: auto;
     background: #fff;
+}
+
+.hamburger_menu {
+    padding-top: 4px;
 }
 
 .container-fluid {
@@ -624,6 +644,10 @@ ul, li {
     padding-top: 49px;
 }
 
+.form_wrapper {
+    display: flex;
+}
+
 .form_paragraph {
     padding-top: 37px;
     font-size: 17px;
@@ -801,17 +825,117 @@ ul, li {
     margin-left: 30px;
 }
 
-.footer_under_wrapper {
-    padding-top: 4px;
-    padding-right: 0;
-}
-
 .footer_bank_option_1 {
+    padding-top: 25px;
     margin-right: 30px;
 }
 
 .footer_bank_option_2 {
-    padding-bottom: 3px;
+    padding-top: 28.5px;
+}
+
+.menu_mobile_wrapper {
+    position: relative;
+    overflow-x: hidden;
+    z-index: 100;
+    background-color: #EFEFEF;
+    height: 100%;
+}
+
+.menu_mobile {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 325px;
+    height: 100vh;
+    display: flex;
+    background-color: #EFEFEF;
+    transition: 0.5s;
+    transform: translateX(+100%);
+}
+
+.menu_mobile_active {
+    transform: translateX(0%);
+}
+
+.navbar_mobile {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.navbar_mobile li {
+    height: 10%;
+    border: .7px solid #C4C4C4;
+    border-left: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
+    width: 325px;
+    padding: 24px 0 18px 16px;
+    cursor: pointer;
+}
+
+.navbar_mobile a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.085em;
+}
+
+.navbar_mobile_close {
+    position: absolute;
+}
+
+.content {
+    transition: 0.5s;
+    position: relative;
+}
+
+.content_active {
+    transform: translateX(-30%);
+}
+
+.menu_mobile_icons {
+    margin-left: 15px;
+    margin-top: 4.5px;
+    position: absolute;
+}
+
+.cart_mobile_highlighter{
+    color: #02810E;
+}
+
+.menu_mobile_arrow_m {
+    padding-left: 160px;
+    padding-top: 3px;
+    position: absolute;
+}
+
+.menu_mobile_arrow_w {
+    padding-left: 160px;
+    padding-top: 3px;
+    position: absolute;
+}
+
+.menu_mobile_arrow_c {
+    padding-left: 220px;
+    padding-top: 3px;
+    position: absolute;
+}
+
+.menu_mobile_arrow_a {
+    padding-left: 186px;
+    padding-top: 3px;
+    position: absolute;
+}
+
+.navbar_mobile:first-child {
+    border: 0px solid #fff;
+}
+
+.navbar_mobile_close_section {
+    padding-bottom: 30px;
 }
 
 /* Responsive */
@@ -820,7 +944,12 @@ ul, li {
     .big_news_wrapper {
         display: block;
     }
-    .small_news_wrapper {
+    .hamburger_menu,
+    .hamburger_menu_col,
+    .small_news_wrapper,
+    .header_tablet_phonenumber,
+    .header_tablet_phonenumber_col,
+    .menu_mobile_wrapper {
         display: none;
     }
 }
@@ -854,7 +983,14 @@ ul, li {
     .arrivals {
         padding-bottom: 42px;
     }
-    .big_news_wrapper {
+    .hamburger_menu,
+    .hamburger_menu_col,
+    .big_news_wrapper,
+    .header_tablet_phonenumber,
+    .header_tablet_phonenumber_col {
+        display: none;
+    }
+    .menu_mobile_wrapper {
         display: none;
     }
     .small_news_wrapper {
@@ -882,8 +1018,6 @@ ul, li {
     }
     .footer_button_up {
         padding-top: 5px;
-    }
-    .footer_button_up {
         padding-left: 0;
     }
     .inst_icon {
@@ -898,12 +1032,47 @@ ul, li {
     .footer_under {
         padding-top: 22px;
     }
+    .footer_bank_option_1 {
+        padding-top: 20px;
+    }
+    .footer_bank_option_2 {
+        padding-top: 23.5px;
+    }
 }
 /* 768px - 992px */
 @media screen and (max-width: 992px) {
     .container {
         width: 720px;
+        padding: 0;
     }
+    .header .header_main {
+        padding-top: 18px;
+        padding-bottom: 19px;
+    }
+    .header_tablet_phonenumber {
+        padding-top: 7px;
+    }
+    .cart {
+        margin-bottom: 5px;
+    }
+    .nav_main,
+    .nav_main_col,
+    .header_additional_phone_col,
+    .header_additional_delivery_col {
+        display: none;
+    }
+    .form_wrapper,
+    .header_logo_text,
+    .cart_summary,
+    .cart_arrow,
+    .hamburger_menu,
+    .hamburger_menu_col,
+    .header_tablet_phonenumber,
+    .header_tablet_phonenumber_col,
+    .menu_mobile_wrapper {
+        display: block;
+    }
+
 }
 /* 576px - 768px */
 @media screen and (max-width: 768px) {
