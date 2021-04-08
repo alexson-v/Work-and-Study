@@ -59,25 +59,52 @@ jsTriggers.forEach(function(trigger) {
 });
 
 
+// TABS in arrivals section (SLIDERS)
+let jsTriggersSlider = document.querySelectorAll('.arrivals-tab-trigger');
+
+jsTriggers.forEach(function(trigger) {
+   trigger.addEventListener('click', function() {
+      let id = this.getAttribute('data-tab'),
+          contentSlider = document.querySelector('.slider4[data-tab="'+id+'"]'),
+          activeTrigger = document.querySelector('.arrivals-tab-trigger.active'),
+          activeContentSlider = document.querySelector('.slider4.active');
+      
+      activeTrigger.classList.remove('active');
+      trigger.classList.add('active');
+      
+      activeContentSlider.classList.remove('active');
+      contentSlider.classList.add('active');
+   });
+});
+
+
 // SWIPER JS in news section (992 x 1200)
 let swiper3 = new Swiper('.slider3', {
   simulateTouch: true,
-  spaceBetween: -300,
+  spaceBetween: 100,
   touchAngle: 45,
-  slidesPerView: 1,
+  slidesPerView: 1.4,
+  autoplay: {
+    delay: 10000,
+  },
+  loop: true,
   draggable: true,
   breakpoints: {
+      529: {
+        slidesPerView: 0.8,
+      },
       576: {
+        slidesPerView: 1,
 
       },
       768: {
-
+        slidesPerView: 1.3,
       },
       992: {
-        spaceBetween: -300,
+        slidesPerView: 1.7,
       },
       1200: {
-
+        
       }
   }
 });
@@ -157,23 +184,29 @@ let swiper4 = new Swiper('.slider4', {
   draggable: true,
   slidesPerView: 3,
   loop: true,
-  spaceBetween: 300,
+  spaceBetween: 150,
+  observer: true,
+  observeParents: true,
   scrollbar: {
     el: '.swiper-scrollbar',
     draggable: true,
     dragSize: 50,
   },
   breakpoints: {
+    529: {
+
+    },
     576: {
-      slidesPerView: 1,
-      spaceBetween: 10,
+      slidesPerView: 2.5,
     },
-
     768: {
+      slidesPerView: 3,
     },
-
     992: {
 
     },
-  },
+    1200: {
+      
+    }
+  }
 });
