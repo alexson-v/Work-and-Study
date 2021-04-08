@@ -62,9 +62,9 @@ jsTriggers.forEach(function(trigger) {
 // SWIPER JS in news section (992 x 1200)
 let swiper3 = new Swiper('.slider3', {
   simulateTouch: true,
-  spaceBetween: 30,
+  spaceBetween: -300,
   touchAngle: 45,
-  slidesPerView: 2,
+  slidesPerView: 1,
   draggable: true,
   breakpoints: {
       576: {
@@ -74,7 +74,7 @@ let swiper3 = new Swiper('.slider3', {
 
       },
       992: {
-          
+        spaceBetween: -300,
       },
       1200: {
 
@@ -142,4 +142,38 @@ jQuery(document).ready(function() {
 $('.hamburger_menu').on('click', function() {
   $('.menu_mobile').toggleClass('menu_mobile_active');
   $('.content').toggleClass('content_active');
-})
+});
+
+$('.navbar_mobile_close').on('click', function() {
+  $('.menu_mobile').toggleClass('menu_mobile_active');
+  $('.content').toggleClass('content_active');
+});
+
+
+// SWIPER JS in arrivals
+let swiper4 = new Swiper('.slider4', {
+  simulateTouch: true,
+  touchAngle: 45,
+  draggable: true,
+  slidesPerView: 3,
+  loop: true,
+  spaceBetween: 300,
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+    dragSize: 50,
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+
+    768: {
+    },
+
+    992: {
+
+    },
+  },
+});

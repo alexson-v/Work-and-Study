@@ -524,6 +524,7 @@ ul, li {
     position: absolute;
     color: #fff;
     margin: 264px 0 0 70px;
+    width: 500px;
 }
 
 .news_undertitle {
@@ -875,6 +876,10 @@ ul, li {
     cursor: pointer;
 }
 
+.navbar_mobile .menu_mobide_rubicon {
+    border-bottom: .7px solid #000;
+}
+
 .navbar_mobile a {
     color: #000;
     text-decoration: none;
@@ -885,6 +890,7 @@ ul, li {
 
 .navbar_mobile_close {
     position: absolute;
+
 }
 
 .content {
@@ -935,8 +941,23 @@ ul, li {
 }
 
 .navbar_mobile_close_section {
-    padding-bottom: 30px;
+    position: absolute;
 }
+
+.arrivals_slider_mobile {
+    padding-top: 30px;
+}
+
+.swiper-scrollbar {
+    background-color: #E2E4F2;
+
+}
+
+.swiper-scrollbar-drag {
+    background: #989898;
+}
+
+
 
 /* Responsive */
 
@@ -949,7 +970,8 @@ ul, li {
     .small_news_wrapper,
     .header_tablet_phonenumber,
     .header_tablet_phonenumber_col,
-    .menu_mobile_wrapper {
+    .menu_mobile_wrapper,
+    .arrivals_slider_mobile {
         display: none;
     }
 }
@@ -1072,14 +1094,48 @@ ul, li {
     .menu_mobile_wrapper {
         display: block;
     }
-
+    .arrivals_nav {
+        margin-top: 35px;
+    }
+    .arrivals_nav .navbar:first-child {
+        padding-left: 0;
+    }
+    .arrivals_cards_wrapper {
+        display: none;
+    }
+    .card_additional,
+    .arrivals_slider_mobile {
+        display: block;
+    }
+    .arrivals_slider_mobile {
+        padding-top: 45news_titlepx;
+    }
+    .card_main {
+        box-shadow: none;
+        opacity: none;
+        transition: none;
+    }
+    
+    .card_main:hover {
+        box-shadow: none;
+        -moz-transform: none;
+        -webkit-transform: none;
+        -o-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+    .news {
+        padding-top: 60px;
+    }
 }
 /* 576px - 768px */
 @media screen and (max-width: 768px) {
     .container {
         width: 540px;
     }
-
+    .menu_mobile_wrapper {
+        display: block;
+    }
 }
 
 /* 0 - 576px */
