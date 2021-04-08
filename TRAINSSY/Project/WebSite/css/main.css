@@ -186,6 +186,10 @@ ul, li {
     padding-top: 20px;
 }
 
+.good_preview:last-child {
+    margin-right: 0;
+}
+
 .under_armour_preview_title {
     position: absolute;
     padding: 12px 0 0 60px;
@@ -853,6 +857,7 @@ ul, li {
     background-color: #EFEFEF;
     transition: 0.5s;
     transform: translateX(+100%);
+
 }
 
 .menu_mobile_active {
@@ -863,6 +868,7 @@ ul, li {
     display: flex;
     height: 100%;
     flex-direction: column;
+    padding-top: 60px;
 }
 
 .navbar_mobile li {
@@ -886,11 +892,6 @@ ul, li {
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.085em;
-}
-
-.navbar_mobile_close {
-    position: absolute;
-
 }
 
 .content {
@@ -942,9 +943,8 @@ ul, li {
 
 .navbar_mobile_close_section {
     position: absolute;
-    top: 10px;
+    top: 20px;
     left: 20px;
-
 }
 
 .arrivals_slider_mobile {
@@ -971,10 +971,6 @@ ul, li {
     display: block;
 }
 
-
-
-/* Responsive */
-
 @media screen and (max-width: 18000px) {
     .big_news_wrapper,
     .phonenumber_footer_for_md {
@@ -999,9 +995,6 @@ ul, li {
 }
 /* 992px - 1200px */
 @media screen and (max-width: 1200px) {
-    .container {
-        width: 960px;
-    }
     .header_additional_pickup {
         margin-left: 0;
     }
@@ -1018,8 +1011,8 @@ ul, li {
     .card_additional {
         display: none;
     }
-    .good_preview {
-        padding-right: 35px;
+    .goods_preview {
+        margin-left: 35px;
     }
     .card_main {
         margin-bottom: 45px;
@@ -1096,10 +1089,6 @@ ul, li {
 }
 /* 768px - 992px */
 @media screen and (max-width: 992px) {
-    .container {
-        width: 720px;
-        padding: 0;
-    }
     .header .header_main {
         padding-top: 18px;
         padding-bottom: 19px;
