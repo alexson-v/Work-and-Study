@@ -14,7 +14,7 @@
     <div class="menu_mobile_wrapper">
         <nav class="menu_mobile">
             <ul class="navbar_mobile">
-                <li><div class="navbar_mobile_close_section"><a class="navbar_mobile_close"><img src="img/close-hamburger-button.svg" alt="x"></a></div></li>
+                <li class="navbar_mobile_first"><div class="navbar_mobile_close_section"><a class="navbar_mobile_close"><img src="img/close-hamburger-button.svg" alt="x"></a></div></li>
                 <a href="#"><li>Главная</li></a>
                 <a href="#"><li>Новинки<img src="img/new-goods-icon.svg" class="menu_mobile_icons" alt="NEW"></li></a>
                 <a href="#"><li>Мужская обувь<img src="img/menu-mobile-arrow.svg" class="menu_mobile_arrow_m" alt=">"></li></a>
@@ -1914,7 +1914,7 @@
                     </div>
                 </div>
                 <div class="row special_offers_line">
-                    <div class="col-xl-3 col-lg-4 col-md-5">
+                    <div class="col-xl-3 col-lg-4 col-md-5 card_md_moderated">
                         <div class="card_main">
                             <div class="card_name">
                                 <h5 class="card_brandname" id="cardBrandName">Nike</h5>
@@ -1942,7 +1942,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 offset-lg-0 col-md-5 offset-md-1">
+                    <div class="col-xl-3 col-lg-4 offset-lg-0 col-md-5 offset-md-1 card_md_moderated">
                         <div class="card_main">
                             <div class="card_name">
                                 <h5 class="card_brandname" id="cardBrandName">Nike</h5>
@@ -2115,9 +2115,9 @@
         <section class="form">
             <div class="container">
                 <div class="form_wrapper">
-                        <div class="row">
-                            <div class="col-xl-9">
-                                <h4>Не нашли, что хотели?</h4>
+                        <div class="row justify-content-center">
+                            <div class="col-xl-9 col-lg-12 offset-lg-0 col-md-7">
+                                <h4 class="form_header">Не нашли, что хотели?</h4>
                                 <p class="form_paragraph">Ничего страшного! Мы можем заказать товар в частном порядке и на протяжении 4-х недель он будет в Ваших руках. <br><br>Заполните форму ниже для связи с оператором, мы обязательно перезвоним.</p>
                                 <form action="#" class="form_structure">
                                     <input type="name" placeholder="Ваше имя" name="name" class="form_input" required>
@@ -2129,7 +2129,7 @@
                         </div>
                     <div class="form_right_side">
                         <div class="row">
-                            <div class="col-xl-6">
+                            <div class="col-xl-6 col-lg-6 offset-lg-0 col-md-10 offset-md-1">
                                 <div class="images" id="scene">
                                     <div data-depth="0.8" class="layer">
                                         <img src="img/form-imagebee-red.png" alt="Мини-Кроссовок" class="form_image_additional_red">
@@ -2147,16 +2147,16 @@
         <section class="brands">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-3 text-center col-lg-6">
+                    <div class="col-xl-3 text-center col-lg-6 col-md-6">
                         <img src="img/Brands_img/Under-Armour.svg" alt="Under Armour" class="brand_image_uu">
                     </div>
-                    <div class="col-xl-3 text-center col-lg-6">
+                    <div class="col-xl-3 text-center col-lg-6 col-md-6">
                         <img src="img/Brands_img/Nike.svg" alt="Nike" class="brand_image_n">
                     </div>
-                    <div class="col-xl-3 text-center col-lg-6">
+                    <div class="col-xl-3 text-center col-lg-6 col-md-6">
                         <img src="img/Brands_img/Jordan.svg" alt="Jordan" class="brands_under">
                     </div>
-                    <div class="col-xl-3 text-center col-lg-6">
+                    <div class="col-xl-3 text-center col-lg-6 col-md-6">
                         <img src="img/Brands_img/New-Balance.svg" alt="New Balance" class="brand_image_nb brands_under">
                     </div>
                 </div>
@@ -2165,13 +2165,16 @@
         <footer class="footer" id="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-2 col-lg-3">
+                    <div class="col-xl-2 col-lg-3 col-md-3">
                         <div class="footer_logo">
                             <a href="#" class="header_logo_image"><img src="img/logo-white.svg" id="logoWhite" alt="TRAINSSY"></a>
                             <p class="footer_logo_text">Магазин брендовой обуви</p>
                         </div>
                     </div>
-                    <div class="col-xl-7 col-lg-8 ml-auto">
+                    <div class="col-md-1 ml-auto anchor_for_md">
+                        <a id="btnUp"><img src="img/button-up.svg" alt="^" class="footer_button_up"></a>
+                    </div>
+                    <div class="col-xl-7 col-lg-8 col-md-10 footer_nav_block">
                         <div class="footer_nav">
                             <ul class="navbar">
                                 <li><a href="#">Главная</a></li>
@@ -2181,9 +2184,9 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4">
+                    <div class="col-xl-3 col-lg-4 footer_anchor_plus_phone">
                         <div class="form_phone_wrapper d-flex">
-                            <a id="btnUp"><img src="img/button-up.svg" alt="^" class="footer_button_up"></a>
+                            <a id="btnUpDesktop"><img src="img/button-up.svg" alt="^" class="footer_button_up"></a>
                             <div class="footer_phonenumber">
                                 <a href="tel:+380636082639" class="footer_phone">+38 (063) 608-26-39</a>
                                 <div class="footer_phone_text">Доставка по всей Украине!</div>
@@ -2192,7 +2195,15 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xl-6 col-lg-8">
+                    <div class="col-md-4 phonenumber_footer_for_md">
+                        <div class="footer_phonenumber">
+                            <a href="tel:+380636082639" class="footer_phone">+38 (063) 608-26-39</a>
+                            <div class="footer_phone_text">Доставка по всей Украине!</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-8 col-md-10">
                         <div class="footer_under d-flex">
                             <div class="footer_under_left d-flex">
                                 <a href="https://www.instagram.com/trainssy/" target="_blank"><img src="img/inst-icon.svg" alt="Instagram" class="inst_icon"></a>
@@ -2200,7 +2211,7 @@
                             </div>
                         </div>      
                     </div>
-                    <div class="col-xl-2 offset-xl-4 col-lg-2 offset-lg-2 d-flex justify-content-end">
+                    <div class="col-xl-2 offset-xl-4 col-lg-2 offset-lg-2 d-flex footer_banking_options">
                         <div class="footer_bank_option_1"><img src="img/mastercard-icon.svg" alt="Mastercard"></div>
                         <div class="footer_bank_option_2"><img src="img/visa-icon.svg" alt="Visa"></div>
                     </div>

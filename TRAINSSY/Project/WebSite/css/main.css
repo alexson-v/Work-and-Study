@@ -925,23 +925,26 @@ ul, li {
 }
 
 .menu_mobile_arrow_c {
-    padding-left: 220px;
+    padding-left: 221px;
     padding-top: 3px;
     position: absolute;
 }
 
 .menu_mobile_arrow_a {
-    padding-left: 186px;
+    padding-left: 188px;
     padding-top: 3px;
     position: absolute;
 }
 
-.navbar_mobile:first-child {
-    border: 0px solid #fff;
+.navbar_mobile_first_li {
+    height: 100px;
 }
 
 .navbar_mobile_close_section {
     position: absolute;
+    top: 10px;
+    left: 20px;
+
 }
 
 .arrivals_slider_mobile {
@@ -973,7 +976,8 @@ ul, li {
 /* Responsive */
 
 @media screen and (max-width: 18000px) {
-    .big_news_wrapper {
+    .big_news_wrapper,
+    .phonenumber_footer_for_md {
         display: block;
     }
     .hamburger_menu,
@@ -984,6 +988,13 @@ ul, li {
     .menu_mobile_wrapper,
     .arrivals_slider_mobile {
         display: none;
+    }
+    .anchor_for_md,
+    .phonenumber_footer_for_md {
+        display: none;
+    }
+    .footer_banking_options {
+        justify-content: end;
     }
 }
 /* 992px - 1200px */
@@ -1023,7 +1034,9 @@ ul, li {
     .header_tablet_phonenumber_col {
         display: none;
     }
-    .menu_mobile_wrapper {
+    .menu_mobile_wrapper,
+    .phonenumber_footer_for_md,
+    .anchor_for_md {
         display: none;
     }
     .small_news_wrapper {
@@ -1045,6 +1058,12 @@ ul, li {
     }
     .brands_under {
         margin-top: 50px;
+    }
+    .footer_nav .navbar:last-child {
+        padding-right: 0;
+    }
+    .footer_nav_block {
+        margin-left: auto;
     }
     .form_phone_wrapper {
         margin-top: 25px;
@@ -1070,6 +1089,9 @@ ul, li {
     }
     .footer_bank_option_2 {
         padding-top: 23.5px;
+    }
+    .footer_banking_options {
+        justify-content: end;
     }
 }
 /* 768px - 992px */
@@ -1102,7 +1124,8 @@ ul, li {
     .hamburger_menu_col,
     .header_tablet_phonenumber,
     .header_tablet_phonenumber_col,
-    .menu_mobile_wrapper {
+    .menu_mobile_wrapper,
+    .anchor_for_md {
         display: block;
     }
     .arrivals_nav {
@@ -1119,14 +1142,13 @@ ul, li {
         display: block;
     }
     .arrivals_slider_mobile {
-        padding-top: 45news_titlepx;
+        padding-top: 45px;
     }
     .card_main {
         box-shadow: none;
         opacity: none;
         transition: none;
     }
-    
     .card_main:hover {
         box-shadow: none;
         -moz-transform: none;
@@ -1138,8 +1160,60 @@ ul, li {
     .news {
         padding-top: 60px;
     }
-    .card_md_moderated {
-        padding-top: 40px;
+    .images {
+        margin-top: 85px;
+    }
+    .form_header {
+        text-align: center;
+        padding-right: 15px;
+    }
+    .brands {
+        padding-top: 127px;
+        padding-bottom: 137px;
+    }
+    .footer {
+        padding-top: 77px;
+        padding-bottom: 89px;
+    }
+    .footer_nav .navbar:first-child {
+        padding-left: 0;
+    }
+    .footer_nav_block {
+        margin-left: 0;
+        margin-right: auto;
+        margin-top: 24px;
+    }
+    .footer_anchor_plus_phone {
+        display: none;
+    }
+    .phonenumber_footer_for_md {
+        display: block;
+    }
+    .footer_phonenumber {
+        margin-top: 24px;
+    }
+    .footer_pickup {
+        margin-left: 25px;
+
+    }
+    .footer_under_left {
+        margin-top: 10px;
+    }
+    .footer_banking_options {
+        margin-top: 10px;
+    }
+    .card_md_moderated .card_main {
+        width: 344px;
+        margin-bottom: 35px;
+    }
+    .card_md_moderated .card_main .card_name,
+    .card_md_moderated .card_main .card_description_special,
+    .card_md_moderated .card_main .goods_wrapper_down {
+        margin-left: 35px;
+    }
+    .card_md_moderated .card_main .card_image {
+        padding-left: 35px;
+        border: none;
     }
 }
 /* 576px - 768px */

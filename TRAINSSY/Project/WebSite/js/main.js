@@ -128,16 +128,16 @@ let swiper2 = new Swiper('.slider2', {
   spaceBetween: 100,
   breakpoints: {
       576: {
-
+        slidesPerView: 1.6,
       },
       768: {
-
+        slidesPerView: 2.2,
       },
       992: {
-        spaceBetween: 300,
+        slidesPerView: 2.9,
       },
       1200: {
-        spaceBetween: 100,
+        slidesPerView: 3.5,
       }
   }
 });
@@ -149,6 +149,23 @@ let parallaxInstance = new Parallax(scene);
 
 
 // Main anchor
+jQuery(document).ready(function() {
+  let btn = $('#btnUpDesktop');  
+  $(window).scroll(function() {     
+    if ($(window).scrollTop() > 300) {
+       btn.addClass('show');
+     } else {
+       btn.removeClass('show');
+     }
+   });
+   btn.on('click', function(e) {
+     e.preventDefault();
+     $('html, body').animate({scrollTop:0}, '300');
+   });
+});
+
+
+// Mobile anchor
 jQuery(document).ready(function() {
   let btn = $('#btnUp');  
   $(window).scroll(function() {     
