@@ -1,3 +1,29 @@
+let swiper5 = new Swiper('.slider5', {
+  simulateTouch: true,
+  touchAngle: 45,
+  draggable: true,
+  slidesPerView: 1.300,
+  spaceBetween: 25,
+  breakpoints: {
+    529: {
+
+    },
+    576: {
+
+    },
+    768: {
+      
+    },
+    992: {
+
+    },
+    1200: {
+      
+    }
+  }
+});
+
+
 // Dropdown menu of main header
 $('#dropDownMenu').on('mouseover', function () {
   $("#openFullMenu").slideDown(400);
@@ -129,6 +155,7 @@ let swiper2 = new Swiper('.slider2', {
   breakpoints: {
       576: {
         slidesPerView: 1.6,
+        navigation: false,
       },
       768: {
         slidesPerView: 2.2,
@@ -227,3 +254,4 @@ let swiper4 = new Swiper('.slider4', {
     }
   }
 });
+
