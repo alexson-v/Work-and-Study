@@ -586,7 +586,7 @@ ul, li {
 }
 
 .slider2 {
-    padding: 67px 67px 123px 67px;
+    padding: 40px 67px 90px 67px;
 }
 
 .slider2 .swiper-slide {
@@ -608,7 +608,6 @@ ul, li {
 
 .slider2 .swiper-slide-active {
     transition: 0.5s;
-    transform: scale(1.120);
     opacity: 1; 
 }
 
@@ -1570,6 +1569,10 @@ ul, li {
     .footer_button_up {
         margin-top: 27px;
     }
+    .offer_content {
+        margin-top: 70px;
+        padding-bottom: 150px;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -1598,7 +1601,7 @@ ul, li {
         margin-left: 0 !important;
     }
     .offer_content {
-        margin-top: 46px;
+        margin-top: 80px;
         padding-bottom: 150px;
     }
     .arrivals {
@@ -1612,20 +1615,17 @@ ul, li {
         justify-content: center;
     }
     .slider2 .swiper-pagination-bullet {
-        width: 22px;
-        height: 3px;
-        margin-bottom: 518px !important;
-        margin-left: 1px !important;
-        margin-right: 1px !important;
+        width: 25px;
+        height: 2px;
+        margin-bottom: 480px !important;
     }
     .slider2 {
-        padding: 45px 67px 50px 67px;
+        padding: 30px 67px 30px 67px;
     }
     .form_input,
     .form_btn {
         width: 100%;
     }
-
 }
 
 @media screen and (max-width: 389px) {
@@ -1634,14 +1634,36 @@ ul, li {
         padding-top: 2px;
     }
     .slider2 .swiper-pagination-bullet {
-        width: 20px;
-        height: 3px;
-        margin-bottom: 517.5px !important;
+        width: 22px;
+        height: 2px;
+        margin-bottom: 470px !important;
     }
     .slider2 {
-        padding: 45px 67px 50px 67px;
+        padding: 25px 67px 25px 67px;
     }
     .cart_arrow {
         display: none;
+    }
+}
+
+@media screen and (max-width: 344px) {
+    .slider2 .swiper-pagination-bullet {
+        width: 20px;
+        height: 2px;
+        margin-bottom: 465px !important;
+    }
+    .slider2 {
+        padding: 30px 67px 20px 67px;
+    }
+}
+
+@media screen and (max-width: 322px) {
+    .slider2 .swiper-pagination-bullet {
+        width: 19px;
+        height: 2px;
+        margin-bottom: 525px !important;
+    }
+    .slider2 .swiper-pagination-bullet {
+        margin-bottom: 467px !important;
     }
 }
