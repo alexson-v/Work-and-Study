@@ -1,25 +1,30 @@
+// Slider tab menu in arrivals
 let swiper5 = new Swiper('.slider5', {
   simulateTouch: true,
   touchAngle: 45,
   draggable: true,
-  slidesPerView: 1.300,
-  spaceBetween: 25,
+  slidesPerView: 1.2,
+  spaceBetween: 17.5,
+  freeMode: true,
   breakpoints: {
-    529: {
-
+    320: {
+      slidesPerView: 1.7,
+    },
+    373: {
+      slidesPerView: 2,
+    },
+    400: {
+      slidesPerView: 2.2,
+    },
+    425: {
+      slidesPerView: 2.2,
+    },
+    473: {
+      slidesPerView: 2.6,
     },
     576: {
-
+      slidesPerView: 1.2,
     },
-    768: {
-      
-    },
-    992: {
-
-    },
-    1200: {
-      
-    }
   }
 });
 
@@ -87,17 +92,14 @@ jsTriggers.forEach(function(trigger) {
 
 // TABS in arrivals section (SLIDERS)
 let jsTriggersSlider = document.querySelectorAll('.arrivals-tab-trigger');
-
 jsTriggers.forEach(function(trigger) {
    trigger.addEventListener('click', function() {
       let id = this.getAttribute('data-tab'),
           contentSlider = document.querySelector('.slider4[data-tab="'+id+'"]'),
           activeTrigger = document.querySelector('.arrivals-tab-trigger.active'),
           activeContentSlider = document.querySelector('.slider4.active');
-      
       activeTrigger.classList.remove('active');
       trigger.classList.add('active');
-      
       activeContentSlider.classList.remove('active');
       contentSlider.classList.add('active');
    });
@@ -116,22 +118,47 @@ let swiper3 = new Swiper('.slider3', {
   loop: true,
   draggable: true,
   breakpoints: {
-      529: {
-        slidesPerView: 0.8,
-      },
-      576: {
-        slidesPerView: 1,
-
-      },
       768: {
         slidesPerView: 1.3,
       },
       992: {
         slidesPerView: 1.7,
-      },
-      1200: {
-        
       }
+  }
+});
+
+let swiper6 = new Swiper('.slider6', {
+  simulateTouch: true,
+  touchAngle: 45,
+  draggable: true,
+  slidesPerView: 1.6,
+  spaceBetween: 17.5,
+  freeMode: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    342: {
+      slidesPerView: 1.1,
+    },
+    378: {
+      slidesPerView: 1.2,
+    },
+    408: {
+      slidesPerView: 1.3,
+    },
+    450: {
+      slidesPerView: 1.4,
+    },
+    502: {
+      slidesPerView: 1.6,
+    },
+    532: {
+      slidesPerView: 1.7,
+    },
+    576: {
+      slidesPerView: 1.650,
+    },
   }
 });
 
@@ -151,21 +178,42 @@ let swiper2 = new Swiper('.slider2', {
   centeredSlides: true,
   slidesPerView: 3.5,
   simulateTouch: true,
-  spaceBetween: 100,
+  spaceBetween: 200,
   breakpoints: {
-      576: {
-        slidesPerView: 1.6,
-        navigation: false,
-      },
-      768: {
-        slidesPerView: 2.2,
-      },
-      992: {
-        slidesPerView: 2.9,
-      },
-      1200: {
-        slidesPerView: 3.5,
-      }
+    320: {
+      slidesPerView: 1,
+    },
+    342: {
+      slidesPerView: 1,
+    },
+    378: {
+      slidesPerView: 1,
+    },
+    408: {
+      slidesPerView: 1.5,
+    },
+    450: {
+      slidesPerView: 1.6,
+    },
+    502: {
+      slidesPerView: 1.7,
+    },
+    532: {
+      slidesPerView: 1.8,
+    },  
+    576: {
+      slidesPerView: 1.9,
+      navigation: false,
+    },
+    768: {
+      slidesPerView: 2.5,
+    },
+    992: {
+      slidesPerView: 3.2,
+    },
+    1200: {
+      slidesPerView: 3.9,
+    }
   }
 });
 
@@ -229,6 +277,7 @@ let swiper4 = new Swiper('.slider4', {
   slidesPerView: 3,
   loop: true,
   spaceBetween: 150,
+  freeMode: true,
   observer: true,
   observeParents: true,
   scrollbar: {
@@ -237,21 +286,21 @@ let swiper4 = new Swiper('.slider4', {
     dragSize: 50,
   },
   breakpoints: {
-    529: {
-
+    320: {
+      slidesPerView: 1.6,
+    },
+    375: {
+      slidesPerView: 1.6,
+    },
+    425: {
+      slidesPerView: 2,
     },
     576: {
-      slidesPerView: 2.5,
+      slidesPerView: 2.1,
     },
     768: {
-      slidesPerView: 3,
+      slidesPerView: 2.8,
     },
-    992: {
-
-    },
-    1200: {
-      
-    }
   }
 });
 
