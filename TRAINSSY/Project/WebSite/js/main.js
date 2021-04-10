@@ -29,6 +29,37 @@ let swiper5 = new Swiper('.slider5', {
 });
 
 
+// Slider menu in special offers ( < 768)
+let swiper7 = new Swiper('.slider7', {
+  simulateTouch: true,
+  touchAngle: 45,
+  draggable: true,
+  slidesPerView: 1.2,
+  spaceBetween: 17.5,
+  freeMode: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1.1,
+    },
+    373: {
+      slidesPerView: 1.3,
+    },
+    400: {
+      slidesPerView: 1.4,
+    },
+    425: {
+      slidesPerView: 1.5,
+    },
+    473: {
+      slidesPerView: 1.6,
+    },
+    484: {
+      slidesPerView: 1.7,
+    }
+  }
+});
+
+
 // Dropdown menu of main header
 $('#dropDownMenu').on('mouseover', function () {
   $("#openFullMenu").slideDown(400);
@@ -53,37 +84,20 @@ let swiper1 = new Swiper('.slider1', {
     loop: true,
     autoplay: {
         delay: 5000,
-    },
-    breakpoints: {
-        576: {
-
-        },
-        768: {
-
-        },
-        992: {
-            
-        },
-        1200: {
-
-        }
     }
   });
 
 
 // TABS in arrivals section
 let jsTriggers = document.querySelectorAll('.arrivals-tab-trigger');
-
 jsTriggers.forEach(function(trigger) {
    trigger.addEventListener('click', function() {
       let id = this.getAttribute('data-tab'),
           content = document.querySelector('.arrivals-tab-content[data-tab="'+id+'"]'),
           activeTrigger = document.querySelector('.arrivals-tab-trigger.active'),
           activeContent = document.querySelector('.arrivals-tab-content.active');
-      
       activeTrigger.classList.remove('active');
       trigger.classList.add('active');
-      
       activeContent.classList.remove('active');
       content.classList.add('active');
    });
@@ -240,9 +254,25 @@ jQuery(document).ready(function() {
 });
 
 
-// Mobile anchor
+// Anchor for medium sizes
 jQuery(document).ready(function() {
   let btn = $('#btnUp');  
+  $(window).scroll(function() {     
+    if ($(window).scrollTop() > 300) {
+       btn.addClass('show');
+     } else {
+       btn.removeClass('show');
+     }
+   });
+   btn.on('click', function(e) {
+     e.preventDefault();
+     $('html, body').animate({scrollTop:0}, '300');
+   });
+});
+
+// Mobile anchor
+jQuery(document).ready(function() {
+  let btn = $('#btnUpMobile');  
   $(window).scroll(function() {     
     if ($(window).scrollTop() > 300) {
        btn.addClass('show');

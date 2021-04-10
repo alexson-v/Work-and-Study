@@ -1014,6 +1014,14 @@ ul, li {
     width: 230px;
 }
 
+.slider7 {
+    padding-top: 50px;
+}
+
+.footer_under_left {
+    display: flex;
+}
+
 @media screen and (max-width: 18000px) {
     .big_news_wrapper,
     .phonenumber_footer_for_md {
@@ -1027,7 +1035,9 @@ ul, li {
     .menu_mobile_wrapper,
     .arrivals_slider_mobile,
     .cart-icon-sm,
-    .cart-icon-sm-css {
+    .cart-icon-sm-css,
+    .footer_pickup_mobile,
+    .footer_schedule_mobile {
         display: none;
     }
     .anchor_for_md,
@@ -1036,7 +1046,10 @@ ul, li {
     .arrivals_menu_slider,
     .header_phone_mobile_col,
     .header_phone_mobile_col.header_phone,
-    .slider6 {
+    .slider6,
+    .special_offers_slider,
+    .inst_icon_mobile,
+    .footer_button_up_mobile {
         display: none;
     }
     .footer_banking_options {
@@ -1061,7 +1074,8 @@ ul, li {
     .cart_summary,
     .cart_arrow,
     .timberland_good__preview,
-    .card_additional {
+    .card_additional,
+    .footer_schedule_mobile {
         display: none;
     }
     .goods_preview {
@@ -1078,7 +1092,11 @@ ul, li {
     .big_news_wrapper,
     .header_tablet_phonenumber,
     .header_tablet_phonenumber_col,
-    .slider6 {
+    .slider6,
+    .special_offers_slider,
+    .inst_icon_mobile,
+    .footer_pickup_mobile,
+    .footer_button_up_mobile {
         display: none;
     }
     .menu_mobile_wrapper,
@@ -1164,7 +1182,8 @@ ul, li {
     .header_additional_delivery_col,
     .hamburger_menu_for_sm_col,
     .arrivals_menu_slider,
-    .slider6 {
+    .slider6,
+    .footer_schedule_mobile {
         display: none;
     }
     .form_wrapper,
@@ -1240,7 +1259,11 @@ ul, li {
     }
     .footer_anchor_plus_phone,
     .header_phone_mobile_col,
-    .header_phone_mobile_col.header_phone {
+    .header_phone_mobile_col.header_phone,
+    .special_offers_slider,
+    .inst_icon_mobile,
+    .footer_pickup_mobile,
+    .footer_button_up_mobile {
         display: none;
     }
     .phonenumber_footer_for_md,
@@ -1290,7 +1313,9 @@ ul, li {
     .arrivals_nav_col,
     .cart-for-big,
     .header_phone_mobile_col,
-    .header_phone_mobile_col.header_phone {
+    .header_phone_mobile_col.header_phone,
+    .special_offers_slider,
+    .inst_icon_mobile {
         display: none;
     }
     .hamburger_menu_for_sm_col {
@@ -1367,7 +1392,10 @@ ul, li {
     }
     .swiper-button-next,
     .swiper-button-prev,
-    .slider3 {
+    .slider3,
+    .footer_pickup_mobile,
+    .footer_schedule_mobile,
+    .footer_button_up_mobile {
         display: none;
     }
     .slider2 .swiper-pagination-bullet {
@@ -1379,20 +1407,18 @@ ul, li {
     .cart-icon-sm-css {
         margin-top: 2.5px;
     }
-    .form_structure,
-    .form_header,
-    .form_paragraph {
-        text-align: center;
-    }
     .form_input,
     .form_btn {
-        width: 88%;
+        width: 100%;
     }
     .slider2 .swiper-pagination-bullet {
         width: 37px;
         height: 3px;
-        margin-bottom: 610px !important;
+        margin-bottom: 535px !important;
         margin-right: 1px !important;
+    }
+    .slider2 {
+        padding: 60px 67px 50px 67px;
     }
 }
 
@@ -1404,13 +1430,22 @@ ul, li {
     .cart-icon-sm-css,
     .header_tablet_phonenumber_col,
     .header_tablet_phonenumber,
-    .slider3 {
+    .slider3,
+    .special_offers_default,
+    .anchor_for_md,
+    .footer_nav_block,
+    .footer_under_tablet {
         display: none;
     }
     .header_phone_mobile_col,
     .header_phone_mobile_col.header_phone,
     .cart-for-big,
-    .slider6 {
+    .slider6,
+    .special_offers_slider,
+    .inst_icon_mobile,
+    .footer_pickup_mobile,
+    .footer_schedule_mobile,
+    .footer_button_up_mobile {
         display: block;
     }
     .header_additional_pickup {
@@ -1426,6 +1461,9 @@ ul, li {
     .cart-for-big {
         margin-left: auto;
         padding-top: 11.5px;
+    }
+    .btn {
+        height: 55px;
     }
     .arrivals_menu_slider {
         margin-top: 40px;
@@ -1482,9 +1520,55 @@ ul, li {
     }
     .slider2 .swiper-pagination-bullet {
         width: 27px;
-        height: 4px;
-        margin-bottom: 27px !important;
+        height: 3px;
+        margin-bottom: 525px !important;
         margin-right: 0px !important;
+    }
+    .slider2 {
+        padding: 60px 67px 50px 67px;
+    }
+    .form_input,
+    .form_btn {
+        width: 100%;
+    }
+    .form_btn {
+        height: 55px;
+        padding-top: 15px;
+    }
+    .brand_image_uu {
+        padding-bottom: 50px;
+    }
+    .brand_image_n {
+        padding-bottom: 50px;
+    }
+    .footer {
+        text-align: center;
+    }
+    .footer_under_left {
+        display: block;
+    }
+    .footer_phonenumber {
+        margin-top: 27px;
+    }
+    .inst_icon {
+        width: 39px;
+        margin-right: 0;
+        margin-top: 27px;
+    }
+    .footer_pickup {
+        margin-top: 27px;
+        margin-left: 0;
+    }
+    .footer_schedule {
+        margin-left: 0;
+        width: 100%;
+    }
+    .footer_banking_options {
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .footer_button_up {
+        margin-top: 27px;
     }
 }
 
@@ -1530,22 +1614,34 @@ ul, li {
     .slider2 .swiper-pagination-bullet {
         width: 22px;
         height: 3px;
-        margin-bottom: 615px !important;
+        margin-bottom: 518px !important;
         margin-left: 1px !important;
         margin-right: 1px !important;
     }
+    .slider2 {
+        padding: 45px 67px 50px 67px;
+    }
+    .form_input,
+    .form_btn {
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 389px) {
     .header_phone {
-        font-size: 10.1px;
+        font-size: 12px;
         padding-top: 2px;
     }
     .slider2 .swiper-pagination-bullet {
-        width: 22px;
+        width: 20px;
         height: 3px;
-        margin-bottom: 615px !important;
-        margin-left: 1px !important;
-        margin-right: 1px !important;
+        margin-bottom: 517.5px !important;
+    }
+    .slider2 {
+        padding: 45px 67px 50px 67px;
+    }
+    .cart_arrow {
+        display: none;
     }
 }
