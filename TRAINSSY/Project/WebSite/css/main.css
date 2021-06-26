@@ -139,6 +139,15 @@
     display: block;
 }
 
+.card_main:hover {
+    box-shadow: -30px 80px 200px rgba(0, 0, 0, 0.10);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
 .news {
     padding-bottom: 80px;
 }
@@ -1226,6 +1235,10 @@
         width: 20px;
         height: 2px;
         margin-bottom: 465px !important;
+    }
+    .btn {
+        padding-top: 12px;
+        font-size: 13px;
     }
     .slider2 {
         padding: 30px 67px 20px 67px;

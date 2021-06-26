@@ -3,6 +3,7 @@
 
 let num = 20; // усранавливаем глобальную переменную
 
+// Function Declaration
 function showFirstMessage(text) {
     console.log(text);
     num = 10; // используем глобальную переменную
@@ -13,10 +14,34 @@ showFirstMessage("Hello World!");
 console.log(num);
 
 
-function calc(a, b) { // когда функция запуститься, она вернёт нам сумму чисел в аргументах a и b
-    return (a + b);
+function calc(a, b) { // когда функция запустится, она вернёт нам сумму чисел в аргументах a и b
+     return (a + b);
+ }
+
+ console.log(calc(4, 3));
+ console.log(calc(5, 6));
+ console.log(calc(10, 6));
+
+
+function ret() { // возвращаем значение "наружу"
+    let num = 50;
+    return num;
 }
 
-console.log(calc(4, 3));
-console.log(calc(5, 6));
-console.log(calc(10, 6));
+const anotherNum = ret();
+console.log(anotherNum);
+
+// Function Expression
+const logger = function() {
+    console.log("Hello");
+};
+
+logger();
+
+// Стрелочная Функция
+const calc1 = (a, b) => a + b;
+
+const calc2 = (a, b) => {
+    console.log('1');
+    return a + b;
+};
