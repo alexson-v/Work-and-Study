@@ -1,7 +1,7 @@
 "use strict";
 // 16. Функции, стрелочные функции (ES6)
 
-let num = 20; // усранавливаем глобальную переменную
+let num = 20; // устанавливаем глобальную переменную
 
 // Function Declaration
 function showFirstMessage(text) {
