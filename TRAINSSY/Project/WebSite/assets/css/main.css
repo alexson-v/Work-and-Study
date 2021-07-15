@@ -1,0 +1,1371 @@
+.slider {
+    position: relative;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.slider1 .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.slider1 .swiper-slide {
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: block;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    width: auto;
+}
+
+.slider1 .swiper-pagination {
+    padding-right: 37px !important;
+}
+
+.slider1 .swiper-pagination-bullet {
+    border-radius: 0;
+    width: 65px;
+    height: 7px;
+    background-color: #fff;
+    margin-left: 40px !important;
+    margin-bottom: 40px !important;
+}
+
+.slider1 .image-slider__image img{
+    max-width: 100%;
+}
+
+#swiper-slide_1 {
+    background-image: url(../img/caorusel-image-1.jpg);
+    background-size: cover;
+    width: 1170px;
+}
+
+#swiper-slide_2 {
+    background-image: url(../img/caorusel-image-2.jpg);
+    background-size: cover;
+    width: 1170px;
+}
+
+#swiper-slide_3 {
+    background-image: url(../img/caorusel-image-3.jpg);
+    background-size: cover;
+    width: 1170px;
+}
+
+#swiper-slide_4 {
+    background-image: url(../img/caorusel-image-4.jpg);
+    background-size: cover;
+    width: 1170px;
+}
+
+.offer_content {
+    text-align: center;
+    margin-top: 150px;
+    padding-bottom: 200px;
+}
+
+.before_heading_offer {
+    color: #fff;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.after_heading_offer {
+    color: #fff;
+    margin-bottom: 19px;
+}
+
+.tag_highlighter {
+    font-weight: 700;
+}
+
+.offer_content {
+    position: static;
+}
+
+.arrivals {
+    padding-top: 80px;
+    padding-bottom: 52px;
+}
+
+.arrivals_nav .navbar li a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.175em;
+    position: relative;
+    padding: 1.75rem 0.3rem;
+    cursor: pointer;
+}
+
+.arrivals_nav .navbar li a:after {
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background-color: #02810E;
+	content: "";
+    transform: scale(0);
+	transition: all .3s;
+}
+
+.arrivals_nav .navbar li a:hover:after,
+.navbar li a:focus:after {
+	width: 100%;
+    transform: scale(1);
+}
+
+.arrivals_cards {
+    padding-top: 50px;
+}
+
+.arrivals-tab-content {
+    display: none;
+}
+
+.arrivals-tab-content.active {
+    display: block;
+}
+
+.card_main:hover {
+    box-shadow: -30px 80px 200px rgba(0, 0, 0, 0.10);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.news {
+    padding-bottom: 80px;
+}
+
+.news_post {
+    position: relative;
+    box-shadow: 0px 10px 50px rgba(45, 47, 94, 0.3);
+    opacity: 1;
+    display: block;
+}
+
+.news_plus {
+    position: absolute;
+    margin: 30px 0 0 495px;
+}
+
+.news_rectangle {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    background: #fff;
+    margin: 235px 0 0 33px;
+}
+
+.news_title {
+    position: absolute;
+    color: #fff;
+    margin: 264px 0 0 70px;
+    width: 500px;
+}
+
+.news_undertitle {
+    position: absolute;
+    color: #fff;
+    margin: 336px 0 0 70px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.special_offers {
+    background: #373540;
+    color: #fff;
+    padding-top: 34px;
+    padding-bottom: 40px;
+}
+
+.black_theme_title {
+    color: #fff;
+}
+
+.special_offers_line {
+    padding-top: 50px;
+}
+
+.card_description_special {
+    padding: 0 51px 5px 51px;
+    color: #7D7D7D;
+}
+
+.card_striked_goodsvalue {
+    font-size: 11px;
+    text-decoration: line-through;
+    padding: 0 0 0 135px;
+}
+
+.card_cta_special {
+    padding: 17px 0 0 18px;
+}
+
+.reviews {
+    background: #373540;
+    padding-bottom: 50px;
+}
+
+.reviews_title {
+    padding-bottom: 50px;
+}
+
+.reviews_slider_layout {
+    background: #202125;
+}
+
+.slider2 {
+    padding: 40px 67px 90px 67px;
+}
+
+.slider2 .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    transition: 0.5s;
+    opacity: 0.25; 
+}
+
+.slider2 .swiper-slide-active {
+    transition: 0.5s;
+    opacity: 1; 
+}
+
+.slider2 .swiper-button-prev,
+.slider2 .swiper-button-next {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slider2 .swiper-button-prev::after,
+.slider2 .swiper-button-next::after {
+    display: none;
+}
+
+.slider2 .swiper-button-prev {
+    background-image: url('../img/button-back.svg');
+    width: 53px;
+    height: 53px;
+}
+
+.slider2 .swiper-button-next {
+    background-image: url('../img/button-forward.svg');
+    width: 53px;
+    height: 53px;
+}
+
+.slider2 .swiper-pagination {
+    padding-left: 6px !important;
+}
+
+.slider2 .swiper-pagination-bullet {
+    border-radius: 0;
+    width: 32px;
+    height: 4px;
+    background-color: #fff;
+    margin-bottom: 20px !important;
+    margin-right: 10px !important;
+}
+
+.form {
+    padding-top: 49px;
+}
+
+.form_wrapper {
+    display: flex;
+}
+
+.form_paragraph {
+    padding-top: 37px;
+    font-size: 17px;
+    font-weight: 300;
+    padding-bottom: 46px;
+}
+
+.form_input {
+    width: 88%;
+    height: 50px;
+    border: 0.01 solid #000;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    padding-left: 18px;
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid #bbbbbb;
+}
+
+.form_btn {
+    width: 88%;
+    height: 63px;
+    background: #02810E;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 900;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding-top: 18px;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    margin-top: 0;
+}
+
+.form_btn:hover {
+    background: #00A810;
+    color: #fff;
+    filter: drop-shadow(0px 7px 35px rgba(2, 129, 14, 0.35));
+}
+
+.images {
+    position: relative;
+    background: url('../img/form-main.png');
+    width: 100%;
+    width: 531px;
+    height: 549px;
+}
+
+.form_image_additional_red,
+.form_image_additional_grey {
+    position: absolute;
+}
+
+.form_image_additional_red {
+    margin-left: 60px;
+    margin-top: 65px;
+}
+
+.form_image_additional_grey {
+    margin-left: 300px;
+    margin-top: 160px;
+}
+
+.brands {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.brand_image_uu {
+    padding-top: 30px;
+}
+
+.brand_image_n {
+    padding-top: 48px;
+}
+
+.brand_image_nb {
+    padding-top: 40px;
+}
+
+.arrivals_slider_mobile {
+    padding-top: 45px;
+}
+
+.swiper-scrollbar {
+    background-color: #E2E4F2;
+}
+
+.swiper-scrollbar-drag {
+    background: #989898;
+}
+
+.slider4 {
+    display: none;
+}
+
+.slider4.active {
+    display: block;
+}
+
+.news_post_slide {
+    display: block;
+}
+
+.news_plus_sm {
+    position: absolute;
+    margin: 20px 0 0 249px;
+}
+
+.news_rectangle_sm {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    background: #fff;
+    margin: 190px 0 0 8px;
+}
+
+.news_title_sm {
+    position: absolute;
+    font-size: 19px;
+    color: #fff;
+    margin: 233px 0 0 46px;
+    width: 230px;
+    line-height: 23px;
+}
+
+.news_undertitle_sm_1 {
+    position: absolute;
+    color: #fff;
+    margin: 319px 0 0 46px;
+    font-size: 13px;
+    font-weight: 400;
+    width: 230px;
+}
+
+.news_undertitle_sm_2 {
+    position: absolute;
+    color: #fff;
+    margin: 317px 0 0 46px;
+    font-size: 13px;
+    font-weight: 400;
+    width: 230px;
+}
+
+.slider7 {
+    padding-top: 50px;
+}
+
+@media screen and (max-width: 18000px) {
+    .big_news_wrapper,
+    .phonenumber_footer_for_md {
+        display: block;
+    }
+    .hamburger_menu,
+    .hamburger_menu_col,
+    .small_news_wrapper,
+    .header_tablet_phonenumber,
+    .header_tablet_phonenumber_col,
+    .menu_mobile_wrapper,
+    .arrivals_slider_mobile,
+    .cart-icon-sm,
+    .cart-icon-sm-css,
+    .footer_pickup_mobile,
+    .footer_schedule_mobile {
+        display: none;
+    }
+    .anchor_for_md,
+    .phonenumber_footer_for_md,
+    .hamburger_menu_for_sm_col,
+    .arrivals_menu_slider,
+    .header_phone_mobile_col,
+    .header_phone_mobile_col.header_phone,
+    .slider6,
+    .special_offers_slider,
+    .inst_icon_mobile,
+    .footer_button_up_mobile {
+        display: none;
+    }
+    .footer_banking_options {
+        justify-content: end;
+    }
+}
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+    .header_additional_pickup {
+        margin-left: 0;
+    }
+    .header_additional_schedule {
+        margin-left: 15px;
+    }
+    .header_logo_image {
+        padding-top: 6px;
+    }
+    .cart-icon-sm {
+        display: none;
+    }
+    .header_logo_text,
+    .cart_summary,
+    .cart_arrow,
+    .timberland_good__preview,
+    .card_additional,
+    .footer_schedule_mobile {
+        display: none;
+    }
+    .goods_preview {
+        margin-left: 35px;
+    }
+    .card_main {
+        margin-bottom: 45px;
+    }
+    .arrivals {
+        padding-bottom: 42px;
+    }
+    .hamburger_menu,
+    .hamburger_menu_col,
+    .big_news_wrapper,
+    .header_tablet_phonenumber,
+    .header_tablet_phonenumber_col,
+    .slider6,
+    .special_offers_slider,
+    .inst_icon_mobile,
+    .footer_pickup_mobile,
+    .footer_button_up_mobile {
+        display: none;
+    }
+    .menu_mobile_wrapper,
+    .phonenumber_footer_for_md,
+    .anchor_for_md,
+    .hamburger_menu_col,
+    .hamburger_menu_for_sm_col,
+    .arrivals_menu_slider,
+    .header_phone_mobile_col,
+    .header_phone_mobile_col.header_phone {
+        display: none;
+    }
+    .small_news_wrapper {
+        display: block;
+    }
+    .news_post_slider {
+        box-shadow: none;
+        opacity: none;
+        transition: none;
+        display: block;
+    }
+    .news_post_slider:hover {
+        box-shadow: none;
+        -moz-transform: none;
+        -webkit-transform: none;
+        -o-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+    .brands_under {
+        margin-top: 50px;
+    }
+    .footer_nav .navbar:last-child {
+        padding-right: 0;
+    }
+    .footer_nav_block {
+        margin-left: auto;
+    }
+    .form_phone_wrapper {
+        margin-top: 25px;
+    }
+    .footer_button_up {
+        padding-top: 5px;
+        padding-left: 0;
+    }
+    .inst_icon {
+        margin-right: 23px;
+    }
+    .footer_pickup {
+        padding-top: 1px;
+    }
+    .footer_schedule {
+        margin-left: 30px;
+    }
+    .footer_under {
+        padding-top: 22px;
+    }
+    .footer_bank_option_1 {
+        padding-top: 20px;
+    }
+    .footer_bank_option_2 {
+        padding-top: 23.5px;
+    }
+    .footer_banking_options {
+        justify-content: end;
+    }
+}
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+    .header .header_main {
+        padding-top: 18px;
+        padding-bottom: 19px;
+    }
+    .header_tablet_phonenumber {
+        padding-top: 7px;
+    }
+    .cart {
+        margin-bottom: 5px;
+    }
+    .nav_main,
+    .nav_main_col,
+    .header_additional_phone_col,
+    .header_additional_delivery_col,
+    .hamburger_menu_for_sm_col,
+    .arrivals_menu_slider,
+    .slider6,
+    .footer_schedule_mobile {
+        display: none;
+    }
+    .form_wrapper,
+    .header_logo_text,
+    .cart_summary,
+    .cart_arrow,
+    .hamburger_menu,
+    .hamburger_menu_col,
+    .header_tablet_phonenumber,
+    .header_tablet_phonenumber_col,
+    .menu_mobile_wrapper,
+    .anchor_for_md {
+        display: block;
+    }
+    .arrivals_nav {
+        margin-top: 35px;
+    }
+    .arrivals_nav .navbar:first-child {
+        padding-left: 0;
+    }
+    .arrivals_cards_wrapper {
+        display: none;
+    }
+    .card_additional,
+    .arrivals_slider_mobile {
+        display: block;
+    }
+    .arrivals_slider_mobile {
+        padding-top: 45px;
+    }
+    .card_main {
+        box-shadow: none;
+        opacity: none;
+        transition: none;
+    }
+    .card_main:hover {
+        box-shadow: none;
+        -moz-transform: none;
+        -webkit-transform: none;
+        -o-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+    .news {
+        padding-top: 60px;
+    }
+    .images {
+        margin-top: 85px;
+    }
+    .form_header {
+        text-align: center;
+        padding-right: 15px;
+    }
+    .form_input,
+    .form_btn {
+        width: 100%;
+    }
+    .brands {
+        padding-top: 127px;
+        padding-bottom: 137px;
+    }
+    .footer {
+        padding-top: 77px;
+        padding-bottom: 89px;
+    }
+    .footer_nav .navbar:first-child {
+        padding-left: 0;
+    }
+    .footer_nav_block {
+        margin-left: 0;
+        margin-right: auto;
+        margin-top: 24px;
+    }
+    .footer_anchor_plus_phone,
+    .header_phone_mobile_col,
+    .header_phone_mobile_col.header_phone,
+    .special_offers_slider,
+    .inst_icon_mobile,
+    .footer_pickup_mobile,
+    .footer_button_up_mobile {
+        display: none;
+    }
+    .phonenumber_footer_for_md,
+    .slider3 {
+        display: block;
+    }
+    .footer_phonenumber {
+        margin-top: 24px;
+    }
+    .footer_pickup {
+        margin-left: 25px;
+    }
+    .footer_under_left {
+        margin-top: 10px;
+    }
+    .footer_banking_options {
+        margin-top: 10px;
+    }
+    .card_md_moderated .card_main {
+        width: 344px;
+        margin-bottom: 35px;
+    }
+    .card_md_moderated .card_main .card_name,
+    .card_md_moderated .card_main .card_description_special,
+    .card_md_moderated .card_main .goods_wrapper_down {
+        margin-left: 35px;
+    }
+    .card_md_moderated .card_main .card_image {
+        padding-left: 35px;
+        border: none;
+    }
+    .menu_mobile {
+        width: 40vw;
+    }
+    .navbar_mobile li {
+        width: 40vw;
+    }
+    .menu_mobile_arrow_m {
+        padding-left: 140px;
+    }
+    .menu_mobile_arrow_w {
+        padding-left: 140px;
+    }
+    .menu_mobile_arrow_c {
+        padding-left: 200px;
+    }
+    .menu_mobile_arrow_a {
+        padding-left: 166px;
+    }
+}
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+    .header_additional_pickup {
+        text-align: center;
+    }
+    .arrivals_menu_slider,
+    .cart-icon-sm,
+    .cart-icon-sm-css,
+    .slider6 {
+        display: block;
+    }
+    .header_additional_phone_col,
+    .header_additional_delivery_col,
+    .hamburger_menu_col,
+    .arrivals_nav_col,
+    .cart-for-big,
+    .header_phone_mobile_col,
+    .header_phone_mobile_col.header_phone,
+    .special_offers_slider,
+    .inst_icon_mobile {
+        display: none;
+    }
+    .hamburger_menu_for_sm_col {
+        display: block;
+    }
+    .header .header_main {
+        padding-top: 19px;
+        padding-bottom: 18px;
+    }
+    .slider5 {
+        border: 1px solid #C4C4C4;
+        border-left: none;
+        border-right: none;
+        margin-top: 1px;
+        padding: 7.5px;
+    }
+    .arrivals-tab-trigger {
+        text-decoration: none;
+        color: #000;
+        text-transform: uppercase;
+        letter-spacing: 0.175em;
+        position: relative;
+    }
+    .arrivals-tab-trigger:hover {
+        text-decoration: none;
+        color: #000;
+    }
+    .arrivals {
+        padding-bottom: 25px;
+    }
+    .arrivals_slider_mobile {
+        padding-top: 50px;
+    }
+    .slider5 {
+        margin-top: -1.5px;
+    }
+    .card_md_moderated .card_main {
+        width: 255px;
+        height: 455px;
+    }
+    .card_md_moderated .card_additional {
+        height: 455px;
+    }
+    .card_md_moderated .card_main .card_name,
+    .card_md_moderated .card_main .card_description_special,
+    .card_md_moderated .card_main .goods_wrapper_down {
+        margin: 0;
+    }
+    .card_md_moderated .card_main .card_image {
+        padding-left: 0;
+        border: 1px solid #EBEBEB;
+    }
+    .card_md_moderated .card_description_attribute {
+        width: 101px;
+    }
+    .card_md_moderated .card_name {
+        padding: 31px 40px 22px 32px;
+    }
+    .card_md_moderated .card_image {
+        margin: 0px 40px 25px 32px;
+        border: 1px solid #EBEBEB;
+    }
+    .card_md_moderated .card_description {
+        padding: 0 51px 20px 35px;
+        color: #7D7D7D;
+    }
+    .card_md_moderated .card_goodsvalue {
+        font-size: 15px;
+        font-weight: 900;
+        padding: 0 50px 10px 43px;
+    }
+    .card_md_moderated .card_cta {
+        padding-left: 19px;
+    }
+    .swiper-button-next,
+    .swiper-button-prev,
+    .slider3,
+    .footer_pickup_mobile,
+    .footer_schedule_mobile,
+    .footer_button_up_mobile {
+        display: none;
+    }
+    .slider2 .swiper-pagination-bullet {
+        width: 30px;
+    }
+    .cart-icon-sm {
+        display: block;
+    }
+    .cart-icon-sm-css {
+        margin-top: 2.5px;
+    }
+    .form_input,
+    .form_btn {
+        width: 100%;
+    }
+    .slider2 .swiper-pagination-bullet {
+        width: 37px;
+        height: 3px;
+        margin-bottom: 535px !important;
+        margin-right: 1px !important;
+    }
+    .slider2 {
+        padding: 60px 67px 50px 67px;
+    }
+    .menu_mobile {
+        width: 40vw;
+    }
+    .navbar_mobile li {
+        width: 40vw;
+    }
+    .menu_mobile_arrow_m {
+        padding-left: 65px;
+    }
+    .menu_mobile_arrow_w {
+        padding-left: 65px;
+    }
+    .menu_mobile_arrow_c {
+        padding-left: 125px;
+    }
+    .menu_mobile_arrow_a {
+        padding-left: 91px;
+    }
+}
+/* 0 - 576px */
+@media screen and (max-width: 576px) {
+    .form_right_side_smartphone,
+    .form_right_side,
+    .cart-icon-sm,
+    .cart-icon-sm-css,
+    .header_tablet_phonenumber_col,
+    .header_tablet_phonenumber,
+    .slider3,
+    .special_offers_default,
+    .anchor_for_md,
+    .footer_nav_block,
+    .footer_under_tablet {
+        display: none;
+    }
+    .header_phone_mobile_col,
+    .header_phone_mobile_col.header_phone,
+    .cart-for-big,
+    .slider6,
+    .special_offers_slider,
+    .inst_icon_mobile,
+    .footer_pickup_mobile,
+    .footer_schedule_mobile,
+    .footer_button_up_mobile {
+        display: block;
+    }
+    .header_additional_pickup {
+        text-align: left;
+        font-size: 11px;
+    }
+    .hamburger_menu_for_sm_col {
+        margin-left: auto;
+    }
+    .header_phone_mobile_col {
+        padding-top: 17px;
+    }
+    .cart-for-big {
+        margin-left: auto;
+        padding-top: 11.5px;
+    }
+    .btn {
+        height: 55px;
+    }
+    .arrivals_menu_slider {
+        margin-top: 40px;
+    }
+    .slider1 .swiper-pagination-bullet {
+        width: 55px;
+        margin-left: 18px !important;
+        margin-bottom: 40px !important;
+    }
+    .slider1 .swiper-pagination:first-child {
+        margin-left: 0 !important;
+    }
+    .special_offers_line {
+        justify-content: center;
+    }
+    .card_md_moderated .card_main {
+        background-color: #fff;
+        color: #000;
+        font-weight: 300;
+        font-size: 12px;
+        width: 270px;
+        height: 455px;
+        box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.08);
+        display: block;
+        opacity: 1;
+        transition: all 1s ease;
+        display: block;
+        margin-bottom: 25px;
+        cursor: pointer;
+    }
+    .card_md_moderated .card_name {
+        padding: 31px 40px 22px 40px;
+    }
+    .card_md_moderated .card_image {
+        margin: 0px 40px 25px 40px;
+        border: 1px solid #EBEBEB;
+    }
+    .card_md_moderated .card_description {
+        padding: 0 51px 20px 51px;
+        color: #7D7D7D;
+    }
+    .card_md_moderated .card_description_attribute {
+        padding-right: 10px;
+        color: #000;
+    }
+    .card_md_moderated .card_main_code {
+        font-size: 10px;
+        margin-top: 2px;
+    }
+    .card_md_moderated .card_goodsvalue {
+        font-size: 15px;
+        font-weight: 900;
+        padding: 0 50px 10px 51px;
+    }
+    .slider2 .swiper-pagination-bullet {
+        width: 27px;
+        height: 3px;
+        margin-bottom: 525px !important;
+        margin-right: 0px !important;
+    }
+    .slider2 {
+        padding: 60px 67px 50px 67px;
+    }
+    .form_input,
+    .form_btn {
+        width: 100%;
+    }
+    .form_btn {
+        height: 55px;
+        padding-top: 15px;
+    }
+    .brand_image_uu {
+        padding-bottom: 50px;
+    }
+    .brand_image_n {
+        padding-bottom: 50px;
+    }
+    .footer {
+        text-align: center;
+    }
+    .footer_under_left {
+        display: block;
+    }
+    .footer_phonenumber {
+        margin-top: 27px;
+    }
+    .inst_icon {
+        width: 39px;
+        margin-right: 0;
+        margin-top: 27px;
+    }
+    .footer_pickup {
+        margin-top: 27px;
+        margin-left: 0;
+    }
+    .footer_schedule {
+        margin-left: 0;
+        width: 100%;
+    }
+    .footer_banking_options {
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .footer_button_up {
+        margin-top: 27px;
+    }
+    .offer_content {
+        margin-top: 70px;
+        padding-bottom: 150px;
+    }
+    .menu_mobile {
+        width: 50vw;
+    }
+    .navbar_mobile li {
+        width: 50vw;
+    }
+    .menu_mobile_arrow_m {
+        padding-left: 40px;
+    }
+    .menu_mobile_arrow_w {
+        padding-left: 40px;
+    }
+    .menu_mobile_arrow_c {
+        padding-left: 100px;
+    }
+    .menu_mobile_arrow_a {
+        padding-left: 66px;
+    }
+}
+
+@media screen and (max-width: 551px) {
+    h1 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    .before_heading_offer,
+    .after_heading_offer {
+        font-size: 20px;
+    }
+    .btn {
+        width: 45%;
+    }
+    .slider1 .swiper-pagination {
+        padding-right: 0px !important;
+    }
+    .slider1 .swiper-pagination-bullet {
+        width: 60px;
+        margin-left: 15px !important;
+        margin-bottom: 40px !important;
+    }
+    .slider1 .swiper-pagination:first-child {
+        margin-left: 0 !important;
+    }
+    .offer_content {
+        margin-top: 80px;
+        padding-bottom: 150px;
+    }
+    .form_btn {
+        width: 100%;
+    }
+    .menu_mobile {
+        width: 50vw;
+    }
+    .navbar_mobile li {
+        width: 50vw;
+    }
+    .menu_mobile_arrow_m {
+        padding-left: 40px;
+    }
+    .menu_mobile_arrow_w {
+        padding-left: 40px;
+    }
+    .menu_mobile_arrow_c {
+        padding-left: 100px;
+    }
+    .menu_mobile_arrow_a {
+        padding-left: 66px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    h1 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    .before_heading_offer,
+    .after_heading_offer {
+        font-size: 20px;
+    }
+    .btn {
+        width: 50%;
+        height: 45px;
+        font-size: 15px;
+        padding-top: 11px;
+    }
+    .slider1 .swiper-pagination {
+        padding-right: 0px !important;
+    }
+    .slider1 .swiper-pagination-bullet {
+        width: 60px;
+        margin-left: 15px !important;
+        margin-bottom: 40px !important;
+    }
+    .slider1 .swiper-pagination:first-child {
+        margin-left: 0 !important;
+    }
+    .offer_content {
+        margin-top: 80px;
+        padding-bottom: 150px;
+    }
+    .arrivals {
+        padding-top: 50px;
+    }
+    .news {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .special_offers_line {
+        justify-content: center;
+    }
+    .slider2 .swiper-pagination-bullet {
+        width: 25px;
+        height: 2px;
+        margin-bottom: 480px !important;
+    }
+    .slider2 {
+        padding: 30px 67px 30px 67px;
+    }
+    .form_input,
+    .form_btn {
+        width: 100%;
+    }
+    .form_btn {
+        height: 55px;
+        padding-top: 15px;
+        font-size: 17px;
+    }
+    .menu_mobile {
+        width: 80vw;
+    }
+    .navbar_mobile li {
+        width: 80vw;
+    }
+    .menu_mobile_arrow_m {
+        padding-left: 120px;
+    }
+    .menu_mobile_arrow_w {
+        padding-left: 120px;
+    }
+    .menu_mobile_arrow_c {
+        padding-left: 180px;
+    }
+    .menu_mobile_arrow_a {
+        padding-left: 146px;
+    }
+}
+
+@media screen and (max-width: 389px) {
+    .header_phone {
+        font-size: 12px;
+        padding-top: 2px;
+    }
+    .slider2 .swiper-pagination-bullet {
+        width: 22px;
+        height: 2px;
+        margin-bottom: 470px !important;
+    }
+    .slider2 {
+        padding: 25px 67px 25px 67px;
+    }
+    .cart_arrow {
+        display: none;
+    }
+    .btn {
+        font-size: 14px;
+    }
+    .form_btn {
+        width: 100%;
+    }
+    .menu_mobile {
+        width: 80vw;
+    }
+    .navbar_mobile li {
+        width: 80vw;
+    }
+    .menu_mobile_arrow_m {
+        padding-left: 100px;
+    }
+    .menu_mobile_arrow_w {
+        padding-left: 100px;
+    }
+    .menu_mobile_arrow_c {
+        padding-left: 160px;
+    }
+    .menu_mobile_arrow_a {
+        padding-left: 126px;
+    }
+}
+
+@media screen and (max-width: 344px) {
+    .slider2 .swiper-pagination-bullet {
+        width: 20px;
+        height: 2px;
+        margin-bottom: 465px !important;
+    }
+    .btn {
+        padding-top: 12px;
+        font-size: 13px;
+    }
+    .slider2 {
+        padding: 30px 67px 20px 67px;
+    }
+    .form_btn {
+        width: 100%;
+    }
+    .menu_mobile {
+        width: 80vw;
+    }
+    .navbar_mobile li {
+        width: 80vw;
+    }
+    .menu_mobile_arrow_m {
+        padding-left: 70px;
+    }
+    .menu_mobile_arrow_w {
+        padding-left: 70px;
+    }
+    .menu_mobile_arrow_c {
+        padding-left: 130px;
+    }
+    .menu_mobile_arrow_a {
+        padding-left: 96px;
+    }
+}
+
+@media screen and (max-width: 322px) {
+    .slider1 .swiper-pagination-bullet {
+        width: 42px;
+        height: 5px;
+    }
+    .slider2 .swiper-pagination-bullet {
+        width: 19px;
+        height: 2px;
+        margin-bottom: 525px !important;
+    }
+    .slider2 .swiper-pagination-bullet {
+        margin-bottom: 467px !important;
+    }
+    .cart_summary {
+        font-size: 11px;
+    }
+    .header_phone {
+        font-size: 10px;
+    }
+    .btn {
+        padding-top: 14px;
+        font-size: 15px;
+        width: 70%;
+        height: 50px;
+    }
+    .offer_content {
+        margin-top: 50px;
+        padding-bottom: 125px;
+    }
+    .form_btn {
+        width: 100%;
+    }
+    .menu_mobile {
+        width: 80vw;
+    }
+    .navbar_mobile li {
+        width: 80vw;
+    }
+    .menu_mobile_arrow_m {
+        padding-left: 60px;
+    }
+    .menu_mobile_arrow_w {
+        padding-left: 60px;
+    }
+    .menu_mobile_arrow_c {
+        padding-left: 120px;
+    }
+    .menu_mobile_arrow_a {
+        padding-left: 86px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .cart_summary {
+        font-size: 11px;
+    }
+    .header_phone {
+        font-size: 10px;
+    }
+    .slider1 .swiper-pagination-bullet {
+        width: 50px;
+        height: 5px;
+    }
+    .btn {
+        padding-top: 14px;
+        font-size: 15px;
+        width: 70%;
+        height: 50px;
+    }
+    .offer_content {
+        margin-top: 50px;
+        padding-bottom: 125px;
+    }
+    .slider2 .swiper-pagination-bullet {
+        width: 16px;
+        height: 2px;
+        margin-bottom: 525px !important;
+    }
+    .slider2 .swiper-pagination-bullet {
+        margin-bottom: 467px !important;
+    }
+    .menu_mobile {
+        width: 100vw;
+    }
+    .navbar_mobile li {
+        width: 100vw;
+    }
+    .menu_mobile_arrow_m {
+        padding-left: 100px;
+    }
+    .menu_mobile_arrow_w {
+        padding-left: 100px;
+    }
+    .menu_mobile_arrow_c {
+        padding-left: 160px;
+    }
+    .menu_mobile_arrow_a {
+        padding-left: 126px;
+    }
+    .form_btn {
+        width: 100%;
+    }
+}
