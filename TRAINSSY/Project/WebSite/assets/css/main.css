@@ -450,95 +450,32 @@
     padding-top: 50px;
 }
 
+/* 1200px - 18000px */
 @media screen and (max-width: 18000px) {
-    .big_news_wrapper,
-    .phonenumber_footer_for_md {
-        display: block;
-    }
-    .hamburger_menu,
-    .hamburger_menu_col,
     .small_news_wrapper,
-    .header_tablet_phonenumber,
-    .header_tablet_phonenumber_col,
-    .menu_mobile_wrapper,
     .arrivals_slider_mobile,
-    .cart-icon-sm,
-    .cart-icon-sm-css,
-    .footer_pickup_mobile,
-    .footer_schedule_mobile {
-        display: none;
-    }
-    .anchor_for_md,
-    .phonenumber_footer_for_md,
-    .hamburger_menu_for_sm_col,
     .arrivals_menu_slider,
-    .header_phone_mobile_col,
-    .header_phone_mobile_col.header_phone,
     .slider6,
-    .special_offers_slider,
-    .inst_icon_mobile,
-    .footer_button_up_mobile {
+    .special_offers_slider {
         display: none;
     }
-    .footer_banking_options {
-        justify-content: end;
+    .big_news_wrapper {
+        display: block;
     }
 }
 /* 992px - 1200px */
 @media screen and (max-width: 1200px) {
-    .header_additional_pickup {
-        margin-left: 0;
-    }
-    .header_additional_schedule {
-        margin-left: 15px;
-    }
-    .header_logo_image {
-        padding-top: 6px;
-    }
-    .cart-icon-sm {
-        display: none;
-    }
-    .header_logo_text,
-    .cart_summary,
-    .cart_arrow,
-    .timberland_good__preview,
-    .card_additional,
-    .footer_schedule_mobile {
-        display: none;
-    }
-    .goods_preview {
-        margin-left: 35px;
-    }
-    .card_main {
-        margin-bottom: 45px;
-    }
-    .arrivals {
-        padding-bottom: 42px;
-    }
-    .hamburger_menu,
-    .hamburger_menu_col,
     .big_news_wrapper,
-    .header_tablet_phonenumber,
-    .header_tablet_phonenumber_col,
     .slider6,
     .special_offers_slider,
-    .inst_icon_mobile,
-    .footer_pickup_mobile,
-    .footer_button_up_mobile {
-        display: none;
-    }
-    .menu_mobile_wrapper,
-    .phonenumber_footer_for_md,
-    .anchor_for_md,
-    .hamburger_menu_col,
-    .hamburger_menu_for_sm_col,
-    .arrivals_menu_slider,
-    .header_phone_mobile_col,
-    .header_phone_mobile_col.header_phone {
+    .arrivals_menu_slider {
         display: none;
     }
     .small_news_wrapper {
         display: block;
+    }
+    .arrivals {
+        padding-bottom: 42px;
     }
     .news_post_slider {
         box-shadow: none;
@@ -557,73 +494,18 @@
     .brands_under {
         margin-top: 50px;
     }
-    .footer_nav .navbar:last-child {
-        padding-right: 0;
-    }
-    .footer_nav_block {
-        margin-left: auto;
-    }
-    .form_phone_wrapper {
-        margin-top: 25px;
-    }
-    .footer_button_up {
-        padding-top: 5px;
-        padding-left: 0;
-    }
-    .inst_icon {
-        margin-right: 23px;
-    }
-    .footer_pickup {
-        padding-top: 1px;
-    }
-    .footer_schedule {
-        margin-left: 30px;
-    }
-    .footer_under {
-        padding-top: 22px;
-    }
-    .footer_bank_option_1 {
-        padding-top: 20px;
-    }
-    .footer_bank_option_2 {
-        padding-top: 23.5px;
-    }
-    .footer_banking_options {
-        justify-content: end;
-    }
 }
 /* 768px - 992px */
 @media screen and (max-width: 992px) {
-    .header .header_main {
-        padding-top: 18px;
-        padding-bottom: 19px;
-    }
-    .header_tablet_phonenumber {
-        padding-top: 7px;
-    }
-    .cart {
-        margin-bottom: 5px;
-    }
-    .nav_main,
-    .nav_main_col,
-    .header_additional_phone_col,
-    .header_additional_delivery_col,
-    .hamburger_menu_for_sm_col,
     .arrivals_menu_slider,
     .slider6,
-    .footer_schedule_mobile {
+    .arrivals_cards_wrapper {
         display: none;
     }
     .form_wrapper,
-    .header_logo_text,
-    .cart_summary,
-    .cart_arrow,
-    .hamburger_menu,
-    .hamburger_menu_col,
-    .header_tablet_phonenumber,
-    .header_tablet_phonenumber_col,
-    .menu_mobile_wrapper,
-    .anchor_for_md {
+    .card_additional,
+    .arrivals_slider_mobile,
+    .slider3 {
         display: block;
     }
     .arrivals_nav {
@@ -632,28 +514,8 @@
     .arrivals_nav .navbar:first-child {
         padding-left: 0;
     }
-    .arrivals_cards_wrapper {
-        display: none;
-    }
-    .card_additional,
-    .arrivals_slider_mobile {
-        display: block;
-    }
     .arrivals_slider_mobile {
         padding-top: 45px;
-    }
-    .card_main {
-        box-shadow: none;
-        opacity: none;
-        transition: none;
-    }
-    .card_main:hover {
-        box-shadow: none;
-        -moz-transform: none;
-        -webkit-transform: none;
-        -o-transform: none;
-        -ms-transform: none;
-        transform: none;
     }
     .news {
         padding-top: 60px;
@@ -673,43 +535,6 @@
         padding-top: 127px;
         padding-bottom: 137px;
     }
-    .footer {
-        padding-top: 77px;
-        padding-bottom: 89px;
-    }
-    .footer_nav .navbar:first-child {
-        padding-left: 0;
-    }
-    .footer_nav_block {
-        margin-left: 0;
-        margin-right: auto;
-        margin-top: 24px;
-    }
-    .footer_anchor_plus_phone,
-    .header_phone_mobile_col,
-    .header_phone_mobile_col.header_phone,
-    .special_offers_slider,
-    .inst_icon_mobile,
-    .footer_pickup_mobile,
-    .footer_button_up_mobile {
-        display: none;
-    }
-    .phonenumber_footer_for_md,
-    .slider3 {
-        display: block;
-    }
-    .footer_phonenumber {
-        margin-top: 24px;
-    }
-    .footer_pickup {
-        margin-left: 25px;
-    }
-    .footer_under_left {
-        margin-top: 10px;
-    }
-    .footer_banking_options {
-        margin-top: 10px;
-    }
     .card_md_moderated .card_main {
         width: 344px;
         margin-bottom: 35px;
@@ -723,53 +548,20 @@
         padding-left: 35px;
         border: none;
     }
-    .menu_mobile {
-        width: 40vw;
-    }
-    .navbar_mobile li {
-        width: 40vw;
-    }
-    .menu_mobile_arrow_m {
-        padding-left: 140px;
-    }
-    .menu_mobile_arrow_w {
-        padding-left: 140px;
-    }
-    .menu_mobile_arrow_c {
-        padding-left: 200px;
-    }
-    .menu_mobile_arrow_a {
-        padding-left: 166px;
-    }
 }
 /* 576px - 768px */
 @media screen and (max-width: 768px) {
-    .header_additional_pickup {
-        text-align: center;
-    }
-    .arrivals_menu_slider,
-    .cart-icon-sm,
-    .cart-icon-sm-css,
-    .slider6 {
-        display: block;
-    }
-    .header_additional_phone_col,
-    .header_additional_delivery_col,
-    .hamburger_menu_col,
     .arrivals_nav_col,
-    .cart-for-big,
-    .header_phone_mobile_col,
-    .header_phone_mobile_col.header_phone,
     .special_offers_slider,
-    .inst_icon_mobile {
+    .form_right_side,
+    .swiper-button-next,
+    .swiper-button-prev,
+    .slider3 {
         display: none;
     }
-    .hamburger_menu_for_sm_col {
+    .arrivals_menu_slider,
+    .slider6 {
         display: block;
-    }
-    .header .header_main {
-        padding-top: 19px;
-        padding-bottom: 18px;
     }
     .slider5 {
         border: 1px solid #C4C4C4;
@@ -836,22 +628,8 @@
     .card_md_moderated .card_cta {
         padding-left: 19px;
     }
-    .swiper-button-next,
-    .swiper-button-prev,
-    .slider3,
-    .footer_pickup_mobile,
-    .footer_schedule_mobile,
-    .footer_button_up_mobile {
-        display: none;
-    }
     .slider2 .swiper-pagination-bullet {
         width: 30px;
-    }
-    .cart-icon-sm {
-        display: block;
-    }
-    .cart-icon-sm-css {
-        margin-top: 2.5px;
     }
     .form_input,
     .form_btn {
@@ -866,64 +644,18 @@
     .slider2 {
         padding: 60px 67px 50px 67px;
     }
-    .menu_mobile {
-        width: 40vw;
-    }
-    .navbar_mobile li {
-        width: 40vw;
-    }
-    .menu_mobile_arrow_m {
-        padding-left: 65px;
-    }
-    .menu_mobile_arrow_w {
-        padding-left: 65px;
-    }
-    .menu_mobile_arrow_c {
-        padding-left: 125px;
-    }
-    .menu_mobile_arrow_a {
-        padding-left: 91px;
-    }
 }
 /* 0 - 576px */
 @media screen and (max-width: 576px) {
     .form_right_side_smartphone,
     .form_right_side,
-    .cart-icon-sm,
-    .cart-icon-sm-css,
-    .header_tablet_phonenumber_col,
-    .header_tablet_phonenumber,
     .slider3,
-    .special_offers_default,
-    .anchor_for_md,
-    .footer_nav_block,
-    .footer_under_tablet {
+    .special_offers_default {
         display: none;
     }
-    .header_phone_mobile_col,
-    .header_phone_mobile_col.header_phone,
-    .cart-for-big,
     .slider6,
-    .special_offers_slider,
-    .inst_icon_mobile,
-    .footer_pickup_mobile,
-    .footer_schedule_mobile,
-    .footer_button_up_mobile {
+    .special_offers_slider {
         display: block;
-    }
-    .header_additional_pickup {
-        text-align: left;
-        font-size: 11px;
-    }
-    .hamburger_menu_for_sm_col {
-        margin-left: auto;
-    }
-    .header_phone_mobile_col {
-        padding-top: 17px;
-    }
-    .cart-for-big {
-        margin-left: auto;
-        padding-top: 11.5px;
     }
     .btn {
         height: 55px;
@@ -1004,59 +736,13 @@
     .brand_image_n {
         padding-bottom: 50px;
     }
-    .footer {
-        text-align: center;
-    }
-    .footer_under_left {
-        display: block;
-    }
-    .footer_phonenumber {
-        margin-top: 27px;
-    }
-    .inst_icon {
-        width: 39px;
-        margin-right: 0;
-        margin-top: 27px;
-    }
-    .footer_pickup {
-        margin-top: 27px;
-        margin-left: 0;
-    }
-    .footer_schedule {
-        margin-left: 0;
-        width: 100%;
-    }
-    .footer_banking_options {
-        justify-content: center;
-        margin-top: 10px;
-    }
-    .footer_button_up {
-        margin-top: 27px;
-    }
     .offer_content {
         margin-top: 70px;
         padding-bottom: 150px;
     }
-    .menu_mobile {
-        width: 50vw;
-    }
-    .navbar_mobile li {
-        width: 50vw;
-    }
-    .menu_mobile_arrow_m {
-        padding-left: 40px;
-    }
-    .menu_mobile_arrow_w {
-        padding-left: 40px;
-    }
-    .menu_mobile_arrow_c {
-        padding-left: 100px;
-    }
-    .menu_mobile_arrow_a {
-        padding-left: 66px;
-    }
 }
 
+/* custom */
 @media screen and (max-width: 551px) {
     h1 {
         font-size: 30px;
@@ -1069,7 +755,9 @@
         font-size: 20px;
     }
     .btn {
-        width: 45%;
+        width: 55%;
+        height: 50px;
+        padding-top: 13px;
     }
     .slider1 .swiper-pagination {
         padding-right: 0px !important;
@@ -1089,26 +777,9 @@
     .form_btn {
         width: 100%;
     }
-    .menu_mobile {
-        width: 50vw;
-    }
-    .navbar_mobile li {
-        width: 50vw;
-    }
-    .menu_mobile_arrow_m {
-        padding-left: 40px;
-    }
-    .menu_mobile_arrow_w {
-        padding-left: 40px;
-    }
-    .menu_mobile_arrow_c {
-        padding-left: 100px;
-    }
-    .menu_mobile_arrow_a {
-        padding-left: 66px;
-    }
 }
 
+/* custom */
 @media screen and (max-width: 425px) {
     h1 {
         font-size: 30px;
@@ -1121,7 +792,7 @@
         font-size: 20px;
     }
     .btn {
-        width: 50%;
+        width: 70%;
         height: 45px;
         font-size: 15px;
         padding-top: 11px;
@@ -1168,31 +839,10 @@
         padding-top: 15px;
         font-size: 17px;
     }
-    .menu_mobile {
-        width: 80vw;
-    }
-    .navbar_mobile li {
-        width: 80vw;
-    }
-    .menu_mobile_arrow_m {
-        padding-left: 120px;
-    }
-    .menu_mobile_arrow_w {
-        padding-left: 120px;
-    }
-    .menu_mobile_arrow_c {
-        padding-left: 180px;
-    }
-    .menu_mobile_arrow_a {
-        padding-left: 146px;
-    }
 }
 
+/* custom */
 @media screen and (max-width: 389px) {
-    .header_phone {
-        font-size: 12px;
-        padding-top: 2px;
-    }
     .slider2 .swiper-pagination-bullet {
         width: 22px;
         height: 2px;
@@ -1201,35 +851,15 @@
     .slider2 {
         padding: 25px 67px 25px 67px;
     }
-    .cart_arrow {
-        display: none;
-    }
     .btn {
         font-size: 14px;
     }
     .form_btn {
         width: 100%;
     }
-    .menu_mobile {
-        width: 80vw;
-    }
-    .navbar_mobile li {
-        width: 80vw;
-    }
-    .menu_mobile_arrow_m {
-        padding-left: 100px;
-    }
-    .menu_mobile_arrow_w {
-        padding-left: 100px;
-    }
-    .menu_mobile_arrow_c {
-        padding-left: 160px;
-    }
-    .menu_mobile_arrow_a {
-        padding-left: 126px;
-    }
 }
 
+/* custom */
 @media screen and (max-width: 344px) {
     .slider2 .swiper-pagination-bullet {
         width: 20px;
@@ -1237,7 +867,7 @@
         margin-bottom: 465px !important;
     }
     .btn {
-        padding-top: 12px;
+        padding-top: 13px;
         font-size: 13px;
     }
     .slider2 {
@@ -1246,26 +876,9 @@
     .form_btn {
         width: 100%;
     }
-    .menu_mobile {
-        width: 80vw;
-    }
-    .navbar_mobile li {
-        width: 80vw;
-    }
-    .menu_mobile_arrow_m {
-        padding-left: 70px;
-    }
-    .menu_mobile_arrow_w {
-        padding-left: 70px;
-    }
-    .menu_mobile_arrow_c {
-        padding-left: 130px;
-    }
-    .menu_mobile_arrow_a {
-        padding-left: 96px;
-    }
 }
 
+/* custom */
 @media screen and (max-width: 322px) {
     .slider1 .swiper-pagination-bullet {
         width: 42px;
@@ -1278,12 +891,6 @@
     }
     .slider2 .swiper-pagination-bullet {
         margin-bottom: 467px !important;
-    }
-    .cart_summary {
-        font-size: 11px;
-    }
-    .header_phone {
-        font-size: 10px;
     }
     .btn {
         padding-top: 14px;
@@ -1298,33 +905,10 @@
     .form_btn {
         width: 100%;
     }
-    .menu_mobile {
-        width: 80vw;
-    }
-    .navbar_mobile li {
-        width: 80vw;
-    }
-    .menu_mobile_arrow_m {
-        padding-left: 60px;
-    }
-    .menu_mobile_arrow_w {
-        padding-left: 60px;
-    }
-    .menu_mobile_arrow_c {
-        padding-left: 120px;
-    }
-    .menu_mobile_arrow_a {
-        padding-left: 86px;
-    }
 }
 
+/* custom */
 @media screen and (max-width: 280px) {
-    .cart_summary {
-        font-size: 11px;
-    }
-    .header_phone {
-        font-size: 10px;
-    }
     .slider1 .swiper-pagination-bullet {
         width: 50px;
         height: 5px;
@@ -1346,24 +930,6 @@
     }
     .slider2 .swiper-pagination-bullet {
         margin-bottom: 467px !important;
-    }
-    .menu_mobile {
-        width: 100vw;
-    }
-    .navbar_mobile li {
-        width: 100vw;
-    }
-    .menu_mobile_arrow_m {
-        padding-left: 100px;
-    }
-    .menu_mobile_arrow_w {
-        padding-left: 100px;
-    }
-    .menu_mobile_arrow_c {
-        padding-left: 160px;
-    }
-    .menu_mobile_arrow_a {
-        padding-left: 126px;
     }
     .form_btn {
         width: 100%;

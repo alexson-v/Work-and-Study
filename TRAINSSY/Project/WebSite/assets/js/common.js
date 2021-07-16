@@ -29,7 +29,7 @@ $('#openFullMenuBtn').on('mouseover', function () {
 });
 
 // Mobile menu
-  $('.hamburger_menu').on('click', function() {
+  $('.header-main__hamburger-menu').on('click', function() {
     $('.menu_mobile').toggleClass('menu_mobile_active');
     $('.content').toggleClass('content_active');
   });
