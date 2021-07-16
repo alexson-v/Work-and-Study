@@ -28,7 +28,7 @@ $('#openFullMenuBtn').on('mouseover', function () {
     }
 });
 
-// Mobile menu
+// Mobile menu (main branch)
   $('.header-main__hamburger-menu').on('click', function() {
     $('.menu_mobile').toggleClass('menu_mobile_active');
     $('.content').toggleClass('content_active');
@@ -38,6 +38,13 @@ $('#openFullMenuBtn').on('mouseover', function () {
     $('.content').toggleClass('content_active');
 });
 
+// Mobile menu (category - men)
+$('.navbar_mobile_open_men').on('click', function() {
+  $('.menu_mobile_category-men').toggleClass('menu_mobile_category-men_active');
+});
+$('.navbar_mobile_close_men').on('click', function() {
+  $('.menu_mobile_category-men').toggleClass('menu_mobile_category-men_active');
+});
 
 // Main anchor
 jQuery(document).ready(function() {
