@@ -161,8 +161,9 @@ ul, li {
     position: absolute;
     z-index: 100;
     width: 100%;
-    height: 38%;
+    height: 240px;
     display: none;
+    border-bottom: 1px solid #7D7D7D;
 }
 
 .horizontal_line {
@@ -203,6 +204,10 @@ ul, li {
 .header_full_navbar .option_green {
     color: #02810E;
     font-weight: 600;
+}
+
+.option_green {
+    color: #02810E !important;
 }
 
 .menu_icons {
@@ -322,6 +327,8 @@ ul, li {
 }
 
 .card_image {
+    width: 192px;
+    height: 181px;
     margin: 0px 40px 25px 40px;
     border: 1px solid #EBEBEB;
 }
@@ -354,6 +361,21 @@ ul, li {
 
 .card_cta {
     padding-left: 12px;
+}
+
+.card_description_special {
+    padding: 0 51px 5px 51px;
+    color: #7D7D7D;
+}
+
+.card_striked_goodsvalue {
+    font-size: 11px;
+    text-decoration: line-through;
+    padding: 0 0 0 135px;
+}
+
+.card_cta_special {
+    padding: 17px 0 0 18px;
 }
 
 .footer {
@@ -620,7 +642,7 @@ ul, li {
         margin-top: -7px;
     }
     .header_full_menu_wrapper {
-        height: 38%;
+        height: 240px;
     }
     .goods_preview {
         margin-left: 35px;

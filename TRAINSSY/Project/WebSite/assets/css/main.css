@@ -46,25 +46,25 @@
 }
 
 #swiper-slide_1 {
-    background-image: url(../img/caorusel-image-1.jpg);
+    background-image: url(../img/offer-carousel_img/carousel-image-1.jpg);
     background-size: cover;
     width: 1170px;
 }
 
 #swiper-slide_2 {
-    background-image: url(../img/caorusel-image-2.jpg);
+    background-image: url(../img/offer-carousel_img/carousel-image-2.jpg);
     background-size: cover;
     width: 1170px;
 }
 
 #swiper-slide_3 {
-    background-image: url(../img/caorusel-image-3.jpg);
+    background-image: url(../img/offer-carousel_img/carousel-image-3.jpg);
     background-size: cover;
     width: 1170px;
 }
 
 #swiper-slide_4 {
-    background-image: url(../img/caorusel-image-4.jpg);
+    background-image: url(../img/offer-carousel_img/carousel-image-4.jpg);
     background-size: cover;
     width: 1170px;
 }
@@ -200,21 +200,6 @@
 
 .special_offers_line {
     padding-top: 50px;
-}
-
-.card_description_special {
-    padding: 0 51px 5px 51px;
-    color: #7D7D7D;
-}
-
-.card_striked_goodsvalue {
-    font-size: 11px;
-    text-decoration: line-through;
-    padding: 0 0 0 135px;
-}
-
-.card_cta_special {
-    padding: 17px 0 0 18px;
 }
 
 .reviews {

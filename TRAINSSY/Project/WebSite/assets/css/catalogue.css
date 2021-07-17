@@ -1,0 +1,94 @@
+hr {
+    margin: 0;
+}
+
+.catalogue_banner {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.catalogue_main {
+    padding-top: 40px;
+}
+
+.navbar_catalogue li {
+    margin-bottom: 14px;
+}
+
+.navbar_catalogue li a{
+    font-size: 17px;
+    font-weight: 700;
+    color: #000;
+}
+
+.navbar_catalogue_icons {
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.subcategory {
+    margin-left: 17px;
+}
+
+.subcategory li a {
+    font-size: 15px;
+    color: #959595;
+}
+
+.catalogue_userbar {
+    padding-bottom: 29px;
+}
+
+.search-history a{
+    color: #000;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.search-arrow {
+    margin: 0 12px 0 12px;
+}
+
+.search-history {
+    margin-bottom: 21px;
+}
+
+.category_goods-value {
+    margin-top: 10px;
+}
+
+.catalogue_open-search {
+    cursor: pointer;
+    position: absolute;
+    right: 1.25em;
+}
+
+.category_filters-wrapper {
+    margin-top: 80px;
+}
+
+.category_filters-title {
+    margin-right: 35px;
+    font-weight: 700;
+}
+
+.category_filters-value,
+.category_filters-color {
+    margin-left: 45px;
+}
+
+.category_dropdown-filter {
+    margin-left: 10px;
+}
+
+.category_showcase {
+    padding-top: 29px;
+    padding-bottom: 90px;
+    flex-flow: row wrap;
+}
+
+.card_main {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
