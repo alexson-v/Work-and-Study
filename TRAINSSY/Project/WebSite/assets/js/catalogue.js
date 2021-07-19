@@ -1,98 +1,199 @@
-const popupLinks = document.querySelectorAll('.popup-link');
-const body = document.querySelector('body');
-const lockPadding = document.querySelectorAll('.lock-padding');
+// Скрипт для попапа "Искать товар"
+const popupSearchLinks = document.querySelectorAll('.popup-search-link');
+const bodyOfSearch = document.querySelector('body');
+const lockPaddingSearch = document.querySelectorAll('.lock-padding');
 
-let unlock = true;
+let unlockSearch = true;
 
-const timeout = 800;
+const timeoutSearch = 800;
 
-if (popupLinks.length > 0) {
-    for (let index = 0; index < popupLinks.length; index++) {
-        const popupLink = popupLinks[index];
-        popupLink.addEventListener('click', function (e) {
-            const popupName = popupLink.getAttribute('href').replace('#', '');
-            const curentPopup = document.getElementById(popupName);
-            popupOpen(curentPopup);
+if (popupSearchLinks.length > 0) {
+    for (let index = 0; index < popupSearchLinks.length; index++) {
+        const popupLinkSearch = popupSearchLinks[index];
+        popupLinkSearch.addEventListener('click', function (e) {
+            const popupNameSearch = popupLinkSearch.getAttribute('href').replace('#', '');
+            const currentPopupSearch = document.getElementById(popupNameSearch);
+            popupOpen(currentPopupSearch);
             e.preventDefault();
         });
     }
 }
-const popupCloseIcon = document.querySelectorAll('.close-popup');
-if (popupCloseIcon.length > 0) {
-    for (let index = 0; index < popupCloseIcon.length; index++) {
-        const el = popupCloseIcon[index];
+const popupCloseIconSearch = document.querySelectorAll('.close-popup-search');
+if (popupCloseIconSearch.length > 0) {
+    for (let index = 0; index < popupCloseIconSearch.length; index++) {
+        const el = popupCloseIconSearch[index];
         el.addEventListener('click', function (e) {
-            popupClose(el.closest('.popup_search'));
+            popupCloseSearch(el.closest('.popup_search'));
             e.preventDefault();
         });
     }
 }
 
-function popupOpen(curentPopup) {
-    if (curentPopup && unlock) {
-        const popupActive = document.querySelector('.popup_search.open');
-        if (popupActive) {
-            popupClose(popupActive, false);
+function popupOpen(currentPopupSearch) {
+    if (currentPopupSearch && unlockSearch) {
+        const popupActiveSearch = document.querySelector('.popup_search.open');
+        if (popupActiveSearch) {
+            popupCloseSearch(popupActiveSearch, false);
         } else {
-            bodyLock();
+            bodyLockSearch();
         }
-        curentPopup.classList.add('open');
-        curentPopup.addEventListener('click', function (e) {
+        currentPopupSearch.classList.add('open');
+        currentPopupSearch.addEventListener('click', function (e) {
             if (!e.target.closest('.search-popup__body')) {
-                popupClose(e.target.closest('.popup_search'));
+                popupCloseSearch(e.target.closest('.popup_search'));
             }
         });
     }
 }
-function popupClose(popupActive, doUnlock = true) {
-    if (unlock) {
-        popupActive.classList.remove('open');
-        if (doUnlock) {
-            bodyUnLock();
+function popupCloseSearch(popupActiveSearch, doUnlockSearch = true) {
+    if (unlockSearch) {
+        popupActiveSearch.classList.remove('open');
+        if (doUnlockSearch) {
+            bodyUnlockSearch();
         }
     }
 }
 
-function bodyLock() {
-    const lockPaddingValue = window.innerWidth - document.querySelector('.content').offsetWidth + 'px';
+function bodyLockSearch() {
+    const lockPaddingSearchValue = window.innerWidth - document.querySelector('.content').offsetWidth + 'px';
 
-    if (lockPadding.length > 0) {
-        for (let index = 0; index < lockPadding.length; index++) {
-            const el = lockPadding[index];
-            el.getElementsByClassName.paddingRight = lockPaddingValue;
+    if (lockPaddingSearch.length > 0) {
+        for (let index = 0; index < lockPaddingSearch.length; index++) {
+            const el = lockPaddingSearch[index];
+            el.getElementsByClassName.paddingRightSearch = lockPaddingSearchValue;
         }
     }
-    body.style.paddingRight = lockPaddingValue;
-    body.classList.add('lock');
+    bodyOfSearch.style.paddingRightSearch = lockPaddingSearchValue;
+    bodyOfSearch.classList.add('lock');
 
-    unlock = false;
+    unlockSearch = false;
     setTimeout(function () {
-        unlock = true;
-    }, timeout);
+        unlockSearch = true;
+    }, timeoutSearch);
 }
 
-function bodyUnLock() {
+function bodyUnlockSearch() {
     setTimeout(function () {
-        if (lockPadding.length > 0) {
-            for (let index = 0; index < lockPadding.length; index++) {
-                const el = lockPadding[index];
-                el.style.paddingRight = '0px';
+        if (lockPaddingSearch.length > 0) {
+            for (let index = 0; index < lockPaddingSearch.length; index++) {
+                const el = lockPaddingSearch[index];
+                el.style.paddingRightSearch = '0px';
             }
         }
-        body.style.paddingRight = '0px';
-        body.classList.remove('lock');
-    }, timeout);
+        bodyOfSearch.style.paddingRightSearch = '0px';
+        bodyOfSearch.classList.remove('lock');
+    }, timeoutSearch);
 
-    unlock = false;
+    unlockSearch = false;
     setTimeout(function () {
-        unlock = true;
-    }, timeout);
+        unlockSearch = true;
+    }, timeoutSearch);
 }
 
 document.addEventListener('keydown', function (e) {
     if (e.which === 27) {
-        const popupActive = document.querySelector('.popup_search.open');
-        popupClose(popupActive);
+        const popupActiveSearch = document.querySelector('.popup_search.open');
+        popupCloseSearch(popupActiveSearch);
+    }
+});
+
+
+// Скрипт для попапа "Корзина"
+const popupCartLinks = document.querySelectorAll('.popup-cart-link');
+const bodyOfCart = document.querySelector('body');
+const lockPaddingCart = document.querySelectorAll('.lock-padding');
+
+let unlockCart = true;
+
+const timeoutCart = 800;
+
+if (popupCartLinks.length > 0) {
+    for (let index = 0; index < popupCartLinks.length; index++) {
+        const popupLinkCart = popupCartLinks[index];
+        popupLinkCart.addEventListener('click', function (e) {
+            const popupNameCart = popupLinkCart.getAttribute('href').replace('#', '');
+            const currentPopupCart = document.getElementById(popupNameCart);
+            popupOpen(currentPopupCart);
+            e.preventDefault();
+        });
+    }
+}
+const popupCloseIconCart = document.querySelectorAll('.close-popup-cart');
+if (popupCloseIconCart.length > 0) {
+    for (let index = 0; index < popupCloseIconCart.length; index++) {
+        const el = popupCloseIconCart[index];
+        el.addEventListener('click', function (e) {
+            popupCloseCart(el.closest('.popup_cart'));
+            e.preventDefault();
+        });
+    }
+}
+
+function popupOpen(currentPopupCart) {
+    if (currentPopupCart && unlockCart) {
+        const popupActiveCart = document.querySelector('.popup_cart.open');
+        if (popupActiveCart) {
+            popupCloseCart(popupActiveCart, false);
+        } else {
+            bodyLockCart();
+        }
+        currentPopupCart.classList.add('open');
+        currentPopupCart.addEventListener('click', function (e) {
+            if (!e.target.closest('.cart_popup__content')) {
+                popupCloseCart(e.target.closest('.popup_cart'));
+            }
+        });
+    }
+}
+function popupCloseCart(popupActiveCart, doUnlockCart = true) {
+    if (unlockCart) {
+        popupActiveCart.classList.remove('open');
+        if (doUnlockCart) {
+            bodyUnlockCart();
+        }
+    }
+}
+
+function bodyLockCart() {
+    const lockPaddingCartValue = window.innerWidth - document.querySelector('.content').offsetWidth + 'px';
+
+    if (lockPaddingCart.length > 0) {
+        for (let index = 0; index < lockPaddingCart.length; index++) {
+            const el = lockPaddingCart[index];
+            el.getElementsByClassName.paddingRightCart = lockPaddingCartValue;
+        }
+    }
+    bodyOfCart.style.paddingRightCart = lockPaddingCartValue;
+    bodyOfCart.classList.add('lock');
+
+    unlockCart = false;
+    setTimeout(function () {
+        unlockCart = true;
+    }, timeoutCart);
+}
+
+function bodyUnlockCart() {
+    setTimeout(function () {
+        if (lockPaddingCart.length > 0) {
+            for (let index = 0; index < lockPaddingCart.length; index++) {
+                const el = lockPaddingCart[index];
+                el.style.paddingRightCart = '0px';
+            }
+        }
+        bodyOfCart.style.paddingRightCart = '0px';
+        bodyOfCart.classList.remove('lock');
+    }, timeoutCart);
+
+    unlockCart = false;
+    setTimeout(function () {
+        unlockCart = true;
+    }, timeoutCart);
+}
+
+document.addEventListener('keydown', function (e) {
+    if (e.which === 27) {
+        const popupActiveCart = document.querySelector('.popup_cart.open');
+        popupCloseCart(popupActiveCart);
     }
 });
 
@@ -116,3 +217,45 @@ document.addEventListener('keydown', function (e) {
             Element.prototype.msMatchesSelector;
     }
 })();
+
+
+// jQuery-скрипт для инпута с кол-вом товара в попапе "Корзина"
+$('.good-in-cart__quantity .bt_minus').click(function() {
+    let $input = $(this).parent().find('.quantity');
+    let count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+});
+
+// Прибавляем кол-во по клику
+$('.good-in-cart__quantity .bt_plus').click(function() {
+    let $input = $(this).parent().find('.quantity');
+    let count = parseInt($input.val()) + 1;
+    count = count > parseInt($input.data('max-count')) ? parseInt($input.data('max-count')) : count;
+    $input.val(parseInt(count));
+}); 
+
+// Убираем все лишнее и невозможное при изменении поля
+$('.good-in-cart__quantity .quantity').bind("change keyup input click", function() {
+    if (this.value.match(/[^0-9]/g)) {
+        this.value = this.value.replace(/[^0-9]/g, '');
+    }
+    if (this.value == "") {
+        this.value = 1;
+    }
+    if (this.value > parseInt($(this).data('max-count'))) {
+        this.value = parseInt($(this).data('max-count'));
+    }    
+});
+
+
+//Jquery-скрипты для отображения выпадающих окон-фильтров
+$('.category_filters-size').on('click', function() {
+    $('.category_filters-size__dropdown').toggleClass('category_filters-size__dropdown-open');
+    $('.category_dropdown-filter_size').toggleClass('category_dropdown-filter_size-active'); // тут нужно вписать закрытие других окон
+});
+
+$('.category_filter__btn').on('click', function() {
+    $('.category_filters-size__dropdown').toggleClass('category_filters-size__dropdown-open');
+    $('.category_dropdown-filter_size').toggleClass('category_dropdown-filter_size-active'); // тут нужно вписать закрытие других окон
+});
