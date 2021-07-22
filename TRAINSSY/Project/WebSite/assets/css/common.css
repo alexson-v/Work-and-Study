@@ -45,6 +45,16 @@ ul, li {
     margin: 0;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 ::-webkit-scrollbar
 {
     background: #7e7d83;
@@ -283,6 +293,7 @@ ul, li {
 
 .header-main__hamburger-menu {
     margin-top: 32px;
+    text-align: right;
 }
 
 .btn {
@@ -314,69 +325,63 @@ ul, li {
     font-size: 12px;
     width: 270px;
     height: 437px;
-    box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.08);
     display: block;
     opacity: 1;
     transition: all 1s ease;
     display: block;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     cursor: pointer;
-}
-
-.card_name {
-    padding: 31px 40px 22px 40px;
+    padding: 31px 40px 31px 40px;
 }
 
 .card_image {
-    width: 192px;
-    height: 181px;
-    margin: 0px 40px 25px 40px;
+    width: 190px;
+    height: 178px;
     border: 1px solid #EBEBEB;
+    margin: 22px 0 15px 0;
 }
 
 .card_description {
-    padding: 0 51px 20px 51px;
     color: #7D7D7D;
+    margin-bottom: 25px;
 }
 
 .card_description ul li {
     font-weight: 400;
-    padding-bottom: 5px;
+    margin-left: 6px;
+    margin-top: 5px;
 }
 
 .card_description_attribute {
-    padding-right: 10px;
     color: #000;
 }
 
-.card_main_code {
-    font-size: 10px;
-    margin-top: 2px;
+.goods_wrapper_down {
+    width: 190px;
 }
 
 .card_goodsvalue {
     font-size: 15px;
     font-weight: 900;
-    padding: 0 50px 10px 51px;
+    margin-left: 6px;
 }
 
-.card_cta {
-    padding-left: 12px;
+.card_main__cta {
+    margin-left: auto;
+}
+
+.card_main__cta.special {
+    margin-left: auto;
 }
 
 .card_description_special {
-    padding: 0 51px 5px 51px;
-    color: #7D7D7D;
+    margin-bottom: 10px;
 }
 
 .card_striked_goodsvalue {
     font-size: 11px;
     text-decoration: line-through;
-    padding: 0 0 0 135px;
-}
-
-.card_cta_special {
-    padding: 17px 0 0 18px;
+    margin-left: 80px;
 }
 
 .footer {
@@ -594,6 +599,27 @@ ul, li {
     padding-bottom: 4px;
 }
 
+.popup-search-link.popup-search-link__small {
+    text-decoration: none;
+}
+
+.popup-search-link__content-wrapper {
+    margin-bottom: 4px;
+}
+
+.search-button__text {
+    letter-spacing: 0.1em;
+    color: #000;
+}
+.search-button__line {
+    background: #000;
+}
+
+.search-button__smallimg {
+    margin-left: auto;
+    margin-right: 12px;
+}
+
 /* 1200px - 18000px */
 @media screen and (max-width: 18000px) {
     .menu_mobile_wrapper,
@@ -606,7 +632,8 @@ ul, li {
     .anchor_for_md,
     .phonenumber_footer_for_md,
     .inst_icon_mobile,
-    .footer_button_up_mobile {
+    .footer_button_up_mobile,
+    .popup-search-link__small {
         display: none;
     }
     .footer_banking_options {
@@ -633,11 +660,14 @@ ul, li {
         margin-left: 0px;
         margin-right: 12px;
     }
+    .header-main {
+        padding: 5px 0 10px 0;
+    }
     .header-main__logo {
         padding-top: 24px;
     }
     .nav__main .navbar {
-        margin-top: -5px;
+        margin-top: -4.75px;
     }
     .side-menu {
         margin-top: -7px;
@@ -661,7 +691,7 @@ ul, li {
         margin-top: 25px;
     }
     .footer_button_up {
-        padding-top: 5px;
+        padding-top: 4px;
         padding-left: 0;
     }
     .inst_icon {
@@ -711,6 +741,9 @@ ul, li {
     .phonenumber_footer_for_md {
         display: block;
     }
+    .header-main {
+        padding: 0;
+    }
     .header-main__logo {
         margin-top: -5px;
     }
@@ -729,6 +762,13 @@ ul, li {
         -o-transform: none;
         -ms-transform: none;
         transform: none;
+    }
+    .card_main.card_special_adaptive {
+        width: 330px;
+    }
+    .card_main.card_special_adaptive {
+        padding: 31px 70px 31px 70px;
+        margin-bottom: 30px;
     }
     .footer {
         padding-top: 77px;
@@ -763,11 +803,21 @@ ul, li {
     .header-main__phonenumber,
     .footer_pickup_mobile,
     .footer_schedule_mobile,
-    .footer_button_up_mobile {
+    .footer_button_up_mobile,
+    .search-popup_link {
         display: none;
     }
-    .navbar__authorization-link {
+    .navbar__authorization-link,
+    .popup-search-link__small {
         display: block;
+    }
+    .navbar__authorization-link__caption {
+        padding-top: 2.5px;
+    }
+    .card_main.card_special_adaptive {
+        width: 260px;
+        padding: 31px 35px 31px 35px;
+        margin-bottom: 10px;
     }
 }
 
@@ -786,6 +836,9 @@ ul, li {
     .footer_schedule_mobile,
     .footer_button_up_mobile {
         display: block;
+    }
+    .popup-search-link__small {
+        margin: 10px 0 10px 0;
     }
     .footer {
         text-align: center;

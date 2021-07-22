@@ -314,8 +314,3 @@ let swiper4 = new Swiper('.slider4', {
     },
   }
 });
-
-
-
-
-

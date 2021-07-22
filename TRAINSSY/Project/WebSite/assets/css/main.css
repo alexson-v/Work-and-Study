@@ -140,12 +140,11 @@
 }
 
 .card_main:hover {
-    box-shadow: -30px 80px 200px rgba(0, 0, 0, 0.10);
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+    -moz-transform: scale(1.050);
+    -webkit-transform: scale(1.050);
+    -o-transform: scale(1.050);
+    -ms-transform: scale(1.050);
+    transform: scale(1.050);
 }
 
 .news {
@@ -502,6 +501,14 @@
     .arrivals_slider_mobile {
         padding-top: 45px;
     }
+    .card_main:hover {
+        box-shadow: 0;
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
     .news {
         padding-top: 60px;
     }
@@ -519,19 +526,6 @@
     .brands {
         padding-top: 127px;
         padding-bottom: 137px;
-    }
-    .card_md_moderated .card_main {
-        width: 344px;
-        margin-bottom: 35px;
-    }
-    .card_md_moderated .card_main .card_name,
-    .card_md_moderated .card_main .card_description_special,
-    .card_md_moderated .card_main .goods_wrapper_down {
-        margin-left: 35px;
-    }
-    .card_md_moderated .card_main .card_image {
-        padding-left: 35px;
-        border: none;
     }
 }
 /* 576px - 768px */
@@ -574,44 +568,6 @@
     }
     .slider5 {
         margin-top: -1.5px;
-    }
-    .card_md_moderated .card_main {
-        width: 255px;
-        height: 455px;
-    }
-    .card_md_moderated .card_additional {
-        height: 455px;
-    }
-    .card_md_moderated .card_main .card_name,
-    .card_md_moderated .card_main .card_description_special,
-    .card_md_moderated .card_main .goods_wrapper_down {
-        margin: 0;
-    }
-    .card_md_moderated .card_main .card_image {
-        padding-left: 0;
-        border: 1px solid #EBEBEB;
-    }
-    .card_md_moderated .card_description_attribute {
-        width: 101px;
-    }
-    .card_md_moderated .card_name {
-        padding: 31px 40px 22px 32px;
-    }
-    .card_md_moderated .card_image {
-        margin: 0px 40px 25px 32px;
-        border: 1px solid #EBEBEB;
-    }
-    .card_md_moderated .card_description {
-        padding: 0 51px 20px 35px;
-        color: #7D7D7D;
-    }
-    .card_md_moderated .card_goodsvalue {
-        font-size: 15px;
-        font-weight: 900;
-        padding: 0 50px 10px 43px;
-    }
-    .card_md_moderated .card_cta {
-        padding-left: 19px;
     }
     .slider2 .swiper-pagination-bullet {
         width: 30px;
@@ -658,45 +614,6 @@
     }
     .special_offers_line {
         justify-content: center;
-    }
-    .card_md_moderated .card_main {
-        background-color: #fff;
-        color: #000;
-        font-weight: 300;
-        font-size: 12px;
-        width: 270px;
-        height: 455px;
-        box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.08);
-        display: block;
-        opacity: 1;
-        transition: all 1s ease;
-        display: block;
-        margin-bottom: 25px;
-        cursor: pointer;
-    }
-    .card_md_moderated .card_name {
-        padding: 31px 40px 22px 40px;
-    }
-    .card_md_moderated .card_image {
-        margin: 0px 40px 25px 40px;
-        border: 1px solid #EBEBEB;
-    }
-    .card_md_moderated .card_description {
-        padding: 0 51px 20px 51px;
-        color: #7D7D7D;
-    }
-    .card_md_moderated .card_description_attribute {
-        padding-right: 10px;
-        color: #000;
-    }
-    .card_md_moderated .card_main_code {
-        font-size: 10px;
-        margin-top: 2px;
-    }
-    .card_md_moderated .card_goodsvalue {
-        font-size: 15px;
-        font-weight: 900;
-        padding: 0 50px 10px 51px;
     }
     .slider2 .swiper-pagination-bullet {
         width: 27px;

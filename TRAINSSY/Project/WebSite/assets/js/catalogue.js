@@ -249,13 +249,93 @@ $('.good-in-cart__quantity .quantity').bind("change keyup input click", function
 });
 
 
-//Jquery-скрипты для отображения выпадающих окон-фильтров
-$('.category_filters-size').on('click', function() {
-    $('.category_filters-size__dropdown').toggleClass('category_filters-size__dropdown-open');
-    $('.category_dropdown-filter_size').toggleClass('category_dropdown-filter_size-active'); // тут нужно вписать закрытие других окон
+// Фильтры размеров, цен и цветов (popup-окна и подсветка check-боксов)
+
+// popup-окна фильтров
+!function(e){"function"!=typeof e.matches&&(e.matches=e.msMatchesSelector||e.mozMatchesSelector||e.webkitMatchesSelector||function(e){for(var t=this,o=(t.document||t.ownerDocument).querySelectorAll(e),n=0;o[n]&&o[n]!==t;)++n;return Boolean(o[n])}),"function"!=typeof e.closest&&(e.closest=function(e){for(var t=this;t&&1===t.nodeType;){if(t.matches(e))return t;t=t.parentNode}return null})}(window.Element.prototype);
+
+document.addEventListener('DOMContentLoaded', function() {
+    const openFilters = document.querySelectorAll('.open_filter'),
+          overlay = document.querySelector('.overlay');
+
+    openFilters.forEach(function(item){
+        item.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const filterId = this.getAttribute('data-filter'),
+                  filterElem = document.querySelector('.category_filter_js[data-filter="' + filterId + '"]'),
+                  filterArrow = document.querySelector('.category_dropdown-arrow[data-filter="' + filterId + '"]');
+
+            filterElem.classList.add('active');
+            filterArrow.classList.add('active');
+            overlay.classList.add('active');
+        });
+    });
+    
+    document.body.addEventListener('keyup', function (e) {
+        const key = e.keyCode;
+        if (key == 27) {
+            document.querySelector('.category_filter_js.active').classList.remove('active');
+            document.querySelector('.category_dropdown-arrow.active').classList.remove('active');
+            document.querySelector('.overlay').classList.remove('active');
+        }
+    }, false);
+
+    overlay.addEventListener('click', function() {
+        document.querySelector('.category_filter_js.active').classList.remove('active');
+        document.querySelector('.category_dropdown-arrow.active').classList.remove('active');
+        this.classList.remove('active');
+    });
+
+    // подсветка check-боксов
+    const checkBox = document.querySelectorAll('.dropdown__checkbox');
+
+    checkBox.forEach(function(item){
+            item.addEventListener('click', function(e) {
+                const checkBoxId = this.getAttribute('data-checkbox'),
+                      checkBoxElem = document.querySelector('.dropdown__checkbox[data-checkbox="' + checkBoxId + '"]'),
+                      checkBoxIcon = document.querySelector('.check_mark-icon[data-checkbox="' + checkBoxId + '"]');
+
+                checkBoxElem.classList.toggle('active');
+                checkBoxIcon.classList.toggle('active');
+            });
+        });
 });
 
-$('.category_filter__btn').on('click', function() {
-    $('.category_filters-size__dropdown').toggleClass('category_filters-size__dropdown-open');
-    $('.category_dropdown-filter_size').toggleClass('category_dropdown-filter_size-active'); // тут нужно вписать закрытие других окон
-});
+
+// NoUiSlider - настройка ползунка фильтра "Цена" с диапазоном значений
+const filterValueSlider = document.getElementById('filter-dropdown__slider');
+
+if (filterValueSlider) {
+    noUiSlider.create(filterValueSlider, {
+        start: [1200, 30000],
+        connect: true,
+        step: 100,
+        range: {
+            'min': [1200],
+            'max': [30000]
+        }
+    });
+
+    const dropdownInput0 = document.getElementById('dropdownInput_0'),
+          dropdownInput1 = document.getElementById('dropdownInput_1'),
+          dropdownInputs = [dropdownInput0, dropdownInput1];
+
+    filterValueSlider.noUiSlider.on('update', function(values, handle) {
+        dropdownInputs[handle].value = Math.round(values[handle]);
+    });
+
+    const setFilterValueSlider = (i, value) => {
+        let arr = [null, null];
+        arr[i] = value;
+
+        filterValueSlider.noUiSlider.set(arr);
+    };
+
+    dropdownInputs.forEach((el, index) => {
+        el.addEventListener('change', (e) => {
+            setFilterValueSlider(index, e.currentTarget.value);
+        });
+    });
+
+}
