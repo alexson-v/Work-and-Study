@@ -328,7 +328,6 @@ input[type=number] {
     display: block;
     opacity: 1;
     transition: all 1s ease;
-    display: block;
     margin-bottom: 20px;
     cursor: pointer;
     padding: 31px 40px 31px 40px;
@@ -505,6 +504,7 @@ input[type=number] {
     height: 100vh;
     display: flex;
     background-color: #EFEFEF;
+    border-left: 2px solid #c4c4c4;
     transition: 0.5s;
     transform: translateX(+100%);
 }
