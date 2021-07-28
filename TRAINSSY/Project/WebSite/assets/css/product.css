@@ -1,0 +1,29 @@
+.ui-elements__product {
+    margin: 13px 0 20px 0;
+}
+
+.search-history.product-page {
+    margin: 0;
+}
+
+.ui-elements__wrapper {
+    margin: 25px 0 13px 0;
+    display: flex;
+}
+
+.search-popup_link__product-page {
+    margin: 4px 0 0 auto;
+}
+
+.ui-elements__product-code {
+    display: flex;
+}
+
+.ui-elements__product-code__text {
+    margin-right: 7px;
+}
+
+.main-block__product {
+    background: #fff;
+    border-radius: 6px;
+}

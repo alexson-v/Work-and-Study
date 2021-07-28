@@ -476,7 +476,8 @@ hr {
 /* 768px - 992px */
 @media screen and (max-width: 992px) {
     .navbar_catalogue__unactive,
-    .category__filters__small {
+    .category__filters__small,
+    .category_filters-title {
         display: none;
     }
     .category_filters-wrapper {
