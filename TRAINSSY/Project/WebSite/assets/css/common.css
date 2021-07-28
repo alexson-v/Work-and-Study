@@ -68,6 +68,19 @@ input[type=number] {
     margin-top: 3px;
 }
 
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 50;
+    position: fixed;
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+}
+
 .header-top {
     background-color: #373540;
     color: #fff;
@@ -145,9 +158,12 @@ input[type=number] {
     padding-top: 2px;
 }
 
-.navbar__wrapper__basket-icon,
-.navbar__account-icon {
+.navbar__wrapper__basket-icon {
     margin-top: 32px;
+}
+
+.navbar__account-icon {
+    margin-top: 33px;
 }
 
 .navbar__authorization-link {
@@ -163,7 +179,7 @@ input[type=number] {
     font-size: 8px;
     font-weight: 500;
     text-align: center;
-    padding-top: 4px;
+    padding-top: 3px;
 }
 
 .header_full_menu_wrapper {
@@ -367,10 +383,8 @@ input[type=number] {
 
 .card_main__cta {
     margin-left: auto;
-}
-
-.card_main__cta.special {
-    margin-left: auto;
+    width: 21px;
+    height: 19px;
 }
 
 .card_description_special {
@@ -381,6 +395,10 @@ input[type=number] {
     font-size: 11px;
     text-decoration: line-through;
     margin-left: 80px;
+}
+
+.card-cta_img.special {
+    margin-top: 16px;
 }
 
 .footer {
@@ -427,6 +445,10 @@ input[type=number] {
 .navbar li a:focus:after {
 	width: 100%;
     transform: scale(1);
+}
+
+.footer_nav .navbar li a:first-child {
+    padding-left: 0;
 }
 
 .footer_button_up {
@@ -496,7 +518,7 @@ input[type=number] {
 }
 
 .menu_mobile,
-.menu_mobile_category-men {
+.menu_mobile_category {
     position: fixed;
     right: 0;
     top: 0;
@@ -509,12 +531,12 @@ input[type=number] {
     transform: translateX(+100%);
 }
 
-.menu_mobile_category-men {
-    transition: 0.3s;
+.menu_mobile_category {
+    transition: 0.5s;
 }
 
-.menu_mobile_active,
-.menu_mobile_category-men_active {
+.menu_mobile.active,
+.menu_mobile_category.active {
     transform: translateX(0%);
 }
 
@@ -522,8 +544,12 @@ input[type=number] {
     padding: 5px;
 }
 
+.navbar_mobile_close-category_image {
+    margin-bottom: 2px;
+}
+
 .navbar_mobile,
-.navbar_mobile_category-men {
+.navbar_mobile_category {
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -532,13 +558,13 @@ input[type=number] {
 }
 
 .navbar_mobile li,
-.navbar_mobile_category-men li{
+.navbar_mobile_category li{
     border: .7px solid #C4C4C4;
     border-left: 0px;
     border-bottom: 0px;
     border-right: 0px;
     width: 320px;
-    padding: 24px 0 18px 16px;
+    padding: 24px 0 18px 20px;
     cursor: pointer;
 }
 
@@ -547,7 +573,7 @@ input[type=number] {
 }
 
 .navbar_mobile a,
-.navbar_mobile_category-men a{
+.navbar_mobile_category a{
     color: #000;
     text-decoration: none;
     font-weight: 400;
@@ -566,8 +592,12 @@ input[type=number] {
     position: relative;
 }
 
-.content_active {
+.content.active-left {
     transform: translateX(-30%);
+}
+
+.content.active-right {
+    transform: translateX(+30%);
 }
 
 .menu_mobile_icons {
