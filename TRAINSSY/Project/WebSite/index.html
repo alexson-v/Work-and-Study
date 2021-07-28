@@ -122,7 +122,7 @@
                             <nav class="side-menu">
                                 <ul class="side-menu__navbar d-flex">
                                     <li class="side-menu__navbar__wrapper d-flex">
-                                        <a href="#"><img class="navbar__wrapper__basket-icon" src="assets/img/common-icons_svg/basket-icon.svg" alt="Моя корзина"></a>
+                                        <a href="#popup_cart" class="popup-cart-link"><img class="navbar__wrapper__basket-icon" src="assets/img/common-icons_svg/basket-icon.svg" alt="Моя корзина"></a>
                                         <div class="wrapper__basket-counter">
                                             <div class="wrapper__basket-counter__ellipse">
                                                 <p class="basket-counter__ellipse__count-num" id="basketNum">4</p>
@@ -2447,6 +2447,192 @@
                 </div>
             </div>
         </footer>
+    </div>
+    <div id="popup_cart" class="popup_cart">
+        <div class="cart_popup__body">
+            <div class="cart_popup__content">
+                <div class="title_block d-flex">
+                    <img src="assets/img/common-icons_svg/basket-icon.svg" class="popup_cart-icon" alt="icon">
+                    <h3 class="popup_cart-title">Корзина</h3>
+                    <a href="#" class="popup_cart__close close-popup-cart"><img src="assets/img/common-icons_svg/close-hamburger-button.svg" class="search-popup__close-button" alt="Закрыть"></a>
+                </div>
+                <div class="added-goods__cart">
+                    <div class="goods-in-cart">
+                        <div class="goods-in-cart__content d-flex">
+                            <img src="assets/img/goods_img/card_37.jpg" class="good-in-cart__image" alt="Фотография товара">
+                            <div class="goods-in-cart__descr">
+                                <div class="goods-in-cart_first-wrapper d-flex">
+                                    <a href="#" class="good-in-cart__name">Adidas Nite jogger Blue 38,5 size (FV3591)</a>
+                                    <img class="good-in-cart__delete-icon" src="assets/img/common-icons_svg/bin-icon.svg" alt="Удалить">
+                                </div>
+                                <p class="good-in-cart__code">Код: 00347</p>
+                                <div class="good-in-cart_second-wrapper">
+                                    <div class="good-in-cart__value">3 100 грн</div>   
+                                    <div class="good-in-cart__second-wrapper__right-part">
+                                        <div class="good-in-cart__quantity">
+                                            <button class="bt_minus">
+                                                <img src="assets/img/quantity-minus-icon.svg" alt="-">
+                                            </button>
+                                            <input type="text" value="1" size="2" class="quantity" data-max-count="10">
+                                            <button class="bt_plus">
+                                                <img src="assets/img/quantity-plus-icon.svg" alt="+">
+                                            </button>
+                                        </div>
+                                        <div class="good-in-cart__sum-value">6 200 грн</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="good-in-cart__second-wrapper__right-part__mobile">
+                            <div class="good-in-cart__quantity">
+                                <button class="bt_minus">
+                                    <img src="assets/img/quantity-minus-icon.svg" alt="-">
+                                </button>
+                                <input type="text" value="1" size="2" class="quantity" data-max-count="10">
+                                <button class="bt_plus">
+                                    <img src="assets/img/quantity-plus-icon.svg" alt="+">
+                                </button>
+                            </div>
+                            <div class="good-in-cart__sum-value">6 200 грн</div>
+                        </div>
+                        <hr class="green-line">
+                    </div> 
+                </div>
+                <div class="added-goods__cart">
+                    <div class="goods-in-cart">
+                        <div class="goods-in-cart__content d-flex">
+                            <img src="assets/img/goods_img/card_24.jpg" class="good-in-cart__image" alt="Фотография товара">
+                            <div class="goods-in-cart__descr">
+                                <div class="goods-in-cart_first-wrapper d-flex">
+                                    <a href="#" class="good-in-cart__name">Jordan Legacy 1 Men's Pullover Hoodie Dark Obsidian S size (CZ1160-010)</a>
+                                    <img class="good-in-cart__delete-icon" src="assets/img/common-icons_svg/bin-icon.svg" alt="Удалить">
+                                </div>
+                                <p class="good-in-cart__code">Код: 00551</p>
+                                <div class="good-in-cart_second-wrapper">
+                                    <div class="good-in-cart__value">2 500 грн</div>   
+                                    <div class="good-in-cart__second-wrapper__right-part">
+                                        <div class="good-in-cart__quantity">
+                                            <button class="bt_minus">
+                                                <img src="assets/img/quantity-minus-icon.svg" alt="-">
+                                            </button>
+                                            <input type="text" value="1" size="2" class="quantity" data-max-count="10" />
+                                            <button class="bt_plus">
+                                                <img src="assets/img/quantity-plus-icon.svg" alt="+">
+                                            </button>
+                                        </div>
+                                        <div class="good-in-cart__sum-value">2 500 грн</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="good-in-cart__second-wrapper__right-part__mobile">
+                            <div class="good-in-cart__quantity">
+                                <button class="bt_minus">
+                                    <img src="assets/img/quantity-minus-icon.svg" alt="-">
+                                </button>
+                                <input type="text" value="1" size="2" class="quantity" data-max-count="10">
+                                <button class="bt_plus">
+                                    <img src="assets/img/quantity-plus-icon.svg" alt="+">
+                                </button>
+                            </div>
+                            <div class="good-in-cart__sum-value">2 500 грн</div>
+                        </div>
+                        <hr class="green-line">
+                    </div>
+                </div>
+                <div class="added-goods__cart">
+                    <div class="goods-in-cart">
+                        <div class="goods-in-cart__content d-flex">
+                            <img src="assets/img/goods_img/card_1.jpg" class="good-in-cart__image" alt="Фотография товара">
+                            <div class="goods-in-cart__descr">
+                                <div class="goods-in-cart_first-wrapper d-flex">
+                                    <a href="#" class="good-in-cart__name">Under Armour HOVR Phantom2 CG Reactor Dark Blue 43,5 size (3023391-501)</a>
+                                    <img class="good-in-cart__delete-icon" src="assets/img/common-icons_svg/bin-icon.svg" alt="Удалить">
+                                </div>
+                                <p class="good-in-cart__code">Код: 00353</p>
+                                <div class="good-in-cart_second-wrapper">
+                                    <div class="good-in-cart__value">4 100 грн</div>   
+                                    <div class="good-in-cart__second-wrapper__right-part">
+                                        <div class="good-in-cart__quantity">
+                                            <button class="bt_minus">
+                                                <img src="assets/img/quantity-minus-icon.svg" alt="-">
+                                            </button>
+                                            <input type="text" value="1" size="2" class="quantity" data-max-count="10" />
+                                            <button class="bt_plus">
+                                                <img src="assets/img/quantity-plus-icon.svg" alt="+">
+                                            </button>
+                                        </div>
+                                        <div class="good-in-cart__sum-value">4 100 грн</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="good-in-cart__second-wrapper__right-part__mobile">
+                            <div class="good-in-cart__quantity">
+                                <button class="bt_minus">
+                                    <img src="assets/img/quantity-minus-icon.svg" alt="-">
+                                </button>
+                                <input type="text" value="1" size="2" class="quantity" data-max-count="10">
+                                <button class="bt_plus">
+                                    <img src="assets/img/quantity-plus-icon.svg" alt="+">
+                                </button>
+                            </div>
+                            <div class="good-in-cart__sum-value">4 100 грн</div>
+                        </div>
+                        <hr class="green-line">
+                    </div>
+                </div>
+                <div class="added-goods__cart">
+                    <div class="goods-in-cart">
+                        <div class="goods-in-cart__content d-flex">
+                            <img src="assets/img/goods_img/card_38.jpg" class="good-in-cart__image" alt="Фотография товара">
+                            <div class="goods-in-cart__descr">
+                                <div class="goods-in-cart_first-wrapper d-flex">
+                                    <a href="#" class="good-in-cart__name">Мужские часы Michael Kors (МК8765)</a>
+                                    <img class="good-in-cart__delete-icon" src="assets/img/common-icons_svg/bin-icon.svg" alt="Удалить">
+                                </div>
+                                <p class="good-in-cart__code">Код: 00356</p>
+                                <div class="good-in-cart_second-wrapper">
+                                    <div class="good-in-cart__value">3 750 грн</div>   
+                                    <div class="good-in-cart__second-wrapper__right-part">
+                                        <div class="good-in-cart__quantity">
+                                            <button class="bt_minus">
+                                                <img src="assets/img/quantity-minus-icon.svg" alt="-">
+                                            </button>
+                                            <input type="text" value="1" size="2" class="quantity" data-max-count="10">
+                                            <button class="bt_plus">
+                                                <img src="assets/img/quantity-plus-icon.svg" alt="+">
+                                            </button>
+                                        </div>
+                                        <div class="good-in-cart__sum-value">11 250 грн</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="good-in-cart__second-wrapper__right-part__mobile">
+                            <div class="good-in-cart__quantity">
+                                <button class="bt_minus">
+                                    <img src="assets/img/quantity-minus-icon.svg" alt="-">
+                                </button>
+                                <input type="text" value="1" size="2" class="quantity" data-max-count="10">
+                                <button class="bt_plus">
+                                    <img src="assets/img/quantity-plus-icon.svg" alt="+">
+                                </button>
+                            </div>
+                            <div class="good-in-cart__sum-value">11 250 грн</div>
+                        </div>
+                        <hr class="green-line">
+                    </div>
+                </div>
+                <div class="summary_block">
+                    <div class="summary_block__title">
+                        <h3 class="summary_block__title-total">Итого:</h3>
+                        <div class="summary-block__title-sum">24 050 грн</div>
+                    </div>
+                    <button class="press-to-buy__link">Оформить заказ</button>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="assets/js/swiper.min.js"></script>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
