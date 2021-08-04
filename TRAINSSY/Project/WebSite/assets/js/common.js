@@ -97,13 +97,6 @@ document.addEventListener('DOMContentLoaded', function() {
       document.querySelector('.menu_mobile_category').classList.remove('active');
       this.classList.remove('active');
   });
-
-  overlay.addEventListener('click', function() {
-    document.querySelector('.menu_mobile').classList.remove('active');
-    document.querySelector('.content').classList.remove('active-left');
-    document.querySelector('.menu_mobile_category').classList.remove('active');
-    this.classList.remove('active');
-});
 });
 
 

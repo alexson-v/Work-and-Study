@@ -252,13 +252,13 @@
 }
 
 .slider2 .swiper-button-prev {
-    background-image: url('../img/button-back.svg');
+    background-image: url('../img/button-back_gray.svg');
     width: 53px;
     height: 53px;
 }
 
 .slider2 .swiper-button-next {
-    background-image: url('../img/button-forward.svg');
+    background-image: url('../img/button-forward_gray.svg');
     width: 53px;
     height: 53px;
 }
