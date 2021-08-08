@@ -208,27 +208,32 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
+                        <a href="#popup_search" class="popup-search-link popup-search-link__small">
+                            <div class="popup-search-link__content-wrapper d-flex">
+                                <p class="search-button__text">Искать товар</p>
+                                <img src="assets/img/common-icons_svg/push-to-search-btn_small.svg" class="search-button__smallimg">
+                            </div>
+                            <hr class="search-button__line">
+                        </a>
                         <div class="search-history product-page">
                             <a href="#">Главная</a>
                             <img src="assets/img/common-icons_svg/search-arrow.svg" class="search-arrow" alt=">">
                             <a href="#">Мужская обувь</a>
                             <img src="assets/img/common-icons_svg/search-arrow.svg" class="search-arrow" alt=">">
                             <a href="#">Adidas</a>
-                            <img src="assets/img/common-icons_svg/search-arrow.svg" class="search-arrow" alt=">">
-                            <a href="#">Adidas Nite Jogger</a>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="ui-elements__wrapper">
-                            <h4>Adidas Nite jogger (FV3591)</h4>
+                            <h4 class="ui-elements__product-name">Adidas Nite jogger (FV3591)</h4>
                             <a href="#popup_search" class="search-popup_link__product-page popup-search-link"><img src="assets/img/common-icons_svg/push-to-search-btn.svg" alt="Искать товар"></a>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xl-12">
+                    <div class="col-xl-12 ui-elements__undertitle-wrapper">
                         <div class="ui-elements__product-code">
                             <div class="ui-elements__product-code__text">
                                 Код: <span id="codeText">00347</span>
@@ -239,6 +244,17 @@
                                 Код скопирован
                             </div>
                         </div>
+                        <button class="ui-elements__share-icon">
+                            <img src="assets/img/common-icons_svg/share-icon.svg" alt="Поделиться">
+                        </button>
+                        <div class="ui-elements__share-popup">
+                            <img class="share-popup__icon" src="assets/img/share-icons_svg/facebook-small-share_icon.svg">
+                            <img class="share-popup__icon" src="assets/img/share-icons_svg/telegram-small-share_icon.svg">
+                            <img class="share-popup__icon" src="assets/img/share-icons_svg/viber-small-share_icon.svg">
+                            <img class="share-popup__icon" src="assets/img/share-icons_svg/whatsapp-small-share_icon.svg">
+                            <img class="share-popup__icon" src="assets/img/share-icons_svg/messenger-small-share_icon.svg">
+                            <img class="ui-elements__share-close_icon" src="assets/img/common-icons_svg/close-hamburger-button.svg" alt="X">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -246,14 +262,14 @@
         <section class="main-block">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-12">
+                    <div class="col-xl-12 col-lg-12">
                         <div class="main-block__product">
                             <div class="main-block__product__big-wrapper">
                                 <nav class="main-block__product-navbar">
                                     <ul id="productTabs">
                                         <li class="product-tab__trigger active" data-product-tab="1">Все о товаре</li>
                                         <li class="product-tab__trigger" data-product-tab="2">Описание</li>
-                                        <li class="product-tab__trigger" data-product-tab="3">Фото</li>
+                                        <li class="product-tab__trigger gallery" data-product-tab="3">Фото</li>
                                         <li class="product-tab__trigger" data-product-tab="4">Оставить отзыв</li>
                                     </ul>
                                 </nav>
@@ -262,35 +278,74 @@
                                     <div class="main-block__product-common__wrapper">
                                         <div class="main-block__product-common__gallery">
                                             <div class="product-common__gallery__pagination">
-                                                <img class="pagination-image active" data-product-image_trigger="1" src="assets/img/product-page_img/product-page_image_1.jpg" alt="Фото № 1">
+                                                <img class="pagination-image active" data-product-image_trigger="1" src="assets/img/product-page_img/product-page_image_1.png" alt="Фото № 1">
                                                 <img class="pagination-image" data-product-image_trigger="2" src="assets/img/product-page_img/product-page_image_2.jpg" alt="Фото № 2">
                                                 <img class="pagination-image" data-product-image_trigger="3" src="assets/img/product-page_img/product-page_image_3.jpg" alt="Фото № 3">
                                                 <img class="pagination-image" data-product-image_trigger="4" src="assets/img/product-page_img/product-page_image_4.jpg" alt="Фото № 4">
                                                 <img class="pagination-image" data-product-image_trigger="5" src="assets/img/product-page_img/product-page_image_5.jpg" alt="Фото № 5">
                                             </div>
                                             <div class="product-common__gallery__current-image">
-                                                <div id="img-container" class="current-image__wrapper">
-                                                    <img class="current-image active" data-product-image_current="1" src="assets/img/1.jpg" alt="Текущее фото">
-                                                </div>
+                                                <img class="current-image active" data-product-image_current="1" src="assets/img/product-page_img/product-page_image_1.png" alt="Текущее фото">
                                                 <img class="current-image" data-product-image_current="2" src="assets/img/product-page_img/product-page_image_2.jpg" alt="Текущее фото">
                                                 <img class="current-image" data-product-image_current="3" src="assets/img/product-page_img/product-page_image_3.jpg" alt="Текущее фото">
                                                 <img class="current-image" data-product-image_current="4" src="assets/img/product-page_img/product-page_image_4.jpg" alt="Текущее фото">
                                                 <img class="current-image" data-product-image_current="5" src="assets/img/product-page_img/product-page_image_5.jpg" alt="Текущее фото">
                                             </div>
+                                            <div class="option-color__bundle option-color__bundle__tablet">
+                                                <div class="option-color__wrapper active">
+                                                    <div class="option-color blue"></div>
+                                                </div>
+                                                <div class="option-color__wrapper">
+                                                    <div class="option-color violet"></div>
+                                                </div>
+                                                <div class="option-color__wrapper">
+                                                    <div class="option-color black"></div>
+                                                </div>
+                                            </div>
                                         </div>
+                                        <div class="swiper-container slider_product-common__mobile">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide" id="swiper-slide_1">
+                                                    <div class="image-slider__image">
+                                                        <img class="slider_sticky-card__img" src="assets/img/product-page_img/product-page_image_1.png" alt="Превью товара">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide" id="swiper-slide_2">
+                                                    <div class="image-slider__image">
+                                                        <img class="slider_sticky-card__img" src="assets/img/product-page_img/product-page_image_2.jpg" alt="Превью товара">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide" id="swiper-slide_3">
+                                                    <div class="image-slider__image">
+                                                        <img class="slider_sticky-card__img" src="assets/img/product-page_img/product-page_image_3.jpg" alt="Превью товара">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide" id="swiper-slide_4">
+                                                    <div class="image-slider__image">
+                                                        <img class="slider_sticky-card__img" src="assets/img/product-page_img/product-page_image_4.jpg" alt="Превью товара">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide" id="swiper-slide_5">
+                                                    <div class="image-slider__image">
+                                                        <img class="slider_sticky-card__img" src="assets/img/product-page_img/product-page_image_5.jpg" alt="Превью товара">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div> 
                                         <div class="main-block__product-common__selling-block">
                                             <div class="selling-block__options">
                                                 <div class="selling-block__option-colors">
                                                     <h6>Цвет</h6>
                                                     <div class="option-color__bundle">
-                                                        <div class="option-color__wrapper active" data-color="1">
-                                                            <div class="option-color blue" data-color="1"></div>
+                                                        <div class="option-color__wrapper active">
+                                                            <div class="option-color blue"></div>
                                                         </div>
-                                                        <div class="option-color__wrapper" data-color="2">
-                                                            <div class="option-color violet" data-color="2"></div>
+                                                        <div class="option-color__wrapper">
+                                                            <div class="option-color violet"></div>
                                                         </div>
-                                                        <div class="option-color__wrapper" data-color="3">
-                                                            <div class="option-color black" data-color="3"></div>
+                                                        <div class="option-color__wrapper">
+                                                            <div class="option-color black"></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -325,35 +380,39 @@
                                                     <a href="#popup_table" class="selling-block__sizetable-button popup-table-link">Таблица размеров</a>
                                                 </div>
                                             </div>
-                                            <div class="selling-block__event-icons">
-                                                <img class="selling-block__event-icon" src="assets/img/event-icons_svg/event-icon_1.svg">
-                                                <img class="selling-block__event-icon" src="assets/img/event-icons_svg/event-icon_2.svg">
-                                                <img class="selling-block__event-icon" src="assets/img/event-icons_svg/event-icon_3.svg">
-                                            </div>
-                                            <div class="selling-block__avaliability-status">
-                                                <div class="avaliability-status__avaliable">
-                                                    <img src="assets/img/product-avaliable_icon.svg">
-                                                    <div class="avaliability-status__avaliable-text">Товар в наличии</div>
+                                            <div class="selling-block__lower-items-wrapper">
+                                                <div class="selling-block__event-icons">
+                                                    <img class="selling-block__event-icon" src="assets/img/event-icons_svg/event-icon_1.svg">
+                                                    <img class="selling-block__event-icon" src="assets/img/event-icons_svg/event-icon_2.svg">
+                                                    <img class="selling-block__event-icon" src="assets/img/event-icons_svg/event-icon_3.svg">
                                                 </div>
-                                                <div class="avaliability-status__not-avaliable">
-                                                    <img src="assets/img/product-not-avaliable_icon.svg">
-                                                    <div class="avaliability-status__avaliable-text">Товар не в наличии</div>
-                                                </div>
-                                            </div>
-                                            <div class="selling-block__call-to-action">
-                                                <h3 class="selling-block__price">3 100 грн</h3>
-                                                <div class="call-to-action__buttons">
-                                                    <div class="btn selling-block__purchase-btn">Купить</div>
-                                                    <div class="selling-block__favorites-btn">
-                                                        <img class="add-to-favorites__btn" data-add-fav="1" src="assets/img/add-to-favorites_btn.svg">
-                                                        <img class="added-to-favorites__btn" data-add-fav="1" src="assets/img/added-to-favorites_btn.svg">
-                                                        <div class="add-to-favorites__text" data-add-fav="1">Добавить товар в избранное</div>
-                                                        <div class="added-to-favorites__text" data-add-fav="1">Товар уже в <span class="added-to-favorites__text-link">избранном</span>!</div>
+                                                <div class="selling-block__avaliability-status">
+                                                    <div class="avaliability-status__avaliable">
+                                                        <img src="assets/img/product-avaliable_icon.svg">
+                                                        <div class="avaliability-status__avaliable-text">Товар в наличии</div>
+                                                    </div>
+                                                    <div class="avaliability-status__not-avaliable">
+                                                        <img src="assets/img/product-not-avaliable_icon.svg">
+                                                        <div class="avaliability-status__avaliable-text">Товар не в наличии</div>
                                                     </div>
                                                 </div>
-                                                <div class="call-to-action__announcement">Возврат/обмен товара возможен в течение 14 дней после покупки.</div>
+                                                <div class="selling-block__call-to-action">
+                                                    <h6 class="selling-block__price-previous">4 000 грн</h6>
+                                                    <h3 class="selling-block__price-present">3 100 грн</h3>
+                                                    <div class="call-to-action__buttons">
+                                                        <div class="btn selling-block__purchase-btn">Купить</div>
+                                                        <div class="selling-block__favorites-btn">
+                                                            <img class="add-to-favorites__btn" data-add-fav="1" src="assets/img/add-to-favorites_btn.svg">
+                                                            <img class="added-to-favorites__btn" data-add-fav="1" src="assets/img/added-to-favorites_btn.svg">
+                                                            <div class="add-to-favorites__text" data-add-fav="1">Добавить товар в избранное</div>
+                                                            <div class="added-to-favorites__text" data-add-fav="1">Товар уже в <span class="added-to-favorites__text-link">избранном</span>!</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="call-to-action__announcement">Возврат/обмен товара возможен в течение 14 дней после покупки.</div>
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="call-to-action__announcement__tablet">Возврат/обмен товара возможен в течение 14 дней после покупки.</div>
                                     </div>
                                 </div>
                                 <div class="main-block__product-additional main-block__product-tab" data-product-content="2">
@@ -388,7 +447,7 @@
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide" id="swiper-slide_1">
                                                     <div class="image-slider__image">
-                                                        <img class="slider_gallery-big__img" src="assets/img/product-page_img/product-page_image_1.jpg" alt="Превью товара">
+                                                        <img class="slider_gallery-big__img" src="assets/img/product-page_img/product-page_image_1.png" alt="Превью товара">
                                                     </div>
                                                 </div>
                                                 <div class="swiper-slide" id="swiper-slide_2">
@@ -527,7 +586,7 @@
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide" id="swiper-slide_1">
                                                 <div class="image-slider__image">
-                                                    <img class="slider_sticky-card__img" src="assets/img/product-page_img/product-page_image_1.jpg" alt="Превью товара">
+                                                    <img class="slider_sticky-card__img" src="assets/img/product-page_img/product-page_image_1.png" alt="Превью товара">
                                                 </div>
                                             </div>
                                             <div class="swiper-slide" id="swiper-slide_2">
@@ -569,6 +628,7 @@
                                         </div>
                                     </div>
                                     <div class="selling-block__call-to-action sticky-card">
+                                        <h6 class="selling-block__price-previous">4 000 грн</h6>
                                         <h3 class="selling-block__price sticky-card">3 100 грн</h3>
                                         <div class="call-to-action__buttons sticky-card">
                                             <div class="btn selling-block__purchase-btn sticky-card">Купить</div>
@@ -596,8 +656,8 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xl-3">
-                        <div class="card_main">
+                    <div class="col-xl-3 col-lg-4 additional-goods__desktop">
+                        <div class="card_main additional-goods__desktop">
                             <div class="card_name">
                                 <h5 class="card_brandname" id="cardBrandName">Nike</h5>
                                 <h5 class="card_goodsname" id="cardGoodsName">Air Force 1 07</h5>
@@ -609,7 +669,7 @@
                                     <li>Материал:</li>
                                     <li>Код товара:</li>
                                 </ul>
-                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                <ul class="card_desctiption_value"> 
                                     <li id="cardGoodsColor">undefined</li> 
                                     <li id="cardGoodsMaterial">undefined</li>
                                     <li id="cardGoodsCode" class="card_main_code">СT2300-001</li>
@@ -621,8 +681,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3">
-                        <div class="card_main">
+                    <div class="col-xl-3 col-lg-4 additional-goods__desktop">
+                        <div class="card_main additional-goods__desktop">
                             <div class="card_name">
                                 <h5 class="card_brandname" id="cardBrandName">Nike</h5>
                                 <h5 class="card_goodsname" id="cardGoodsName">Vapormax plus</h5>
@@ -634,7 +694,7 @@
                                     <li>Материал:</li>
                                     <li>Код товара:</li>
                                 </ul>
-                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                <ul class="card_desctiption_value"> 
                                     <li id="cardGoodsColor">undefined</li> 
                                     <li id="cardGoodsMaterial">undefined</li>
                                     <li id="cardGoodsCode" class="card_main_code">924453-004</li>
@@ -646,8 +706,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3">
-                        <div class="card_main card_special_adaptive">
+                    <div class="col-xl-3 col-lg-4 additional-goods__desktop">
+                        <div class="card_main card_special_adaptive additional-goods__desktop">
                             <div class="card_name">
                                 <h5 class="card_brandname" id="cardBrandName">Nike</h5>
                                 <h5 class="card_goodsname" id="cardGoodsName">Jordan pro rx</h5>
@@ -659,7 +719,7 @@
                                     <li>Материал:</li>
                                     <li>Код товара:</li>
                                 </ul>
-                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                <ul class="card_desctiption_value"> 
                                     <li id="cardGoodsColor">undefined</li> 
                                     <li id="cardGoodsMaterial">undefined</li>
                                     <li id="cardGoodsCode" class="card_main_code">CQ6116-106</li>
@@ -674,8 +734,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3">
-                        <div class="card_main">
+                    <div class="col-xl-3 col-lg-4 card-product_additional additional-goods__desktop">
+                        <div class="card_main card-product_additional additional-goods__desktop">
                             <div class="card_name">
                                 <h5 class="card_brandname" id="cardBrandName">Under Armour</h5>
                                 <h5 class="card_goodsname" id="cardGoodsName">Curry 8 Golden</h5>
@@ -687,7 +747,7 @@
                                     <li>Материал:</li>
                                     <li>Код товара:</li>
                                 </ul>
-                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                <ul class="card_desctiption_value"> 
                                     <li id="cardGoodsColor">undefined</li> 
                                     <li id="cardGoodsMaterial">undefined</li>
                                     <li id="cardGoodsCode" class="card_main_code">3024456-102</li>
@@ -698,6 +758,116 @@
                                 <a href="#" class="card_main__cta"><div class="card_cta"><img src="assets/img/common-icons_svg/card-cta.svg" alt="-->"></div></a>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="additional-goods__slider">
+                    <div class="swiper-container slider-product_additionals">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card_main">
+                                    <div class="card_name">
+                                        <h5 class="card_brandname" id="cardBrandName">Nike</h5>
+                                        <h5 class="card_goodsname" id="cardGoodsName">Air Force 1 07</h5>
+                                    </div>
+                                    <img src="assets/img/goods_img/card_8.jpg" class="card_image" id="cardImage" alt="Photo">
+                                    <div class="card_description d-flex">
+                                        <ul class="card_description_attribute">
+                                            <li>Цвет:</li>
+                                            <li>Материал:</li>
+                                            <li>Код товара:</li>
+                                        </ul>
+                                        <ul class="card_desctiption_value"> 
+                                            <li id="cardGoodsColor">undefined</li> 
+                                            <li id="cardGoodsMaterial">undefined</li>
+                                            <li id="cardGoodsCode" class="card_main_code">СT2300-001</li>
+                                        </ul>
+                                    </div>
+                                    <div class="goods_wrapper_down d-flex">
+                                        <div class="card_goodsvalue"><h5><span id="cardGoodsValue">3 200</span> грн</h5></div>
+                                        <a href="#" class="card_main__cta"><div class="card_cta"><img src="assets/img/common-icons_svg/card-cta.svg" alt="-->"></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card_main">
+                                    <div class="card_name">
+                                        <h5 class="card_brandname" id="cardBrandName">Nike</h5>
+                                        <h5 class="card_goodsname" id="cardGoodsName">Vapormax plus</h5>
+                                    </div>
+                                    <img src="assets/img/goods_img/card_2.jpg" class="card_image" id="cardImage" alt="Photo">
+                                    <div class="card_description d-flex">
+                                        <ul class="card_description_attribute">
+                                            <li>Цвет:</li>
+                                            <li>Материал:</li>
+                                            <li>Код товара:</li>
+                                        </ul>
+                                        <ul class="card_desctiption_value"> 
+                                            <li id="cardGoodsColor">undefined</li> 
+                                            <li id="cardGoodsMaterial">undefined</li>
+                                            <li id="cardGoodsCode" class="card_main_code">924453-004</li>
+                                        </ul>
+                                    </div>
+                                    <div class="goods_wrapper_down d-flex">
+                                        <div class="card_goodsvalue"><h5><span id="cardGoodsValue">5 000</span> грн</h5></div>
+                                        <a href="#" class="card_main__cta"><div class="card_cta"><img src="assets/img/common-icons_svg/card-cta.svg" alt="-->"></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card_main">
+                                    <div class="card_name">
+                                        <h5 class="card_brandname" id="cardBrandName">Nike</h5>
+                                        <h5 class="card_goodsname" id="cardGoodsName">Jordan pro rx</h5>
+                                    </div>
+                                    <img src="assets/img/goods_img/card_9.jpg" class="card_image" id="cardImage" alt="Photo">
+                                    <div class="card_description card_description_special d-flex">
+                                        <ul class="card_description_attribute">
+                                            <li>Цвет:</li>
+                                            <li>Материал:</li>
+                                            <li>Код товара:</li>
+                                        </ul>
+                                        <ul class="card_desctiption_value"> 
+                                            <li id="cardGoodsColor">undefined</li> 
+                                            <li id="cardGoodsMaterial">undefined</li>
+                                            <li id="cardGoodsCode" class="card_main_code">CQ6116-106</li>
+                                        </ul>
+                                    </div>
+                                    <div class="goods_wrapper_down d-flex">
+                                        <div class="goods_special_value">
+                                            <div class="card_striked_goodsvalue"><span id="cardOldGoodsValue">4 000</span> грн</div>
+                                            <div class="card_goodsvalue"><h5><span id="cardSpecialGoodsValue">3 200</span> грн</h5></div>
+                                        </div>
+                                        <a href="#" class="card_main__cta special"><div class="card_cta"><img class="card-cta_img special" src="assets/img/common-icons_svg/card-cta.svg" alt="-->"></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card_main">
+                                    <div class="card_name">
+                                        <h5 class="card_brandname" id="cardBrandName">Under Armour</h5>
+                                        <h5 class="card_goodsname" id="cardGoodsName">Curry 8 Golden</h5>
+                                    </div>
+                                    <img src="assets/img/goods_img/card_3.jpg" class="card_image" id="cardImage" alt="Photo">
+                                    <div class="card_description d-flex">
+                                        <ul class="card_description_attribute">
+                                            <li>Цвет:</li>
+                                            <li>Материал:</li>
+                                            <li>Код товара:</li>
+                                        </ul>
+                                        <ul class="card_desctiption_value"> 
+                                            <li id="cardGoodsColor">undefined</li> 
+                                            <li id="cardGoodsMaterial">undefined</li>
+                                            <li id="cardGoodsCode" class="card_main_code">3024456-102</li>
+                                        </ul>
+                                    </div>
+                                    <div class="goods_wrapper_down d-flex">
+                                        <div class="card_goodsvalue"><h5><span id="cardGoodsValue">3 500</span> грн</h5></div>
+                                        <a href="#" class="card_main__cta"><div class="card_cta"><img src="assets/img/common-icons_svg/card-cta.svg" alt="-->"></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-scrollbar"></div>
                     </div>
                 </div>
             </div>
@@ -770,6 +940,14 @@
                 </div>
             </div>
         </footer>
+        <div id="cta_ui_mobile" class="cta_ui_mobile">
+            <button type="button" class="cta_ui_mobile-button">
+                <img src="assets/img/cta_ui_mobile_icon.svg">
+                <h5 class="cta_ui_mobile__title">Купить</h5>
+                <div class="price_present">3 100 грн</div>
+                </div>
+            </button>
+        </div>
     </div>
     <div id="popup_search" class="popup_search">
         <div class="search-popup__body">
@@ -813,7 +991,7 @@
                                     <li>Материал:</li>
                                     <li>Код товара:</li>
                                 </ul>
-                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                <ul class="card_desctiption_value"> 
                                     <li id="cardGoodsColor">undefined</li> 
                                     <li id="cardGoodsMaterial">undefined</li>
                                     <li id="cardGoodsCode" class="card_main_code">924453-004</li>
@@ -836,7 +1014,7 @@
                                     <li>Материал:</li>
                                     <li>Код товара:</li>
                                 </ul>
-                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                <ul class="card_desctiption_value"> 
                                     <li id="cardGoodsColor">undefined</li> 
                                     <li id="cardGoodsMaterial">undefined</li>
                                     <li id="cardGoodsCode" class="card_main_code">DH4095-001</li>
@@ -859,7 +1037,7 @@
                                     <li>Материал:</li>
                                     <li>Код товара:</li>
                                 </ul>
-                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                <ul class="card_desctiption_value"> 
                                     <li id="cardGoodsColor">undefined</li> 
                                     <li id="cardGoodsMaterial">undefined</li>
                                     <li id="cardGoodsCode" class="card_main_code">CN2873-101</li>
@@ -882,7 +1060,7 @@
                                     <li>Материал:</li>
                                     <li>Код товара:</li>
                                 </ul>
-                                <ul class="card_desctiption_value"> <!-- 11 letters maximum-->
+                                <ul class="card_desctiption_value"> 
                                     <li id="cardGoodsColor">undefined</li> 
                                     <li id="cardGoodsMaterial">undefined</li>
                                     <li id="cardGoodsCode" class="card_main_code">СT2300-001</li>
@@ -1360,7 +1538,6 @@
     <script src="assets/js/swiper.min.js"></script>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/SmoothScroll.min.js"></script>
-    <script src="assets/js/js-image-zoom.js"></script>
     <script src="assets/js/common.js"></script>
     <script src="assets/js/product.js"></script>
 </body>

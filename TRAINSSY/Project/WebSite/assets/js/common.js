@@ -29,7 +29,6 @@ $('#openFullMenuBtn').on('mouseover', function () {
 });
 
 // Открытие главного меню в мобильной версии
-
 document.addEventListener('DOMContentLoaded', function() {
   const openMobileMainMenu = document.querySelectorAll('.header-main__hamburger-menu'),
         closeMobileMainMenu = document.querySelector('.navbar_mobile_close'),

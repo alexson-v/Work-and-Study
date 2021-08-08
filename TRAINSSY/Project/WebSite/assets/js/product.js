@@ -14,7 +14,7 @@ for (let i = 0; i < productTabTriggers.length; i++) {
 
       if (activeTabAttr === contentAttr) {
         productTabTriggers[j].classList.add("active");
-        productTabContents[j].classList.add("active"); 
+        productTabContents[j].classList.add("active");
       } else {
         productTabTriggers[j].classList.remove("active");
         productTabContents[j].classList.remove("active");
@@ -63,20 +63,6 @@ for (var i = 0; i < productImageTriggers.length; i++) {
   });
 }
 
-// Выбор цвета в категории "Все о товаре"
-const colorTab = document.querySelectorAll('.option-color');
-const colorContainer = document.querySelector('.option-color__bundle');
-colorTab.forEach(function(item){
-    item.addEventListener('click', function(e) {
-        const colorId = this.getAttribute('data-color'),
-                colorElem = document.querySelector('.option-color__wrapper[data-color="' + colorId + '"]');
-        for (let i = 0; i < colorContainer.children.length;i++){
-            colorContainer.children[i].classList.remove('active');
-        }
-        colorElem.classList.add('active');
-    });
-});
-
 // Выбор размера в категории "Все о товаре"
 const sizeTab = document.querySelectorAll('.option-size');
 const sizeContainer = document.querySelector('.option-size__bundle');
@@ -124,17 +110,6 @@ removeFromFavorites.forEach(function(item){
         addedFavText.classList.remove('added');
     });
 });
-
-// Увеличение картинки товара справа
-const options = {
-  width: 470,
-  zoomWidth: 470,
-  scale: 1.050,
-  offset: {vertical: 0, horizontal: 25},
-};
-
-new ImageZoom(document.getElementById("img-container"), options);
-
 
 // Скрипт для попапа c таблицей размеров
 document.addEventListener('DOMContentLoaded', function() {
@@ -292,5 +267,120 @@ let swiperBigGallery = new Swiper('.slider_gallery-big', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
     clickable: true,
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 1.5,
+      spaceBetween: 10,
+    },
+    1200: {
+      slidesPerView: 1.850,
+      spaceBetween: 40,
+    }
   }
 });
+
+// Свайпер в секции "Вам может понравиться" (320px - 992px)
+let swiperAdditionals = new Swiper('.slider-product_additionals', {
+  simulateTouch: true,
+  touchAngle: 45,
+  draggable: true,
+  slidesPerView: 2.5,
+  loop: true,
+  spaceBetween: 150,
+  freeMode: true,
+  observer: true,
+  observeParents: true,
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+    dragSize: 200,
+  },
+  breakpoints: {
+    280: {
+      slidesPerView: 1,
+      freeMode: false,
+    },
+    320: {
+      slidesPerView: 1.4,
+      freeMode: false,
+      spaceBetween: 100,
+    },
+    375: {
+      slidesPerView: 1.6,
+      freeMode: true,
+      spaceBetween: 100,
+    },
+    425: {
+      slidesPerView: 2,
+      freeMode: true,
+      spaceBetween: 150,
+    },
+    576: {
+      slidesPerView: 2.1,
+      freeMode: true,
+      spaceBetween: 150,
+    },
+    768: {
+      slidesPerView: 2.8,
+      freeMode: true,
+      spaceBetween: 150,
+    },
+  }
+});
+
+// Свайпер в дополнительном блоке справа в табах "Описание" и "Оставить отзыв"
+let swiperCommonMobile = new Swiper('.slider_product-common__mobile', {
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true
+  },
+  simulateTouch: true,
+  touchAngle: 45,
+  slidesPerView: 1,
+  spaceBetween: 17.5,
+  draggable: true,
+  observer: true,
+  observeParents: true,
+  loop: true,
+});
+
+// popup-окно "Поделиться"
+document.addEventListener('DOMContentLoaded', function() {
+  const openShare = document.querySelector('.ui-elements__share-icon'),
+        modalShare = document.querySelector('.ui-elements__share-popup'),
+        closeShare = document.querySelector('.ui-elements__share-close_icon'),
+        overlay = document.querySelector('.overlay'),
+        thisUrl = window.document.location.href,
+        thisTitle = document.title;
+
+
+  openShare.addEventListener('click', event => {
+    if (navigator.share) {
+      navigator.share({
+        title: thisTitle,
+        url: thisUrl
+      }).then(() => {
+        alert('Thanks for sharing!');
+      })
+      .catch(console.error);
+    } else {
+      modalShare.classList.add('active');
+      overlay.classList.add('active');
+    }
+  });
+
+  closeShare.addEventListener('click', function() {
+      document.querySelector('.ui-elements__share-popup.active').classList.remove('active');
+      overlay.classList.remove('active');
+  });
+
+  overlay.addEventListener('click', function() {
+      document.querySelector('.ui-elements__share-popup.active').classList.remove('active');
+      this.classList.remove('active');
+  });
+  
+});
+
+

@@ -1077,7 +1077,6 @@ button::-moz-focus-inner {
         justify-content: end;
     }
 }
-
 /* 992px - 1200px */
 @media screen and (max-width: 1200px) {
     .timberland_good__preview,
@@ -1106,9 +1105,13 @@ button::-moz-focus-inner {
     }
     .nav__main .navbar {
         margin-top: -4.75px;
+        padding-left: 0;
     }
     .side-menu {
         margin-top: -7px;
+    }
+    .side-menu__navbar {
+        float: right;
     }
     .header_full_menu_wrapper {
         height: 240px;
@@ -1165,7 +1168,6 @@ button::-moz-focus-inner {
         margin-bottom: 35px;
     }
 }
-
 /* 768px - 992px */
 @media screen and (max-width: 992px) {
     .header-top__phone,
@@ -1199,6 +1201,9 @@ button::-moz-focus-inner {
     }
     .side-menu {
         margin-top: -3px;
+    }
+    .side-menu__navbar {
+        float: none;
     }
     .card_main {
         box-shadow: none;
@@ -1266,7 +1271,6 @@ button::-moz-focus-inner {
         margin-right: 67px;
     }
 }
-
 /* 576px - 768px */
 @media screen and (max-width: 768px) {
     .inst_icon_mobile,
@@ -1309,7 +1313,6 @@ button::-moz-focus-inner {
         margin-right: 67px;
     }
 }
-
 /* 551px - 576px */
 @media screen and (max-width: 576px) {
     .navbar__authorization-link,
@@ -1410,14 +1413,12 @@ button::-moz-focus-inner {
         background-color: #EFEFEF;
     }
 }
-
 /* 425px - 551px */
 @media screen and (max-width: 551px) {
     .header-top__pickup__info {
         font-size: 11px;
     }
 }
-
 /* 375px - 425px */
 @media screen and (max-width: 425px) {
     .search-history a{
@@ -1462,7 +1463,6 @@ button::-moz-focus-inner {
         width: 100%;
     }
 }
-
 /* 320px - 375px */
 @media screen and (max-width: 375px) {
     .search-history {
@@ -1509,7 +1509,6 @@ button::-moz-focus-inner {
         font-size: 15px;
     }
 }
-
 /* 0px - 320px */
 @media screen and (max-width: 320px) {
     .card_main.card_finded {
