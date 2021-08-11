@@ -393,4 +393,5 @@ const swiperCommonMobile = new Swiper('.slider_product-common__mobile', {
     observer: true,
     observeParents: true,
     loop: true,
+    speed: 500
 });

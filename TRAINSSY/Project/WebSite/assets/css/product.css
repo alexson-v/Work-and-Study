@@ -540,6 +540,7 @@ hr {
     width: 15vw;
     height: 0.75vw;
     border-radius: 0;
+    transition: 0.5s;
 }
 
 .slider_product-common__mobile .swiper-pagination-bullet-active {
@@ -967,6 +968,7 @@ hr {
 .cta_ui_mobile__title {
     margin-left: 14px;
     font-weight: 800;
+    font-size: 17px;
 }
 
 .cta_ui_mobile__price {
