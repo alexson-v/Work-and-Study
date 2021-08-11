@@ -352,7 +352,7 @@ hr {
 }
 
 .dropdown-checkbox__group-mobile .dropdown-checkbox__wrapper,
-.dropdown-checkbox__family.mobile .dropdown-checkbox__group .dropdown-checkbox__wrapper {
+.dropdown-checkbox__family.mobile .dropdown-checkbox__wrapper {
     margin-bottom: 12px;
 }
 
@@ -361,7 +361,7 @@ hr {
 }
 
 .filter-dropdown__input-division.mobile {
-    margin-right: 26px;
+    margin-right: 20px;
 }
 
 .filter-dropdown__input-division.mobile:last-child {
@@ -382,7 +382,11 @@ hr {
 
 .dropdown-checkbox__family.mobile {
     display: flex;
-    height: 280px;
+    height: 259px;
+}
+
+.dropdown-checkbox__family.mobile.colors {
+    height: 100%;
 }
 
 .filter-mobile-dropdown {

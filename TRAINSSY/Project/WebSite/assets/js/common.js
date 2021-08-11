@@ -1,6 +1,6 @@
 // Спрятать страницу до полной загрузки 
 $(window).on('load', function() {
-    $('.loader').fadeOut().end().delay(400).fadeOut('slow');
+    $('.loader').fadeOut().delay(400).fadeOut('slow');
 });
 
 // Выпадающее окно полного меню (десктопная версия)
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
             popupLinkSearch.addEventListener('click', function (e) {
                 const popupNameSearch = popupLinkSearch.getAttribute('href').replace('#', '');
                 const currentPopupSearch = document.getElementById(popupNameSearch);
-                popupOpen(currentPopupSearch);
+                popupSearchOpen(currentPopupSearch);
             });
         }
     }
@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
-    function popupOpen(currentPopupSearch) {
+    function popupSearchOpen(currentPopupSearch) {
         if (currentPopupSearch && unlockSearch) {
             const popupActiveSearch = document.querySelector('.popup_search.open');
             if (popupActiveSearch) {
@@ -241,7 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
             popupLinkCart.addEventListener('click', function (e) {
                 const popupNameCart = popupLinkCart.getAttribute('href').replace('#', '');
                 const currentPopupCart = document.getElementById(popupNameCart);
-                popupOpen(currentPopupCart);
+                popupCartOpen(currentPopupCart);
             });
         }
     }
@@ -254,7 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
-    function popupOpen(currentPopupCart) {
+    function popupCartOpen(currentPopupCart) {
         if (currentPopupCart && unlockCart) {
             const popupActiveCart = document.querySelector('.popup_cart.open');
             if (popupActiveCart) {

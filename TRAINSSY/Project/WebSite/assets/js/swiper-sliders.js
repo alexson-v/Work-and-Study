@@ -1,6 +1,3 @@
-
-
-
 // Главная страница -> (320px - 768px) -> Cлайдер-меню в секции "Новые поступления"
 
 const swiperArrivalsMenu = new Swiper('.slider_arrivals-menu', {
