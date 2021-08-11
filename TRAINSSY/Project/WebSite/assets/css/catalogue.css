@@ -16,6 +16,10 @@ hr {
     position: relative;
 }
 
+.navbar_catalogue {
+    padding-bottom: 90px;
+}
+
 .navbar_catalogue li {
     margin-bottom: 14px;
 }
@@ -102,6 +106,10 @@ hr {
     transition: .3s opacity, .3s visibility;
 }
 
+.category_filters-color__dropdown.color {
+    width: 380px;
+}
+
 .category_filter_js.active {
     opacity: 1;
     visibility: visible;
@@ -109,13 +117,20 @@ hr {
 
 .dropdown-checkbox__family {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 280px;
 }
 
-.dropdown-checkbox__group {
-    margin-right: 35px;
+.dropdown-checkbox__family.desktop {
+    height: 280px;
 }
 
-.dropdown-checkbox__group-mobile {
+.dropdown-checkbox__family.desktop .dropdown-checkbox__wrapper {
+    margin-right: 32.5px;
+}
+
+.dropdown-checkbox__family.mobile .dropdown-checkbox__wrapper {
     margin-right: 25px;
 }
 
@@ -257,7 +272,12 @@ hr {
 
 .category_showcase {
     padding-bottom: 90px;
+    display: flex;
     flex-flow: row wrap;
+}
+
+.category_showcase.none {
+    display: none;
 }
 
 .card_category {
@@ -270,7 +290,6 @@ hr {
     position: relative;
     z-index: 100;
     background-color: #EFEFEF;
-
 }
 
 .filters_popup_body {
@@ -362,7 +381,8 @@ hr {
 }
 
 .dropdown-checkbox__family.mobile {
-    display: block;
+    display: flex;
+    height: 280px;
 }
 
 .filter-mobile-dropdown {
@@ -438,6 +458,24 @@ hr {
     margin-left: 1.5px;
 }
 
+.category_no-products {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 90px;
+}
+
+.category_no-products.active {
+    display: flex;
+}
+
+.category_no-products__alert {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 7.5px;
+    width: 450px;
+}
+
 /* 1200px - 18000px */
 @media screen and (max-width: 18000px) {
     .category__filters__small,
@@ -471,6 +509,9 @@ hr {
         margin-bottom: 14px;
         margin-right: 14px;
     }
+    .category_no-products__alert {
+        width: 360px;
+    }
 }
 
 /* 768px - 992px */
@@ -488,6 +529,9 @@ hr {
         padding: 31px 70px 31px 70px;
         margin-bottom: 15px;
         margin-right: 15px;
+    }
+    .category_no-products__alert {
+        width: 100%;
     }
 }
 
@@ -526,10 +570,24 @@ hr {
     .category__filters__small {
         margin-top: 12px;
     }
+    .category_no-products {
+        text-align: center;
+    }
+    .category_no-products.active {
+        display: block;
+    }
+    .category_no-products__alert {
+        width: 100%;
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
 }
 
 /* 425px - 576px */
 @media screen and (max-width: 576px) {
+    .category_showcase {
+        display: block;
+    }
     .category_goods-value {
         margin: 8px 0 8px 0;
     }
