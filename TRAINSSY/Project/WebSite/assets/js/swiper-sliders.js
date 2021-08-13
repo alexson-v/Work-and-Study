@@ -91,9 +91,6 @@ const swiperNewsLg = new Swiper('.slider_news-lg', {
     spaceBetween: 100,
     touchAngle: 45,
     slidesPerView: 1.4,
-    autoplay: {
-        delay: 10000,
-    },
     loop: true,
     draggable: true,
     breakpoints: {

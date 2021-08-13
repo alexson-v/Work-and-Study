@@ -709,10 +709,9 @@ button::-moz-focus-inner {
     background-image: url("../img/common-icons_svg/check_mark-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
-    align-content: center;
     background-color: #02810E;
-    width: 23.4px;
-    height: 23.4px;
+    width: 23px;
+    height: 23px;
     border-radius: 100%;
     position: absolute;
     display: block;
@@ -1125,6 +1124,8 @@ button::-moz-focus-inner {
     margin-left: auto;
     margin-right: 12px;
 }
+
+
 
 /* 1200px - 18000px */
 @media screen and (max-width: 18000px) {

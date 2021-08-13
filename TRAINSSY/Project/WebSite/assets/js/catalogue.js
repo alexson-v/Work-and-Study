@@ -26,20 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.category_dropdown-arrow.active').classList.remove('active');
         this.classList.remove('active');
     });
-
-    // подсветка check-боксов
-    const checkBox = document.querySelectorAll('.dropdown__checkbox');
-
-    checkBox.forEach(function(item){
-        item.addEventListener('click', function(e) {
-            const checkBoxId = this.getAttribute('data-checkbox'),
-                  checkBoxElem = document.querySelector('.dropdown__checkbox[data-checkbox="' + checkBoxId + '"]'),
-                  checkBoxIcon = document.querySelector('.check_mark-icon[data-checkbox="' + checkBoxId + '"]');
-
-            checkBoxElem.classList.toggle('active');
-            checkBoxIcon.classList.toggle('active');
-        });
-    });
 });
 
 

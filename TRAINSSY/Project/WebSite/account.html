@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/common.css">
-    <link rel="stylesheet" href="assets/css/authorization.css">
+    <link rel="stylesheet" href="assets/css/account.css">
     <title>TRAINSSY | Магазин брендовой обуви</title>
 </head>
 <body>
@@ -203,66 +203,21 @@
             <div class="horizontal_line"></div>
             </div>
         </section>
-        <section class="ui-elements__authorization">
+        <section class="ui-elements__account">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="search-history">
                             <a href="#">Главная</a>
                             <img src="assets/img/common-icons_svg/search-arrow.svg" class="search-arrow" alt=">">
-                            <a href="#">Авторизация</a>
+                            <a href="#">Регистрация нового аккаунта</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="main_bundle-block">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="bundle-block__wrapper">
-                            <div class="bundle-block__authorization">
-                                <div class="bundle-block__authorization-content">
-                                    <h3 class="bundle-block__title">Авторизация</h3>
-                                    <form class="authorization-form" action="#">
-                                        <input type="email" class="authorization-form__input" placeholder="Ваш E-mail" required>
-                                        <input type="password" class="authorization-form__input" placeholder="Пароль" required>
-                                        <button class="btn authorization__btn" onClick='location.href="account.html"'>Войти в учётную запись</button>
-                                        <div class="authorization-form__remember">
-                                            <label class="checkbox-label">
-                                                <input class="checkbox real" type="checkbox">
-                                                <span class="checkbox fake"></span>
-                                                <span class="checkbox-text">Запомнить меня</span>
-                                            </label>
-                                            <a class="authorization-recovery popup_password-recovery-link" href="#popup_password-recovery">Забыли пароль?</a>
-                                        </div>
-                                    </form>
-                                    <h5 class="bundle-block__or">или</h5>
-                                    <div class="bundle-block__google-button">
-                                        <img class="google-button__logo" src="assets/img/google-logo.svg" alt="Google">
-                                        <p class="google-button__title">Войти через аккаунт Google</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bundle-block__registration">
-                                <div class="bundle-block__registration-content">
-                                    <h3 class="bundle-block__title">Зарегистрировать аккаунт</h3>
-                                    <div class="registration-benefits">
-                                        <p class="registration-benefits__subtitle">Что вы получаете после регистрации?</p>
-                                        <ul class="registration-benefits__features-list">
-                                            <li>Возможность добавлять товары в избранные.</li>
-                                            <li>Осуществление заказа в пару кликов после одноразового заполнения данных в вашем профиле.</li>
-                                            <li>Возможность отслеживать статус обработки заказов.</li>
-                                        </ul>
-                                    </div>
-                                    <a class="btn registration__btn" href="registration.html">Перейти к регистрации</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
+
         <footer class="footer" id="footer">
             <div class="container">
                 <div class="row">
@@ -524,25 +479,9 @@
             </div>
         </div>
     </div>
-    <div id="popup_password-recovery" class="popup_password-recovery">
-        <div class="password-recovery_popup__body">
-            <div class="password-recovery_popup__content">
-                <div class="recovery-header">
-                    <img class="recovery-header__image" src="assets/img/common-icons_svg/key_green-icon.svg" alt="Ключ">
-                    <h3 class="recovery-header__title">Восстановить пароль</h3>
-                    <img class="recovery-header__close-popup" src="assets/img/common-icons_svg/close-hamburger-button.svg" alt="X">
-                </div>
-                <p class="recovery-info">Введите привязанный к аккаунту адрес электронной почты. Мы отправим на него инструкции по восстановлению пароля.</p>
-                <form class="recovery-form" action="#">
-                    <input type="email" class="authorization-form__input recovery-form__input" placeholder="Ваш E-mail" required>
-                    <button class="btn recovery-form__button">Отправить</button>
-                </form>
-            </div>
-        </div>
-    </div>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/SmoothScroll.min.js"></script>
     <script src="assets/js/common.js"></script>
-    <script src="assets/js/authorization.js"></script>
+    <script src="assets/js/account.js"></script>
 </body>
 </html>
