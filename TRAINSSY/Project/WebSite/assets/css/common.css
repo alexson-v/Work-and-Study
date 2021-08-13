@@ -60,6 +60,12 @@ ul, li {
     margin: 0;
 }
 
+input:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: inset 0 0 0 2px #02810E;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -678,42 +684,50 @@ button::-moz-focus-inner {
     float: right;
 }
 
-.dropdown-checkbox__wrapper {
-    margin-bottom: 10px;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
+.checkbox-label {
+    margin-bottom: 15px;
     display: flex;
+    font-size: 14px;
 }
 
-.dropdown__checkbox {
-    width: 25px;
-    height: 25px;
-    border: 1px solid #02810E;
-    border-radius: 20px;
-    margin-right: 12.5px;
-    cursor: pointer;
-    color: #fff;
-}
-
-.dropdown__checkbox.active {
-    background-color: #02810E;
-}
-
-.check_mark-icon {
-    margin: 6.25px 0px 0px 4.75px;
+.checkbox.real {
     display: none;
 }
 
-.check_mark-icon.active {
-    display: block;
+.checkbox.fake {
+    display: inline-block;
+    min-width: 25px;
+    max-width: 25px;
+    height: 25px;
+    border: 1px solid #02810E;
+    border-radius: 50%;
+    position: relative;
 }
 
-.checkbox__text {
-    font-size: 16px;
-    font-weight: 400;
-    padding-top: 0.75px;
+.checkbox.fake::before {
+    content: "";
+    background-image: url("../img/common-icons_svg/check_mark-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    align-content: center;
+    background-color: #02810E;
+    width: 23.4px;
+    height: 23.4px;
+    border-radius: 100%;
+    position: absolute;
+    display: block;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.checkbox.real:checked + .checkbox.fake::before {
+    opacity: 1;
+}
+
+.checkbox-text {
+    width: 100%;
+    margin-top: 2.5px;
+    margin-left: 10px;
 }
 
 .popup_search {

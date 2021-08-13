@@ -965,6 +965,11 @@ hr {
     color: #fff;
 }
 
+.cta_ui_mobile-button:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
 .cta_ui_mobile__title {
     margin-left: 14px;
     font-weight: 800;

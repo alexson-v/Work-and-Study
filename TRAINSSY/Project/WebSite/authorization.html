@@ -229,12 +229,11 @@
                                         <input type="password" class="authorization-form__input" placeholder="Пароль" required>
                                         <button class="btn authorization__btn">Войти в учётную запись</button>
                                         <div class="authorization-form__remember">
-                                            <div class="dropdown-checkbox__wrapper">
-                                                <div class="dropdown__checkbox">
-                                                    <img class="check_mark-icon" src="assets/img/common-icons_svg/check_mark-icon.svg" alt="+">
-                                                </div>
-                                                <div class="checkbox__text">Запомнить меня</div>
-                                            </div>
+                                            <label class="checkbox-label">
+                                                <input class="checkbox real" type="checkbox">
+                                                <span class="checkbox fake"></span>
+                                                <span class="checkbox-text">Запомнить меня</span>
+                                            </label>
                                             <a class="authorization-recovery popup_password-recovery-link" href="#popup_password-recovery">Забыли пароль?</a>
                                         </div>
                                     </form>
@@ -256,7 +255,7 @@
                                             <li>Возможность отслеживать статус обработки заказов.</li>
                                         </ul>
                                     </div>
-                                    <a class="btn registration__btn" href="#">Перейти к регистрации</a>
+                                    <a class="btn registration__btn" href="registration.html">Перейти к регистрации</a>
                                 </div>
                             </div>
                         </div>

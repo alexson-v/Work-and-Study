@@ -50,25 +50,16 @@
     display: flex;
 }
 
-.authorization-form__remember .dropdown__checkbox {
-    margin-right: 10px;
-}
-
-.authorization-form__remember .check_mark-icon {
-    margin-left: 5px;
-}
-
-.authorization-form__remember .checkbox__text {
-    font-size: 14px;
+.authorization-form__remember .checkbox-label {
     font-weight: 500;
-    margin-top: 1px;
+    width: 158px;
 }
 
 .authorization-recovery {
     font-size: 14px;
     font-weight: 500;
     color: #000;
-    margin: 2px 0 0 auto;
+    margin: 3px 0 0 auto;
 }
 
 .authorization-recovery:hover {
@@ -298,18 +289,19 @@
         margin-bottom: 16px;
     }
     .authorization__btn {
-        margin-top: 0;
+        margin: 0 0 17px 0;
     }
     .authorization-form__remember {
+        width: 100%;
         display: block;
         text-align: center;
     }
-    .dropdown-checkbox__wrapper {
-        justify-content: center;
+    .authorization-form__remember .checkbox-label{
+        margin: 0 auto;
         margin-bottom: 16px;
     }
-    .authorization-form__remember .checkbox__text {
-        margin-top: 2.10px;
+    .authorization-form__remember .checkbox-text {
+        margin-top: 2.99px;
     }
     .authorization-recovery {
         margin-left: 0;

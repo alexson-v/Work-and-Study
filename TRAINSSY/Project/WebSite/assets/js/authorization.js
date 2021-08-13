@@ -1,13 +1,3 @@
-// подсветка check-box "Запомнить меня"
-const checkBox = document.querySelector('.dropdown__checkbox'),
-      checkBoxIcon = document.querySelector('.check_mark-icon');
-
-checkBox.addEventListener('click', function(e) {
-    checkBox.classList.toggle('active');
-    checkBoxIcon.classList.toggle('active');
-});
-
-
 // Скрипт для попапа "Восстановление пароля"
 const popupRecoveryLinks = document.querySelectorAll('.popup_password-recovery-link');
 const bodyOfRecovery = document.querySelector('body');
