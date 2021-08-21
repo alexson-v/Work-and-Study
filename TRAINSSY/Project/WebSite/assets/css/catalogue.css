@@ -445,6 +445,7 @@ hr {
     width: 100%;
     padding: 0 10px 0 10px;
     transition: all .3s ease;
+    box-shadow: 0 7px 8px -4px rgb(0 0 0 / 5%), 0 12px 17px 2px rgb(0 0 0 / 5%), 0 5px 22px 4px rgb(0 0 0 / 5%);
 }
 
 .navbar_ui_mobile.out {

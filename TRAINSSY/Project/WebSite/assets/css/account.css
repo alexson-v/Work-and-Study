@@ -390,6 +390,32 @@ hr {
     margin-left: 30px;
 }
 
+.main-block__account-orders .account-orders__added,
+.main-block__account-orders .account-orders__empty {
+    display: none;
+}
+
+.main-block__account-orders .account-orders__added.active,
+.main-block__account-orders .account-orders__empty.active {
+    display: block;
+}
+
+.main-block__account-orders .account-orders__empty {
+    padding: 60px 45px 60px 45px;
+    text-align: center;
+}
+
+.main-block__account-orders .account-orders__empty-text {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.main-block__account-orders .account-orders__empty .btn {
+    height: 45px;
+    padding: 10px;
+}
+
 .main-block__account-adresses .text-notification {
     font-size: 14px;
     padding: 30px 45px 0 45px;
@@ -438,6 +464,16 @@ hr {
     font-size: 14px;
     font-weight: 700;
     padding: 0;
+}
+
+.main-block__account-testimonials .account-testimonials__added,
+.main-block__account-testimonials .account-testimonials__empty {
+    display: none;
+}
+
+.main-block__account-testimonials .account-testimonials__added.active,
+.main-block__account-testimonials .account-testimonials__empty.active {
+    display: block;
 }
 
 .main-block__account-testimonials .testimonial {
@@ -545,6 +581,21 @@ hr {
 
 .main-block__account-testimonials .testimonial_dropdown-text.active {
     display: block;
+}
+
+.main-block__account-testimonials .account-testimonials__empty {
+    padding: 60px 45px 60px 45px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.main-block__account-testimonials .account-testimonials__empty__first {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.main-block__account-testimonials .account-testimonials__empty__second {
+    font-weight: 500;
 }
 
 .main-block__account-edit .account-initials,
@@ -1048,6 +1099,18 @@ hr {
     .main-block__account-edit .account-password,
     .main-block__account-edit .account-confirmation {
         padding: 30px 20px 30px 20px;
+    }
+    .account-favorites__none,
+    .main-block__account-orders .account-orders__empty,
+    .main-block__account-testimonials .account-testimonials__empty {
+        padding: 30px 20px 30px 20px;
+        font-size: 14px;
+    }
+    .main-block__account-orders .account-orders__empty .btn {
+        width: 100%;
+        height: 40px;
+        padding: 7.5px;
+        font-size: 15px;
     }
 }
 /* 320px - 365px */

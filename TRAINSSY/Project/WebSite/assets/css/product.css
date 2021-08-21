@@ -951,10 +951,10 @@ hr {
     position: fixed;
     z-index: 5;
     width: 100%;
-    padding: 9px 15px 9px 15px;
+    padding: 10px 15px 20px 15px;
     text-align: center;
     transition: all .3s ease;
-    box-shadow: 15px 0px 50px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 7px 8px -4px rgb(0 0 0 / 10%), 0 12px 17px 2px rgb(0 0 0 / 10%), 0 5px 22px 4px rgb(0 0 0 / 10%);
 }
 
 .cta_ui_mobile-button {

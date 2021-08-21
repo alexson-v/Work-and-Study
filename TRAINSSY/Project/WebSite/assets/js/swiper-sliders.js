@@ -27,7 +27,7 @@ const swiperArrivalsMenu = new Swiper('.slider_arrivals-menu', {
         slidesPerView: 2.6,
       },
       576: {
-        slidesPerView: 1.2,
+        slidesPerView: 2.8,
       },
     }
 });
@@ -92,6 +92,7 @@ const swiperNewsLg = new Swiper('.slider_news-lg', {
     touchAngle: 45,
     slidesPerView: 1.4,
     loop: true,
+    freeMode: true,
     draggable: true,
     breakpoints: {
         768: {

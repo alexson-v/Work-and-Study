@@ -427,19 +427,19 @@
     padding-top: 50px;
 }
 
-/* 1200px - 18000px */
-@media screen and (max-width: 18000px) {
-    .small_news_wrapper,
-    .arrivals_slider_mobile,
-    .arrivals_menu_slider,
-    .slider_news-sm,
-    .special_offers_slider {
-        display: none;
-    }
-    .big_news_wrapper {
-        display: block;
-    }
+.small_news_wrapper,
+.arrivals_slider_mobile,
+.arrivals_menu_slider,
+.slider_news-sm,
+.special_offers_slider {
+    display: none;
 }
+
+.big_news_wrapper {
+    display: block;
+}
+
+
 /* 992px - 1200px */
 @media screen and (max-width: 1200px) {
     .big_news_wrapper,
@@ -526,8 +526,8 @@
 }
 /* 576px - 768px */
 @media screen and (max-width: 768px) {
-    .arrivals_nav_col,
     .special_offers_slider,
+    .arrivals_nav_col,
     .form_right_side,
     .swiper-button-next,
     .swiper-button-prev,
@@ -541,11 +541,14 @@
     .slider-offer-text {
         height: 10%;
     }
+    .arrivals_menu_slider {
+        margin-top: 40px;
+    }
     .slider_arrivals-menu {
         border: 1px solid #C4C4C4;
         border-left: none;
         border-right: none;
-        margin-top: 1px;
+        margin-top: -1.5px;
         padding: 7.5px;
     }
     .arrivals-tab-trigger {
@@ -564,9 +567,6 @@
     }
     .arrivals_slider_mobile {
         padding-top: 50px;
-    }
-    .slider_arrivals-menu {
-        margin-top: -1.5px;
     }
     .form_input,
     .form_btn {
@@ -593,9 +593,6 @@
     .slider_news-sm,
     .special_offers_slider {
         display: block;
-    }
-    .arrivals_menu_slider {
-        margin-top: 40px;
     }
     .special_offers_line {
         justify-content: center;
