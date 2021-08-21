@@ -2,7 +2,6 @@
 
 // Фильтры размеров, цен и цветов (popup-окна и подсветка check-боксов)
 
-// popup-окна фильтров
 document.addEventListener('DOMContentLoaded', function() {
     const openFilters = document.querySelectorAll('.open_filter'),
           overlay = document.querySelector('.overlay');
@@ -167,17 +166,24 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// Появление мобильного нижнего меню после прокрутки вниз
-let navbarUi = $('.navbar_ui_mobile'),
-		scrollPrev = 0;
 
-$(window).scroll(function() {
-	let scrolled = $(window).scrollTop();
- 
-	if ( scrolled < 400 ) {
-		navbarUi.addClass('out');
-	} else {
-		navbarUi.removeClass('out');
-	}
-	scrollPrev = scrolled;
+$(document).ready(function() {
+
+    // Появление мобильного нижнего меню после прокрутки вниз
+    let navbarUi = $('.navbar_ui_mobile'),
+    scrollPrev = 0;
+
+    $(window).scroll(function() {
+    let scrolled = $(window).scrollTop();
+
+    if ( scrolled < 400 ) {
+        navbarUi.addClass('out');
+        } else {
+        navbarUi.removeClass('out');
+        }
+        scrollPrev = scrolled;
+    });
+
 });
+
+

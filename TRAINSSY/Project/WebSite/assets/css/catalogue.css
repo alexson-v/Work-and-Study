@@ -504,12 +504,9 @@ hr {
     width: 450px;
 }
 
-/* 1200px - 18000px */
-@media screen and (max-width: 18000px) {
-    .category__filters__small,
-    .navbar_ui_mobile {
-        display: none;
-    }
+.category__filters__small,
+.navbar_ui_mobile {
+    display: none;
 }
 
 /* 992px - 1200px */

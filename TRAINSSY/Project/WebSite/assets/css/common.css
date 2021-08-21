@@ -542,6 +542,10 @@ button::-moz-focus-inner {
     display: flex;
 }
 
+.footer_banking_options {
+    justify-content: end;
+}
+
 .menu_mobile_wrapper {
     position: relative;
     overflow-x: hidden;
@@ -572,8 +576,6 @@ button::-moz-focus-inner {
 .menu_mobile_category.active {
     transform: translateX(0%);
 }
-
-
 
 .navbar_mobile,
 .navbar_mobile_category {
@@ -688,6 +690,7 @@ button::-moz-focus-inner {
     margin-bottom: 15px;
     display: flex;
     font-size: 14px;
+    cursor: pointer;
 }
 
 .checkbox.real {
@@ -1125,30 +1128,55 @@ button::-moz-focus-inner {
     margin-right: 12px;
 }
 
-
-
-/* 1200px - 18000px */
-@media screen and (max-width: 18000px) {
-    .menu_mobile_wrapper,
-    .footer_pickup_mobile,
-    .footer_schedule_mobile,
-    .header-main__phonenumber,
-    .header-main__phonenumber-md,
-    .header-main__hamburger-menu,
-    .hamburger-menu,
-    .anchor_for_md,
-    .phonenumber_footer_for_md,
-    .inst_icon_mobile,
-    .footer_button_up_mobile,
-    .popup-search-link__small,
-    .good-in-cart__second-wrapper__right-part__mobile,
-    .popup_search__close_mobile {
-        display: none;
-    }
-    .footer_banking_options {
-        justify-content: end;
-    }
+.contacts-block {
+    background: #fff;
+    border-radius: 6px;
+    padding: 30px 40px 15px 40px;
+    margin-bottom: 90px;
+    width: 100%;
 }
+
+.contacts-block__title {
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.contacts-block__elements-wrapper {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.contacts-block .contacts-block__icon {
+    width: 27px;
+    height: 27px;
+    margin-right: 25px;
+}
+
+.contacts-block .contacts-block__text {
+    font-size: 17px;
+    font-weight: 400;
+    color: #000;
+    text-decoration: none;
+    margin-top: 0.5px;
+}
+
+.menu_mobile_wrapper,
+.footer_pickup_mobile,
+.footer_schedule_mobile,
+.header-main__phonenumber,
+.header-main__phonenumber-md,
+.header-main__hamburger-menu,
+.hamburger-menu,
+.anchor_for_md,
+.phonenumber_footer_for_md,
+.inst_icon_mobile,
+.footer_button_up_mobile,
+.popup-search-link__small,
+.good-in-cart__second-wrapper__right-part__mobile,
+.popup_search__close_mobile {
+    display: none;
+}
+
 /* 992px - 1200px */
 @media screen and (max-width: 1200px) {
     .timberland_good__preview,
@@ -1238,6 +1266,9 @@ button::-moz-focus-inner {
     }
     .search-popup__result-more {
         margin-bottom: 35px;
+    }
+    .contacts-block {
+        padding: 30px 25px 15px 25px;
     }
 }
 /* 768px - 992px */
@@ -1342,6 +1373,16 @@ button::-moz-focus-inner {
     .good-in-cart__name {
         margin-right: 67px;
     }
+    .contacts-block {
+        text-align: center;
+    }
+    .contacts-block__contacts {
+        display: flex;
+        justify-content: center;
+    }
+    .contacts-block .contacts-block__elements-wrapper:nth-child(2n) {
+        margin-left: 70px;
+    }
 }
 /* 576px - 768px */
 @media screen and (max-width: 768px) {
@@ -1383,6 +1424,18 @@ button::-moz-focus-inner {
     }
     .good-in-cart__name {
         margin-right: 67px;
+    }
+    .contacts-block {
+        
+    }
+    .contacts-block__contacts {
+        display: block;
+    }
+    .contacts-block .contacts-block__elements-wrapper {
+        justify-content: center;
+    }
+    .contacts-block .contacts-block__elements-wrapper:nth-child(2n) {
+        margin-left: 7.5px;
     }
 }
 /* 551px - 576px */
@@ -1543,6 +1596,10 @@ button::-moz-focus-inner {
     }
     .press-to-buy__link {
         width: 100%;
+    }
+    .contacts-block__title {
+        font-size: 24px;
+        font-weight: 600;
     }
 }
 /* 320px - 375px */

@@ -3,47 +3,47 @@ $(window).on('load', function() {
     $('.loader').fadeOut().delay(400).fadeOut('slow');
 });
 
-// Выпадающее окно полного меню (десктопная версия)
-$('#openFullMenuBtn').on('mouseover', function () {
-    $("#openFullMenu").slideDown(400);
-});
-$('.horizontal_line').on('mouseover', function(e) {
-    if (!$('#openFullMenuBtn').is(e.target) && !$('#openFullMenu').is(e.target)) {
-    $("#openFullMenu").slideUp(400);
-    }
-});
-
-// jQuery-скрипт для инпута с кол-вом товара в попапе "Корзина"
-$('.good-in-cart__quantity .bt_minus').click(function() {
-    let $input = $(this).parent().find('.quantity');
-    let count = parseInt($input.val()) - 1;
-    count = count < 1 ? 1 : count;
-    $input.val(count);
-});
-
-// Прибавляем кол-во по клику
-$('.good-in-cart__quantity .bt_plus').click(function() {
-    let $input = $(this).parent().find('.quantity');
-    let count = parseInt($input.val()) + 1;
-    count = count > parseInt($input.data('max-count')) ? parseInt($input.data('max-count')) : count;
-    $input.val(parseInt(count));
-}); 
-
-// Убираем все лишнее и невозможное при изменении поля
-$('.good-in-cart__quantity .quantity').bind("change keyup input click", function() {
-    if (this.value.match(/[^0-9]/g)) {
-        this.value = this.value.replace(/[^0-9]/g, '');
-    }
-    if (this.value == "") {
-        this.value = 1;
-    }
-    if (this.value > parseInt($(this).data('max-count'))) {
-        this.value = parseInt($(this).data('max-count'));
-    }    
-});
-
-// Плавная прокрутка вверх по нажатию на кнопки-якорь
 jQuery(document).ready(function() {
+
+    
+    // Выпадающее окно полного меню (десктопная версия)
+    $('#openFullMenuBtn').on('mouseover', function () {
+        $("#openFullMenu").slideDown(400);
+    });
+    $('.horizontal_line').on('mouseover', function(e) {
+        if (!$('#openFullMenuBtn').is(e.target) && !$('#openFullMenu').is(e.target)) {
+        $("#openFullMenu").slideUp(400);
+        }
+    });
+
+    // jQuery-скрипт для инпута с кол-вом товара в попапе "Корзина"
+    $('.good-in-cart__quantity .bt_minus').click(function() {
+        let $input = $(this).parent().find('.quantity');
+        let count = parseInt($input.val()) - 1;
+        count = count < 1 ? 1 : count;
+        $input.val(count);
+    });
+    // Прибавляем кол-во по клику
+    $('.good-in-cart__quantity .bt_plus').click(function() {
+        let $input = $(this).parent().find('.quantity');
+        let count = parseInt($input.val()) + 1;
+        count = count > parseInt($input.data('max-count')) ? parseInt($input.data('max-count')) : count;
+        $input.val(parseInt(count));
+    }); 
+    // Убираем все лишнее и невозможное при изменении поля
+    $('.good-in-cart__quantity .quantity').bind("change keyup input click", function() {
+        if (this.value.match(/[^0-9]/g)) {
+            this.value = this.value.replace(/[^0-9]/g, '');
+        }
+        if (this.value == "") {
+            this.value = 1;
+        }
+        if (this.value > parseInt($(this).data('max-count'))) {
+            this.value = parseInt($(this).data('max-count'));
+        }    
+    });
+
+    // Плавная прокрутка вверх по нажатию на кнопки-якорь
     let btn = $('.btn_up');  
     $(window).scroll(function() {     
         if ($(window).scrollTop() > 300) {
@@ -55,7 +55,11 @@ jQuery(document).ready(function() {
     btn.on('click', function(e) {
         $('html, body').animate({scrollTop:0}, '300');
     });
+
+
 });
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
 
