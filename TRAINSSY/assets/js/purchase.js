@@ -4,7 +4,7 @@ jQuery(document).ready(function() {
     $("#phonePurchase").mask("+38 (999) 999-99-99");
 
     // Маска на инпут номера телефона другого получателя
-    $("#phoneMaskAnotherRecipient").mask("+38 (999) 999-99-99");
+    $("#phonePurchaseSecond").mask("+38 (999) 999-99-99");
 
 
     
@@ -24,35 +24,35 @@ function _(x) {
 }
 
 function processFormTask1() {
-    fnamePurchase = _("fullnamePurchase").value;
-    phonePurchase = _("phonePurchase").value;
-    emailPurchase = _("emailPurchase").value;
-    if(fnamePurchase.length > 3 && phonePurchase.length > 5 && emailPurchase.length > 5) {
+    // fnamePurchase = _("fullnamePurchase").value;
+    // phonePurchase = _("phonePurchase").value;
+    // emailPurchase = _("emailPurchase").value;
+    // if(fnamePurchase.length > 3 && phonePurchase.length > 5 && emailPurchase.length > 5) {
         _("formTask1").style.display = "none";
         _("formTask2").style.display = "block";
         _("progressLevel2").classList.add('active');
         _("progressLine2").classList.add('active');
-    } else {
-        alert("Нужно заполнить!");
-    }
+    // } else {
+    //     alert("Нужно заполнить!");
+    // }
 }
 
 function processFormTask2() {
-    fnamePurchaseSecond = _("fnamePurchaseSecond").value;
-    phonePurchaseSecond = _("phonePurchaseSecond").value;
-    cityPurchase = _("cityPurchase").value;
-    novaPochtaPurchase = _("novaPochtaPurchase").value;
-    ukrPochtaPurchase = _("ukrPochtaPurchase").value;
-    pickupPurchase = _("pickupPurchase").checked;
-    if(cityPurchase.length > 3 && (novaPochtaPurchase.length > 3 || ukrPochtaPurchase.length > 3 || pickupPurchase.checked)) {
+    // fnamePurchaseSecond = _("fnamePurchaseSecond").value;
+    // phonePurchaseSecond = _("phonePurchaseSecond").value;
+    // cityPurchase = _("cityPurchase").value;
+    // novaPochtaPurchase = _("novaPochtaPurchase").value;
+    // ukrPochtaPurchase = _("ukrPochtaPurchase").value;
+    // pickupPurchase = _("pickupPurchase").checked;
+    // if(cityPurchase.length > 3 && (novaPochtaPurchase.length > 3 || ukrPochtaPurchase.length > 3 || pickupPurchase.checked)) {
         _("formTask2").style.display = "none";
         _("formTask3").style.display = "block";
         _("progressLevel3").classList.add('active');
         _("progressLine3").classList.add('active');
         _("progressArrow3").classList.add('active');
-    } else {
-        alert("Нужно заполнить!");
-    }
+    // } else {
+    //     alert("Нужно заполнить!");
+    // }
 }
 
 function processFormTask3() {
@@ -60,6 +60,8 @@ function processFormTask3() {
 
     mainBtn.classList.add('active');
     mainBtn.disabled = false; 
+
+    $('html, body').animate({scrollTop:1000}, '300');
 }
 
 function processFormTask4() {
@@ -76,7 +78,6 @@ function processFormTask4() {
     _("progressLevel4").classList.add('active');
     _("cartSmallNoProducts").classList.add('active');
 
-    $('html, body').animate({scrollTop:0}, '0');
 }
 
 

@@ -1087,22 +1087,22 @@ button::-moz-focus-inner {
     font-weight: 900;
 }
 
-.press-to-buy__link {
+.cart_popup__content .summary_block .btn {
     color: #fff;
     font-size: 17px;
     font-weight: 800;
-    width: 297px;
+    width: 100%;
     height: 50px;
     background-color: #02810E;
     border: none;
     border-radius: 4px;
-    padding-top: 2px;
+    padding-top: 12.5px;
     text-decoration: none;
     cursor: pointer;
     transition: all 1s ease 0s;
 }
 
-.press-to-buy__link:hover {
+.cart_popup__content .summary_block .btn:hover {
     background: #00A810;
     filter: drop-shadow(0px 7px 35px rgba(2, 129, 14, 0.35));
 }
