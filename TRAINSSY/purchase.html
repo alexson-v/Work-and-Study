@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/preloader.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/purchase.css">
+    <title>TRAINSSY | Магазин брендовой обуви</title>
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+        </div>
+    </div>
+    <div class="menu_mobile_wrapper">
+        <nav class="menu_mobile" data-mobile_menu="1">
+            <ul class="navbar_mobile">
+                <li class="navbar_mobile_close"><img src="assets/img/common-icons_svg/close-hamburger-button.svg" alt="X"></li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#">Новинки<img src="assets/img/common-icons_svg/new-goods-icon.svg" class="menu_mobile_icons" alt="NEW"></a></li>
+                <li><a href="#">Распродажа<img src="assets/img/common-icons_svg/sale-goods-icon.svg" class="menu_mobile_icons" alt="SALE"></a></li>
+                <li><a class="navbar_mobile_open_category" data-mobile_menu-category="1">Мужская обувь<img src="assets/img/common-icons_svg/menu-mobile-arrow.svg" class="menu_mobile_arrow_m" alt=">"></a></li>
+                <li><a class="navbar_mobile_open_category" data-mobile_menu-category="2">Женская обувь<img src="assets/img/common-icons_svg/menu-mobile-arrow.svg" class="menu_mobile_arrow_w" alt=">"></a></li>
+                <li><a class="navbar_mobile_open_category" data-mobile_menu-category="3">Одежда<img src="assets/img/common-icons_svg/menu-mobile-arrow.svg" class="menu_mobile_arrow_c" alt=">"></a></li>
+                <li><a class="navbar_mobile_open_category" data-mobile_menu-category="4">Аксессуары<img src="assets/img/common-icons_svg/menu-mobile-arrow.svg" class="menu_mobile_arrow_a" alt=">"></a></li>
+                <li><a href="#popup_cart" class="popup-cart-link">Моя корзина</a></li>
+                <li class="menu_mobile_rubicon"><a href="authorization.html">Мой аккаунт</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Помощь</a></li>
+            </ul>
+        </nav>
+        <nav class="menu_mobile_category" data-mobile_menu-category="1">
+            <ul class="navbar_mobile_category">
+                <li class="navbar_mobile_close-category" data-mobile_menu-category="1"><img class="navbar_mobile_close-category_image" src="assets/img/common-icons_svg/back-icon.svg" alt="<"><span class="navbar_mobile_category-title">Мужская обувь</span></li>
+                <li><a href="catalogue.html">Смотреть всё</a></li>
+                <li><a href="#">Adidas</a></li>
+                <li><a href="#">Converse</a></li>
+                <li><a href="#">Dr. Martens</a></li>
+                <li><a href="#">Eastland</a></li>
+                <li><a href="#">New Balance</a></li>
+                <li><a href="#">Nike</a></li>
+                <li><a href="#">Nike Jordan</a></li>
+                <li><a href="#">Reebok</a></li>
+                <li><a href="#">The North Face</a></li>
+                <li><a href="#">Timberland</a></li>
+                <li><a href="#">Under Armour</a></li>
+                <li><a href="#">Vans</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="overlay"></div>
+    <div class="content">
+        <header class="header" id="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="header-top__pickup d-flex">
+                                <div class="header-top__pickup__info"><span class="header-top__pickup__title">Самовывоз:</span>г. Киев в пн/ср/пт 12:00 - 15:00, сб/вс по договорённости</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 offset-xl-1 col-lg-2 offset-lg-1">
+                            <div class="header-top__phone">
+                                <a href="tel:+380636082639">+38 (063) 608-26-39</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="header-top__delivery__info">
+                                Доставка по всей Украине!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5 col-10">
+                            <div class="header-main__logo">
+                                <a href="index.html"><img class="header-main__logo__img" src="assets/img/common-icons_svg/logo-black.svg" alt="TRAINSSY"></a>
+                                <div class="header-main__logo__caption">Магазин брендовой обуви</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-8 nav__main-md">
+                            <nav class="nav__main">
+                                <ul class="navbar">
+                                    <li><a href="index.html">Главная</a></li>
+                                    <li><a href="#">Новинки</a></li>
+                                    <li><a href="catalogue.html">Мужская обувь</a></li>
+                                    <li><a href="#">Женская обувь</a></li>
+                                    <li class="nav__main__fullopen" id="openFullMenuBtn"><img src="assets/img/common-icons_svg/dropdown-menu-black.svg" alt="..."></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-md-4 col-sm-5 col-12 header-main__phonenumber-md">
+                            <div class="header-main__phonenumber">
+                                <a href="tel:+380636082639" class="header-main__phone">+38 (063) 608-26-39</a>
+                                <div class="header-main__phone-caption">Доставка по всей Украине!</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-2 offset-md-0 col-sm-2 offset-sm-1 col-3 offset-1 side-menu_col">
+                            <nav class="side-menu">
+                                <ul class="side-menu__navbar d-flex">
+                                    <li class="side-menu__navbar__wrapper d-flex">
+                                        <a href="#popup_cart" class="popup-cart-link"><img class="navbar__wrapper__basket-icon" src="assets/img/common-icons_svg/basket-icon.svg" alt="Моя корзина"></a>
+                                        <div class="wrapper__basket-counter">
+                                            <div class="wrapper__basket-counter__ellipse">
+                                                <p class="basket-counter__ellipse__count-num">4</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <a href="authorization.html"><img class="navbar__account-icon" src="assets/img/common-icons_svg/account-icon.svg" alt="Личный аккаунт"></a>
+                                        <div class="navbar__authorization-link">
+                                            <p class="navbar__authorization-link__caption" id="isAuthor">Авторизация</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-md-1 offset-md-1 col-sm-2 offset-sm-2 col-2 offset-0 hamburger-menu">
+                            <div class="header-main__hamburger-menu" data-mobile_menu="1">
+                                <img src="assets/img/common-icons_svg/hamburger-menu.svg" alt="Открыть меню">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="full-menu">
+            <div class="header_full_menu_wrapper" id="openFullMenu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="header_full_menu">
+                                <div class="header_nav_full">
+                                    <ul class="header_full_navbar">
+                                        <li><a href="#" class="option_bold">Смотреть всё</a></li>
+                                        <li><a href="#" class="option_green">Новинки</a><img class="menu_icons" src="assets/img/common-icons_svg/new-goods-icon.svg" alt="SALE"></li>
+                                        <li><a href="#" class="option_green">Распродажа</a><img class="menu_icons" src="assets/img/common-icons_svg/sale-goods-icon.svg" alt="SALE"></li>
+                                        <li><a href="catalogue.html">Мужская обувь</a></li>
+                                        <li><a href="#">Женская обувь</a></li>
+                                        <li><a href="#">Одежда</a></li>
+                                        <li><a href="#">Аксессуары</a></li>
+                                        <li><a href="#">Помощь</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 d-flex align-items-right">
+                            <div class="goods_preview d-flex">
+                                <div class="good_preview">
+                                    <a href="#">
+                                    <h5 class="under_armour_preview_title">Under Armour</h5>
+                                    <p class="good_preview_cta">Посмотреть</p>
+                                    <img src="assets/img/under-armour-preview.jpg" alt="Фотография">
+                                    </a>
+                                </div>
+                                <div class="good_preview">
+                                    <a href="#">
+                                    <h5 class="jordan_preview_title">Air Jordan</h5>
+                                    <p class="good_preview_cta">Посмотреть</p>
+                                    <img src="assets/img/jordan-preview.jpg" alt="Фотография">
+                                    </a>
+                                </div>
+                                <div class="good_preview">
+                                    <a href="#">
+                                    <h5 class="nike_preview_title">Nike</h5>
+                                    <p class="good_preview_cta">Посмотреть</p>
+                                    <img src="assets/img/nike-preview.jpg" alt="Фотография">
+                                    </a>
+                                </div>
+                                <div class="good_preview timberland_good__preview">
+                                    <a href="#">
+                                    <h5 class="timberland_preview_title">Timberland</h5>
+                                    <p class="timberland_preview_cta">Посмотреть</p>
+                                    <img src="assets/img/timberland-preview.jpg" alt="Фотография">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="horizontal_line"></div>
+            </div>
+        </section>
+        <section class="main-block__purchase">
+            <form id="purchaseFormMain" onsubmit="return false">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <h2 class="purchase-title">Оформление заказа</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-7 col-lg-7">
+                            <div class="gradual-form">
+                                <div class="gradual-form__progressbar">
+                                    <div class="progress-level active">1</div>
+                                    <hr class="progressbar-line active">
+                                    <div class="progress-level" id="progressLevel2">2</div>
+                                    <hr class="progressbar-line" id="progressLine2">
+                                    <div class="progress-level" id="progressLevel3">3</div>
+                                    <div class="line-wrapper">
+                                        <hr class="progressbar-line" id="progressLine3">
+                                        <i class="progressbar-arrow" id="progressArrow3"></i>
+                                    </div>
+                                    <div class="progress-level finish" id="progressLevel4"></div>
+                                </div>
+                                <div class="gradual-form__tasks">
+                                    <div class="gradual-form__task active" id="formTask1">
+                                        <div class="heading">
+                                            <div class="progress-level active">1</div>
+                                            <h3 class="title">Ваши контактные данные</h3>
+                                        </div>
+                                        <div class="form__task-1">
+                                            <input type="text" name="fullnamePurchase" id="fullnamePurchase" class="input-task-1" value="Коркач Константин" placeholder="Ваше ФИО" required>
+                                            <input type="tel" name="phonePurchase" id="phonePurchase" class="input-task-1" value="+38 063 386 6004" placeholder="Номер телефона" required>
+                                            <input type="email" name="emailPurchase" id="emailPurchase" class="input-task-1" value="jackkorkach@gmail.com" placeholder="E-mail" required>
+                                            <button onclick="processFormTask1()" class="btn">Дальше</button>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                    <div class="gradual-form__task" id="formTask2">
+                                        <div class="heading">
+                                            <div class="progress-level active">2</div>
+                                            <h3 class="title">Доставка</h3>
+                                        </div>
+                                        <div class="form__task-2">
+                                            <div class="region-body">
+                                                <h6 class="field-title">Ваш город</h6>
+                                                <input type="text" name="cityPurchase" id="cityPurchase" class="input-task-2" value="" placeholder="Выберите город" list="inputDeliveryCity">
+                                                <datalist id="inputDeliveryCity">
+                                                    <option>Авдеевка</option>
+                                                    <option>Алмазная</option>
+                                                    <option>Алчевск</option>
+                                                    <option>Амвросиевка</option>
+                                                    <option>Ананьев (Одесская область)</option>
+                                                    <option>Ананьев (Житомирская область)</option>
+                                                    <option>Арциз</option>
+                                                    <option>Балаклея</option>
+                                                    <option>Балта</option>
+                                                    <option>Бар</option>
+                                                    <option>Барановка</option>
+                                                    <option>Барвенково</option>
+                                                    <option>Батурин</option>
+                                                    <option>Бахмач</option>
+                                                    <option>Баштанка</option>
+                                                    <option>Белз</option>
+                                                    <option>Бердичев</option>
+                                                    <option>Бердянск</option>
+                                                    <option>Береговое</option>
+                                                    <option>Бережаны</option>
+                                                </datalist>
+                                                <ul>
+                                                    <li>Киев</li>
+                                                    <li>Одесса</li>
+                                                    <li>Львов</li>
+                                                    <li>Харьков</li>
+                                                    <li>Днепр</li>
+                                                </ul>
+                                            </div>
+                                            <div class="recipient-body">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox real" type="checkbox" checked>
+                                                    <span class="checkbox fake"></span>
+                                                    <span class="checkbox-text">Я получатель</span>
+                                                </label>
+                                                <div class="another-recipient">
+                                                    <input type="text" name="fnamePurchaseSecond" id="fnamePurchaseSecond" class="input-task-2" placeholder="ФИО получателя">
+                                                    <input type="tel" name="phonePurchaseSecond" id="phonePurchaseSecond" class="input-task-2" placeholder="Номер телефона получателя" id="phoneMaskAnotherRecipient">
+                                                </div>
+                                            </div>
+                                            <div class="delivery_way-body">
+                                                <h6 class="field-title">Способ доставки</h6>
+                                                <div class="delivery_way-option">
+                                                    <label class="checkbox-label" data-delivery-way="1">
+                                                        <input class="checkbox real" type="checkbox">
+                                                        <span class="checkbox fake"></span>
+                                                        <span class="checkbox-text">Доставка в отделение “Новая Почта”</span>
+                                                    </label>
+                                                    <p class="delivery-price">Цена доставки: 69,00 грн</p>
+                                                    <input class="input-task-2 input-checkbox-js" name="novaPochtaPurchase" id="novaPochtaPurchase" type="text" placeholder="Номер отделения Новой почты" list="inputDeliveryBranch-NovaPochta" autocomplete="on" data-delivery-way="1">
+                                                    <datalist id="inputDeliveryBranch-NovaPochta">
+                                                        <option>Відділення №1: вул. Пирогівський шлях, 135</option>
+                                                        <option>Відділення №2: вул. Бережанська, 9 (Оболонь Лугова)</option>
+                                                        <option>Відділення №3: вул. Калачівська, 13 (Стара Дарниця)</option>
+                                                        <option>Відділення №4: вул. Верховинна, 69</option>
+                                                        <option>Відділення №5: вул. Федорова, 32 (м. Олімпійська)</option>
+                                                        <option>Відділення №6: вул. Миколи Василенка, 2 (метро Берестейська)</option>
+                                                        <option>Відділення №7 (до 5 кг), Міні-відділення: вул. Гната Хоткевича, 8 (м.Чернігівська)</option>
+                                                        <option>Відділення №8 (до 30 кг на одне місце): вул. Набережно-Хрещатицька, 33</option>
+                                                        <option>Відділення №9: пров. В'ячеслава Чорновола, 54а (р-н Жулянського мосту)</option>
+                                                        <option>Відділення №10: вул. Василя Жуковського, 22А</option>
+                                                        <option>Відділення №11 (до 30 кг на одне місце): просп. Лобановського (ран.Червонозоряний), 119 (м.Деміїв.)</option>
+                                                        <option>Відділення №13: вул. Оранжерейна, 3 (метро Дорогожичі)</option>
+                                                        <option>Відділення №14: вул. Миколи Кибальчича, 23/25</option>
+                                                        <option>Відділення №15: вул. Малинська, 18 (Новобіличи)</option>
+                                                        <option>Відділення №16 (до 30 кг): просп. Степана Бандери, 16</option>
+                                                        <option>Відділення №17: вул. Новокостянтинівська, 22/15</option>
+                                                        <option>Відділення №18: вул. Молодогвардійська, 22 (Чоколівка)</option>
+                                                        <option>Відділення №19: вул. Райдужна, 25А</option>
+                                                        <option>Відділення №20: пров. Новопечерський, 5 (м. Палац Україна)</option>
+                                                        <option>Відділення №21 (до 15 кг), Міні-відділення: вул. Луценка, 6</option>
+                                                    </datalist>
+                                                </div>
+                                                <div class="delivery_way-option">
+                                                    <label class="checkbox-label" data-delivery-way="2">
+                                                        <input class="checkbox real" type="checkbox">
+                                                        <span class="checkbox fake"></span>
+                                                        <span class="checkbox-text">Доставка в отделение “Укрпочта”</span>
+                                                    </label>
+                                                    <p class="delivery-price">Цена доставки: 49,00 грн</p>
+                                                    <input class="input-task-2 input-checkbox-js" name="ukrPochtaPurchase" id="ukrPochtaPurchase" type="text" placeholder="Номер отделения Укрпочты" list="inputDeliveryBranch-UkrPochta" autocomplete="on" data-delivery-way="2">
+                                                    <datalist id="inputDeliveryBranch-UkrPochta">
+                                                        <option>Відділення №1: вул. Пирогівський шлях, 135</option>
+                                                        <option>Відділення №2: вул. Бережанська, 9 (Оболонь Лугова)</option>
+                                                        <option>Відділення №3: вул. Калачівська, 13 (Стара Дарниця)</option>
+                                                        <option>Відділення №4: вул. Верховинна, 69</option>
+                                                        <option>Відділення №5: вул. Федорова, 32 (м. Олімпійська)</option>
+                                                        <option>Відділення №6: вул. Миколи Василенка, 2 (метро Берестейська)</option>
+                                                        <option>Відділення №7 (до 5 кг), Міні-відділення: вул. Гната Хоткевича, 8 (м.Чернігівська)</option>
+                                                        <option>Відділення №8 (до 30 кг на одне місце): вул. Набережно-Хрещатицька, 33</option>
+                                                        <option>Відділення №9: пров. В'ячеслава Чорновола, 54а (р-н Жулянського мосту)</option>
+                                                        <option>Відділення №10: вул. Василя Жуковського, 22А</option>
+                                                        <option>Відділення №11 (до 30 кг на одне місце): просп. Лобановського (ран.Червонозоряний), 119 (м.Деміїв.)</option>
+                                                        <option>Відділення №13: вул. Оранжерейна, 3 (метро Дорогожичі)</option>
+                                                        <option>Відділення №14: вул. Миколи Кибальчича, 23/25</option>
+                                                        <option>Відділення №15: вул. Малинська, 18 (Новобіличи)</option>
+                                                        <option>Відділення №16 (до 30 кг): просп. Степана Бандери, 16</option>
+                                                        <option>Відділення №17: вул. Новокостянтинівська, 22/15</option>
+                                                        <option>Відділення №18: вул. Молодогвардійська, 22 (Чоколівка)</option>
+                                                        <option>Відділення №19: вул. Райдужна, 25А</option>
+                                                        <option>Відділення №20: пров. Новопечерський, 5 (м. Палац Україна)</option>
+                                                        <option>Відділення №21 (до 15 кг), Міні-відділення: вул. Луценка, 6</option>
+                                                    </datalist>
+                                                </div>
+                                                <div class="delivery_way-option">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox real" name="pickupPurchase" id="pickupPurchase" type="checkbox">
+                                                        <span class="checkbox fake"></span>
+                                                        <span class="checkbox-text">Самовывоз (г. Киев, ул. Жилянская 148)</span>
+                                                    </label>
+                                                    <p class="delivery-price">Цена доставки: бесплатно</p>
+                                                </div>
+                                            </div>
+                                            <button class="btn" onclick="processFormTask2()">Дальше</button>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+                                    <div class="gradual-form__task" id="formTask3">
+                                        <div class="heading">
+                                            <div class="progress-level active">3</div>
+                                            <h3 class="title">Оплата</h3>
+                                        </div>
+                                        <div class="form__task-3">
+                                            <h6 class="field-title">Способ оплаты</h6>
+                                            <label class="checkbox-label">
+                                                <input class="checkbox real" type="checkbox">
+                                                <span class="checkbox fake"></span>
+                                                <span class="checkbox-text">Оплата при получении</span>
+                                            </label>
+                                            <label class="checkbox-label">
+                                                <input class="checkbox real" type="checkbox">
+                                                <span class="checkbox fake"></span>
+                                                <span class="checkbox-text">Оплата картой на сайте</span>
+                                            </label>
+                                            <label class="checkbox-label">
+                                                <input class="checkbox real" type="checkbox">
+                                                <span class="checkbox fake"></span>
+                                                <span class="checkbox-text">Privat Pay</span>
+                                            </label>
+                                            <label class="checkbox-label">
+                                                <input class="checkbox real" type="checkbox">
+                                                <span class="checkbox fake"></span>
+                                                <span class="checkbox-text">Google Pay</span>
+                                            </label>
+                                            <label class="checkbox-label">
+                                                <input class="checkbox real" type="checkbox">
+                                                <span class="checkbox fake"></span>
+                                                <span class="checkbox-text">Apple Pay</span>
+                                            </label>
+                                            <button class="btn btn-finish" onclick="processFormTask3()">Дальше</button>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="gradual-form__task" id="formTask4">
+                                        <div class="heading">
+                                            <div class="progress-level content finish"></div>
+                                            <h3 class="title">Заказ успешно оформлен</h3>
+                                        </div>
+                                        <div class="form__task-4">
+                                            <p class="finish-notification">Ожидайте СМС с номером накладной.</p>
+                                            <p class="finish-notification">Мы можем позвонить Вам для уточнения полученных данных.</p>
+                                            <a class="btn" href="index.html">Вернуться на главную страницу</a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="notifications" id="notifTasks">
+                                        <div class="notification">
+                                            <img class="notification-icon" src="assets/img/exclamation-icon.svg" alt="!">
+                                            <p class="notification-text">Настоятельно рекомендуем проверять введенные Вами данные!</p>
+                                        </div>
+                                        <div class="notification">
+                                            <img class="notification-icon" src="assets/img/exclamation-icon.svg" alt="!">
+                                            <p class="notification-text">Возврат/обмен товара возможен в течение 14 дней после покупки.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-5">
+                            <div class="summary-info">
+                                <div class="cart-small">
+                                    <div class="heading">
+                                        <img class="heading-icon" src="assets/img/common-icons_svg/basket-icon.svg" alt="icon">
+                                        <h3 class="heading-title">Ваша корзина</h3>
+                                    </div>
+                                    <div class="added-products active" id="cartSmallProductsAdded">
+                                        <div class="added-product">
+                                            <img class="product-image" src="assets/img/goods_img/card_37.jpg" alt="Фото товара">
+                                            <div class="content-wrapper">
+                                                <a href="product.html" class="product-name">Adidas Nite jogger Blue 38,5 size (FV3591)</a>
+                                                <div class="row-bottom">
+                                                    <p class="product-price__one">3 100 грн</p>
+                                                    <div class="input-wrapper">
+                                                        <input class="product-amount__input" type="text" value="2">
+                                                        <p class="product-amount__text">шт.</p>
+                                                    </div>
+                                                    <p class="product-price__summary">6 200 грн</p>
+                                                </div>
+                                            </div>
+                                            <img class="product-delete" src="assets/img/common-icons_svg/bin-icon.svg" alt="Удалить">
+                                        </div>
+                                        <div class="added-product">
+                                            <img class="product-image" src="assets/img/goods_img/card_24.jpg" alt="Фото товара">
+                                            <div class="content-wrapper">
+                                                <a href="#" class="product-name">Jordan Legacy 1 Men's Pullover Hoodie Dark Obsidian S size (CZ1160-010)</a>
+                                                <div class="row-bottom">
+                                                    <p class="product-price__one">2 500 грн</p>
+                                                    <div class="input-wrapper">
+                                                        <input class="product-amount__input" type="text" value="1">
+                                                        <p class="product-amount__text">шт.</p>
+                                                    </div>
+                                                    <p class="product-price__summary">2 500 грн</p>
+                                                </div>
+                                            </div>
+                                            <img class="product-delete" src="assets/img/common-icons_svg/bin-icon.svg" alt="Удалить">
+                                        </div>
+                                        <div class="added-product">
+                                            <img class="product-image" src="assets/img/goods_img/card_1.jpg" alt="Фото товара">
+                                            <div class="content-wrapper">
+                                                <a href="#" class="product-name">Under Armour HOVR Phantom2 CG Reactor Dark Blue 43,5 size (3023391-501)</a>
+                                                <div class="row-bottom">
+                                                    <p class="product-price__one">4 100 грн</p>
+                                                    <div class="input-wrapper">
+                                                        <input class="product-amount__input" type="text" value="1">
+                                                        <p class="product-amount__text">шт.</p>
+                                                    </div>
+                                                    <p class="product-price__summary">4 100 грн</p>
+                                                </div>
+                                            </div>
+                                            <img class="product-delete" src="assets/img/common-icons_svg/bin-icon.svg" alt="Удалить">
+                                        </div>
+                                        <div class="added-product">
+                                            <img class="product-image" src="assets/img/goods_img/card_38.jpg" alt="Фото товара">
+                                            <div class="content-wrapper">
+                                                <a href="#" class="product-name">Мужские часы Michael Kors (МК8765)</a>
+                                                <div class="row-bottom">
+                                                    <p class="product-price__one">3 750 грн</p>
+                                                    <div class="input-wrapper">
+                                                        <input class="product-amount__input" type="text" value="3">
+                                                        <p class="product-amount__text">шт.</p>
+                                                    </div>
+                                                    <p class="product-price__summary">11 250 грн</p>
+                                                </div>
+                                            </div>
+                                            <img class="product-delete" src="assets/img/common-icons_svg/bin-icon.svg" alt="Удалить">
+                                        </div>
+                                    </div>
+                                    <div class="no-products" id="cartSmallNoProducts">
+                                        <h5 class="no-products__title">В корзине ничего нет.</h5>
+                                        <a href="catalogue.html" class="btn">Перейти в каталог</a>
+                                    </div>
+                                </div>
+                                <div class="promo-code active" id="promoCodePurchase">
+                                    <div class="heading">
+                                        <img class="heading-icon" src="assets/img/discount-icon.svg" alt="icon">
+                                        <h3 class="heading-title">Получить скидку</h3>
+                                    </div>
+                                    <div class="form__promocode">
+                                        <input type="text" name="place" class="input-promocode" placeholder="Ввести промокод">
+                                        <button class="btn">Активировать</button>
+                                    </div>
+                                </div>
+                                <hr class="green-line active" id="cartSmallLine">
+                                <div class="total-price active" id="cartSmallSummary">
+                                    <div class="heading">
+                                        <img class="heading-icon" src="assets/img/wallet-icon.svg" alt="icon">
+                                        <h3 class="heading-title">Итого к оплате</h3>
+                                    </div>
+                                    <div class="content-wrapper">
+                                        <div class="info-row">
+                                            <p class="info-row__heading">Оплата за товар</p>
+                                            <span>24,050 грн.</span>
+                                        </div>
+                                        <hr class="total-price__line">
+                                        <div class="info-row">
+                                            <p class="info-row__heading">Скидка</p>
+                                            <span>0,00 грн.</span>
+                                        </div>
+                                        <hr class="total-price__line">
+                                        <div class="info-row">
+                                            <p class="info-row__heading">Доставка</p>
+                                            <span>69,00 грн.</span>
+                                        </div>
+                                        <hr class="total-price__line">
+                                        <div class="info-row">
+                                            <p class="info-row__heading">Вместе к оплате</p>
+                                            <span class="total">24 119 грн.</span>
+                                        </div>
+                                        <button class="btn" onclick="processFormTask4()">Подтвердить заказ</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5 col-12">
+                        <div class="footer_logo">
+                            <a href="index.html" class="header_logo_image"><img src="assets/img/common-icons_svg/logo-white.svg" id="logoWhite" alt="TRAINSSY"></a>
+                            <p class="footer_logo_text">Магазин брендовой обуви</p>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-1 ml-auto anchor_for_md">
+                        <a class="btn_up"><img src="assets/img/common-icons_svg/button-up.svg" alt="^" class="footer_button_up"></a>
+                    </div>
+                    <div class="col-xl-7 col-lg-8 col-md-10 col-sm-12 footer_nav_block">
+                        <div class="footer_nav">
+                            <ul class="navbar">
+                                <li><a href="#">Главная</a></li>
+                                <li><a href="#">Новинки</a></li>
+                                <li><a href="#">Мужская обувь</a></li>
+                                <li><a href="#">Женская обувь</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 footer_anchor_plus_phone">
+                        <div class="form_phone_wrapper d-flex">
+                            <a class="btn_up"><img src="assets/img/common-icons_svg/button-up.svg" alt="^" class="footer_button_up"></a>
+                            <div class="footer_phonenumber">
+                                <a href="tel:+380636082639" class="footer_phone">+38 (063) 608-26-39</a>
+                                <div class="footer_phone_text">Доставка по всей Украине!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-5 col-12 phonenumber_footer_for_md">
+                        <div class="footer_phonenumber">
+                            <a href="tel:+380636082639" class="footer_phone">+38 (063) 608-26-39</a>
+                            <div class="footer_phone_text">Доставка по всей Украине!</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-8 col-md-11 col-sm-12 footer_under_tablet">
+                        <div class="footer_under d-flex">
+                            <div class="footer_under_left">
+                                <a href="https://www.instagram.com/trainssy/" target="_blank"><img src="assets/img/common-icons_svg/inst-icon-white.svg" alt="Instagram" class="inst_icon"></a>
+                                <div class="footer_pickup">Самовывоз:<span class="footer_schedule">г. Киев в пн/ср/пт 12:00 - 15:00, сб/вс по договорённости</span></div>
+                            </div>
+                        </div>      
+                    </div>
+                    <div class="col-12 inst_icon_mobile">
+                        <a href="https://www.instagram.com/trainssy/" target="_blank"><img src="assets/img/common-icons_svg/inst-icon-white.svg" alt="Instagram" class="inst_icon"></a>
+                    </div>
+                    <div class="col-12 footer_pickup_mobile">
+                        <div class="footer_pickup">Самовывоз:</div>
+                    </div>
+                    <div class="col-12 footer_schedule_mobile">
+                        <div class="footer_schedule">г. Киев в пн/ср/пт 12:00 - 15:00, сб/вс по договорённости</div>
+                    </div>
+                    <div class="col-xl-2 offset-xl-4 col-lg-2 offset-lg-2 col-md-2 col-sm-2 col-12 d-flex footer_banking_options">
+                        <div class="footer_bank_option_1"><img src="assets/img/common-icons_svg/mastercard-icon.svg" alt="Mastercard"></div>
+                        <div class="footer_bank_option_2"><img src="assets/img/common-icons_svg/visa-icon.svg" alt="Visa"></div>
+                    </div>
+                    <div class="col-12 footer_button_up_mobile">
+                        <a class="btn_up"><img src="assets/img/common-icons_svg/button-up.svg" alt="^" class="footer_button_up"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="popup_cart" class="popup_cart">
+        <div class="cart_popup__body">
+            <div class="cart_popup__content">
+                <div class="title_block">
+                    <img src="assets/img/common-icons_svg/basket-icon.svg" class="popup_cart-icon" alt="icon">
+                    <h3 class="popup_cart-title">Корзина</h3>
+                    <a href="#" class="popup_cart__close close-popup-cart"><img src="assets/img/common-icons_svg/close-hamburger-button.svg" class="search-popup__close-button" alt="Закрыть"></a>
+                </div>
+                <div class="goods-added__cart active">
+                    <div class="added-goods__cart">
+                        <div class="goods-in-cart">
+                            <div class="goods-in-cart__content d-flex">
+                                <img src="assets/img/goods_img/card_37.jpg" class="good-in-cart__image" alt="Фотография товара">
+                                <div class="goods-in-cart__descr">
+                                    <div class="goods-in-cart_first-wrapper d-flex">
+                                        <a href="#" class="good-in-cart__name">Adidas Nite jogger Blue 38,5 size (FV3591)</a>
+                                        <img class="good-in-cart__delete-icon" src="assets/img/common-icons_svg/bin-icon.svg" alt="Удалить">
+                                    </div>
+                                    <p class="good-in-cart__code">Код: 00347</p>
+                                    <div class="good-in-cart_second-wrapper">
+                                        <div class="good-in-cart__value">3 100 грн</div>   
+                                        <div class="good-in-cart__second-wrapper__right-part">
+                                            <div class="good-in-cart__quantity">
+                                                <button class="bt_minus">
+                                                    <img src="assets/img/quantity-minus-icon.svg" alt="-">
+                                                </button>
+                                                <input type="text" value="1" size="2" class="quantity" data-max-count="10">
+                                                <button class="bt_plus">
+                                                    <img src="assets/img/quantity-plus-icon.svg" alt="+">
+                                                </button>
+                                            </div>
+                                            <div class="good-in-cart__sum-value">6 200 грн</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="good-in-cart__second-wrapper__right-part__mobile">
+                                <div class="good-in-cart__quantity">
+                                    <button class="bt_minus">
+                                        <img src="assets/img/quantity-minus-icon.svg" alt="-">
+                                    </button>
+                                    <input type="text" value="1" size="2" class="quantity" data-max-count="10">
+                                    <button class="bt_plus">
+                                        <img src="assets/img/quantity-plus-icon.svg" alt="+">
+                                    </button>
+                                </div>
+                                <div class="good-in-cart__sum-value">6 200 грн</div>
+                            </div>
+                            <hr class="green-line">
+                        </div> 
+                    </div>
+                    <div class="added-goods__cart">
+                        <div class="goods-in-cart">
+                            <div class="goods-in-cart__content d-flex">
+                                <img src="assets/img/goods_img/card_24.jpg" class="good-in-cart__image" alt="Фотография товара">
+                                <div class="goods-in-cart__descr">
+                                    <div class="goods-in-cart_first-wrapper d-flex">
+                                        <a href="#" class="good-in-cart__name">Jordan Legacy 1 Men's Pullover Hoodie Dark Obsidian S size (CZ1160-010)</a>
+                                        <img class="good-in-cart__delete-icon" src="assets/img/common-icons_svg/bin-icon.svg" alt="Удалить">
+                                    </div>
+                                    <p class="good-in-cart__code">Код: 00551</p>
+                                    <div class="good-in-cart_second-wrapper">
+                                        <div class="good-in-cart__value">2 500 грн</div>   
+                                        <div class="good-in-cart__second-wrapper__right-part">
+                                            <div class="good-in-cart__quantity">
+                                                <button class="bt_minus">
+                                                    <img src="assets/img/quantity-minus-icon.svg" alt="-">
+                                                </button>
+                                                <input type="text" value="1" size="2" class="quantity" data-max-count="10" />
+                                                <button class="bt_plus">
+                                                    <img src="assets/img/quantity-plus-icon.svg" alt="+">
+                                                </button>
+                                            </div>
+                                            <div class="good-in-cart__sum-value">2 500 грн</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="good-in-cart__second-wrapper__right-part__mobile">
+                                <div class="good-in-cart__quantity">
+                                    <button class="bt_minus">
+                                        <img src="assets/img/quantity-minus-icon.svg" alt="-">
+                                    </button>
+                                    <input type="text" value="1" size="2" class="quantity" data-max-count="10">
+                                    <button class="bt_plus">
+                                        <img src="assets/img/quantity-plus-icon.svg" alt="+">
+                                    </button>
+                                </div>
+                                <div class="good-in-cart__sum-value">2 500 грн</div>
+                            </div>
+                            <hr class="green-line">
+                        </div>
+                    </div>
+                    <div class="added-goods__cart">
+                        <div class="goods-in-cart">
+                            <div class="goods-in-cart__content d-flex">
+                                <img src="assets/img/goods_img/card_1.jpg" class="good-in-cart__image" alt="Фотография товара">
+                                <div class="goods-in-cart__descr">
+                                    <div class="goods-in-cart_first-wrapper d-flex">
+                                        <a href="#" class="good-in-cart__name">Under Armour HOVR Phantom2 CG Reactor Dark Blue 43,5 size (3023391-501)</a>
+                                        <img class="good-in-cart__delete-icon" src="assets/img/common-icons_svg/bin-icon.svg" alt="Удалить">
+                                    </div>
+                                    <p class="good-in-cart__code">Код: 00353</p>
+                                    <div class="good-in-cart_second-wrapper">
+                                        <div class="good-in-cart__value">4 100 грн</div>   
+                                        <div class="good-in-cart__second-wrapper__right-part">
+                                            <div class="good-in-cart__quantity">
+                                                <button class="bt_minus">
+                                                    <img src="assets/img/quantity-minus-icon.svg" alt="-">
+                                                </button>
+                                                <input type="text" value="1" size="2" class="quantity" data-max-count="10" />
+                                                <button class="bt_plus">
+                                                    <img src="assets/img/quantity-plus-icon.svg" alt="+">
+                                                </button>
+                                            </div>
+                                            <div class="good-in-cart__sum-value">4 100 грн</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="good-in-cart__second-wrapper__right-part__mobile">
+                                <div class="good-in-cart__quantity">
+                                    <button class="bt_minus">
+                                        <img src="assets/img/quantity-minus-icon.svg" alt="-">
+                                    </button>
+                                    <input type="text" value="1" size="2" class="quantity" data-max-count="10">
+                                    <button class="bt_plus">
+                                        <img src="assets/img/quantity-plus-icon.svg" alt="+">
+                                    </button>
+                                </div>
+                                <div class="good-in-cart__sum-value">4 100 грн</div>
+                            </div>
+                            <hr class="green-line">
+                        </div>
+                    </div>
+                    <div class="added-goods__cart">
+                        <div class="goods-in-cart">
+                            <div class="goods-in-cart__content d-flex">
+                                <img src="assets/img/goods_img/card_38.jpg" class="good-in-cart__image" alt="Фотография товара">
+                                <div class="goods-in-cart__descr">
+                                    <div class="goods-in-cart_first-wrapper d-flex">
+                                        <a href="#" class="good-in-cart__name">Мужские часы Michael Kors (МК8765)</a>
+                                        <img class="good-in-cart__delete-icon" src="assets/img/common-icons_svg/bin-icon.svg" alt="Удалить">
+                                    </div>
+                                    <p class="good-in-cart__code">Код: 00356</p>
+                                    <div class="good-in-cart_second-wrapper">
+                                        <div class="good-in-cart__value">3 750 грн</div>   
+                                        <div class="good-in-cart__second-wrapper__right-part">
+                                            <div class="good-in-cart__quantity">
+                                                <button class="bt_minus">
+                                                    <img src="assets/img/quantity-minus-icon.svg" alt="-">
+                                                </button>
+                                                <input type="text" value="1" size="2" class="quantity" data-max-count="10">
+                                                <button class="bt_plus">
+                                                    <img src="assets/img/quantity-plus-icon.svg" alt="+">
+                                                </button>
+                                            </div>
+                                            <div class="good-in-cart__sum-value">11 250 грн</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="good-in-cart__second-wrapper__right-part__mobile">
+                                <div class="good-in-cart__quantity">
+                                    <button class="bt_minus">
+                                        <img src="assets/img/quantity-minus-icon.svg" alt="-">
+                                    </button>
+                                    <input type="text" value="1" size="2" class="quantity" data-max-count="10">
+                                    <button class="bt_plus">
+                                        <img src="assets/img/quantity-plus-icon.svg" alt="+">
+                                    </button>
+                                </div>
+                                <div class="good-in-cart__sum-value">11 250 грн</div>
+                            </div>
+                            <hr class="green-line">
+                        </div>
+                    </div>
+                    <div class="summary_block">
+                        <div class="summary_block__title">
+                            <h3 class="summary_block__title-total">Итого:</h3>
+                            <div class="summary-block__title-sum">24 050 грн</div>
+                        </div>
+                        <a href="purchase.html">
+                            <button class="press-to-buy__link">Оформить заказ</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="empty__cart">
+                    <h4 class="empty__cart-title">В корзине ничего нет.</h4>
+                    <a href="#" class="btn empty__cart-btn">Перейти в каталог</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/jquery.maskedinput.min.js"></script>
+    <script src="assets/js/SmoothScroll.min.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/purchase.js"></script>
+</body>
+</html>
