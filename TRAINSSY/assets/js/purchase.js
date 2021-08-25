@@ -61,7 +61,7 @@ function processFormTask3() {
     mainBtn.classList.add('active');
     mainBtn.disabled = false; 
 
-    $('html, body').animate({scrollTop:1000}, '300');
+    $('html, body').animate({scrollTop:1000}, '500');
 }
 
 function processFormTask4() {
@@ -77,6 +77,8 @@ function processFormTask4() {
 
     _("progressLevel4").classList.add('active');
     _("cartSmallNoProducts").classList.add('active');
+
+    $('html, body').animate({scrollTop:0}, '500');
 
 }
 
