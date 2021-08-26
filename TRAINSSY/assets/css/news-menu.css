@@ -173,6 +173,9 @@
         margin-left: auto;
         margin-right: auto;
     }
+    .main-block__news-menu .news-post__content {
+        margin-bottom: 35px;
+    }
 }
 /* 320px - 425px */
 @media screen and (max-width: 425px) {
@@ -181,6 +184,9 @@
     }
     .main-block__news-menu .title {
         font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .main-block__news-menu .news-post__content {
         margin-bottom: 30px;
     }
 }
