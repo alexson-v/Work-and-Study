@@ -259,6 +259,9 @@
         bottom: 30px;
         left: 30px;
     }
+    .preview-text .title {
+        font-size: 25px;
+    }
     .gallery-wrapper .gallery-image, .gallery-wrapper .gallery-image.reduced {
         width: 240px;
         height: 240px;

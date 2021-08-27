@@ -1307,7 +1307,7 @@ hr {
 }
 /* 440px - 576px */
 @media screen and (max-width: 576px) {
-    ::-webkit-scrollbar,
+    .main-block__product-navbar::-webkit-scrollbar,
     .main-block__product-common__gallery,
     .call-to-action__announcement {
         display: none;
