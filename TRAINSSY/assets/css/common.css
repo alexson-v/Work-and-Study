@@ -1164,6 +1164,15 @@ button::-moz-focus-inner {
     margin-top: 0.5px;
 }
 
+.additional-goods {
+    margin-top: 80px;
+    margin-bottom: 90px;
+}
+
+.additional-goods__title {
+    margin-bottom: 50px;
+}
+
 .menu_mobile_wrapper,
 .footer_pickup_mobile,
 .footer_schedule_mobile,
@@ -1177,8 +1186,13 @@ button::-moz-focus-inner {
 .footer_button_up_mobile,
 .popup-search-link__small,
 .good-in-cart__second-wrapper__right-part__mobile,
-.popup_search__close_mobile {
+.popup_search__close_mobile,
+.additional-goods__slider {
     display: none;
+}
+
+.additional-goods__desktop {
+    display: block;
 }
 
 /* 992px - 1200px */
@@ -1274,6 +1288,9 @@ button::-moz-focus-inner {
     .contacts-block {
         padding: 30px 25px 15px 25px;
     }
+    .card-product_additional {
+        display: none;
+    }
 }
 /* 768px - 992px */
 @media screen and (max-width: 992px) {
@@ -1286,7 +1303,8 @@ button::-moz-focus-inner {
     .special_offers_slider,
     .inst_icon_mobile,
     .footer_pickup_mobile,
-    .footer_button_up_mobile {
+    .footer_button_up_mobile,
+    .additional-goods__desktop {
         display: none;
     }
     .header-main__logo__caption,
@@ -1297,7 +1315,8 @@ button::-moz-focus-inner {
     .header-main__hamburger-menu,
     .hamburger-menu,
     .phonenumber_footer_for_md,
-    .card_finded__additional {
+    .card_finded__additional,
+    .additional-goods__slider {
         display: block;
     }
     .header-main {
@@ -1386,6 +1405,9 @@ button::-moz-focus-inner {
     }
     .contacts-block .contacts-block__elements-wrapper:nth-child(2n) {
         margin-left: 70px;
+    }
+    .slider-product_additionals {
+        height: 500px;
     }
 }
 /* 576px - 768px */
@@ -1548,6 +1570,10 @@ button::-moz-focus-inner {
         padding-top: 30px;
         background-color: #EFEFEF;
     }
+    .additional-goods__title {
+        font-size: 22px;
+        margin-bottom: 40px;
+    }
 }
 /* 425px - 551px */
 @media screen and (max-width: 551px) {
@@ -1601,6 +1627,9 @@ button::-moz-focus-inner {
     .contacts-block__title {
         font-size: 24px;
         font-weight: 600;
+    }
+    .additional-goods__title {
+        font-size: 20px;
     }
 }
 /* 320px - 375px */

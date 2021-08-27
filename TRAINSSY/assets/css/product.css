@@ -398,15 +398,6 @@ hr {
     margin-top: 30px;
 }
 
-.additional-goods {
-    margin-top: 80px;
-    margin-bottom: 90px;
-}
-
-.additional-goods__title {
-    margin-bottom: 50px;
-}
-
 .main-block__product-additional__two-sides {
     display: flex;
 }
@@ -1019,22 +1010,14 @@ hr {
 
 .call-to-action__announcement__tablet,
 .option-color__bundle__tablet,
-.additional-goods__slider,
 .ui-elements__share-icon,
 .slider_product-common__mobile,
 .cta_ui_mobile {
     display: none;
 }
 
-.additional-goods__desktop {
-    display: block;
-}
-
 /* 992px - 1200px */
 @media screen and (max-width: 1200px) {
-    .card-product_additional {
-        display: none;
-    }
     .ui-elements__product-name {
         width: 650px;
     }
@@ -1099,8 +1082,7 @@ hr {
 @media screen and (max-width: 992px) {
     .selling-block__option-colors,
     .product-tab__trigger.gallery,
-    .call-to-action__announcement,
-    .additional-goods__desktop {
+    .call-to-action__announcement {
         display: none;
     }
     .main-block__product__sticky-card {
@@ -1109,7 +1091,6 @@ hr {
     .main-block__product-common__wrapper,
     .call-to-action__announcement__tablet,
     .option-color__bundle__tablet,
-    .additional-goods__slider,
     .ui-elements__share-icon {
         display: block;
     }
@@ -1190,9 +1171,6 @@ hr {
     }
     .main-block__product-additional__wrapper {
         padding: 30px 30px 40px 30px;
-    }
-    .slider-product_additionals {
-        height: 500px;
     }
     .card_main:hover {
         -moz-transform: scale(1);
@@ -1357,10 +1335,6 @@ hr {
     .call-to-action__announcement__tablet {
         margin: 25px 0 0 15px;
     }
-    .additional-goods__title {
-        font-size: 22px;
-        margin-bottom: 40px;
-    }
     .popup_table {
         background: #fff;
     }
@@ -1433,9 +1407,6 @@ hr {
     }
     .call-to-action__announcement__tablet {
         margin-left: 10px;
-    }
-    .additional-goods__title {
-        font-size: 20px;
     }
     .selling-block__event-icons {
         margin: 15px 0 20px 0;

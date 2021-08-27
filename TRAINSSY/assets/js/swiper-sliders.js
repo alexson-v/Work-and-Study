@@ -323,7 +323,7 @@ const swiperBigGallery = new Swiper('.slider_gallery-big', {
 
 // Страница товара -> (320px - 992px) -> Слайдер карточек в секции "Вам может понравиться"
 
-const swiperAdditionals = new Swiper('.slider-product_additionals', {
+const swiperAdditionalsProduct = new Swiper('.slider-product_additionals', {
     simulateTouch: true,
     touchAngle: 45,
     draggable: true,
