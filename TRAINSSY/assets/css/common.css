@@ -664,10 +664,16 @@ button::-moz-focus-inner {
     display: flex;
 }
 
-.search-history a{
+.search-history a {
     color: #000;
     font-weight: 500;
     letter-spacing: 0.1em;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.search-history a:hover {
+    color: #02810E;
 }
 
 .search-arrow {

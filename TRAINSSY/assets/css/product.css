@@ -223,7 +223,7 @@ hr {
 }
 
 .selling-block__option-sizes {
-    margin-left: 55px;
+    margin-left: 35px;
 }
 
 .option-size__bundle {
@@ -1134,7 +1134,7 @@ hr {
     .main-block__product-common__selling-block {
         display: flex;
         flex-flow: row-reverse;
-        margin-right: 100px;
+        margin-right: 90px;
     }
     .product-common__gallery__pagination {
         margin: 0 20px 0 25px;
