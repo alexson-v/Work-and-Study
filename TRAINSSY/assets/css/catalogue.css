@@ -315,12 +315,12 @@
     top: 0;
     z-index: 100;
     width: 320px;
-    height: 100vh;
+    height: 100%;
     background-color: #FFF;
     border-right: 2px solid #dedede;
     transition: 0.5s;
     padding: 27px 20px 20px 20px;
-    overflow: scroll;
+    overflow-y: scroll;
     overflow-x: hidden;
     transform: translateX(-100%);
     transition: 0.5s;
@@ -606,6 +606,14 @@
         width: 100%;
         margin-bottom: 30px;
         font-size: 18px;
+    }
+    .filters-size__mobile__dropdown {
+        margin-top: 0;
+    }
+    .filters-size__mobile__dropdown .checkbox-label:first-child,
+    .filters-size__mobile__dropdown .checkbox-label:nth-child(2),
+    .filters-size__mobile__dropdown .checkbox-label:nth-child(3) {
+        margin-top: 0;
     }
 }
 

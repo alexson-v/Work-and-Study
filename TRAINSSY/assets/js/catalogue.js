@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     overlay.addEventListener('click', function() {
-        document.querySelector('.category_filter_js.active').classList.remove('active');
-        document.querySelector('.category_dropdown-arrow.active').classList.remove('active');
+        document.querySelector('.category_filter_js').classList.remove('active');
+        document.querySelector('.category_dropdown-arrow').classList.remove('active');
         this.classList.remove('active');
     });
 });
