@@ -106,7 +106,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const openBigMobileFilter = document.querySelectorAll('.category__filters__small'),
           overlay = document.querySelector('.overlay'),
           content = document.querySelector('.content'),
-          closeButtons = document.querySelectorAll('.filters-popup__close-button');
+          closeButtons = document.querySelectorAll('.filters-popup__close-button'),
+          body = document.querySelector('body');
 
     openBigMobileFilter.forEach(function(item){
         item.addEventListener('click', function(e) {
@@ -118,6 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
             mobileFilterElem.classList.add('active');
             overlay.classList.add('active');
             content.classList.add('active-right');
+            body.classList.add('lock');
         });
     });
     
@@ -128,22 +130,15 @@ document.addEventListener('DOMContentLoaded', function() {
             parentModal.classList.remove('active');
             overlay.classList.remove('active');
             content.classList.remove('active-right');
+            body.classList.remove('lock');
         });
     });
-
-    document.body.addEventListener('keyup', function (e) {
-        const key = e.keyCode;
-        if (key == 27) {
-            document.querySelector('.filters_popup_body').classList.remove('active');
-            document.querySelector('.overlay').classList.remove('active');
-            document.querySelector('.content').classList.remove('active-right');
-        }
-    }, false);
 
     overlay.addEventListener('click', function() {
         document.querySelector('.filters_popup_body').classList.remove('active');
         document.querySelector('.content').classList.remove('active-right');
         this.classList.remove('active');
+        body.classList.remove('lock');
     });
 });
 

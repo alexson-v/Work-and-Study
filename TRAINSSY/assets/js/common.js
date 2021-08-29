@@ -49,9 +49,6 @@ jQuery(document).ready(function() {
         $('html, body').animate({scrollTop:0}, '300');
     });
 
-    // Маска на инпуты номера телефона
-    $("#phoneMask").mask("+38 (999) 999-99-99");
-
 });
 
 
@@ -78,7 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
           openMobileCategoryMenu = document.querySelectorAll('.navbar_mobile_open_category'),
           closeMobileCategoryMenu = document.querySelectorAll('.navbar_mobile_close-category'),
           overlay = document.querySelector('.overlay'),
-          content = document.querySelector('.content');
+          content = document.querySelector('.content'),
+          body = document.querySelector('body');
 
     openMobileMainMenu.forEach(function(item){
         item.addEventListener('click', function(e) {
@@ -89,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mobileMainMenuElem.classList.add('active');
             overlay.classList.add('active');
             content.classList.add('active-left');
+            body.classList.add('lock');
         });
     });
 
@@ -98,6 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
         parentModal.classList.remove('active');
         overlay.classList.remove('active');
         content.classList.remove('active-left');
+        body.classList.remove('lock');
     });
 
     openMobileCategoryMenu.forEach(function(item){
@@ -125,6 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('.overlay').classList.remove('active');
             document.querySelector('.content').classList.remove('active-left');
             document.querySelector('.menu_mobile_category').classList.remove('active');
+            body.classList.remove('lock');
         }
     }, false);
 
@@ -133,6 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.content').classList.remove('active-left');
         document.querySelector('.menu_mobile_category').classList.remove('active');
         this.classList.remove('active');
+        body.classList.remove('lock');
     });
 
     // Скрипт для попапа "Искать товар"
@@ -218,12 +220,6 @@ document.addEventListener('DOMContentLoaded', () => {
             unlockSearch = true;
         }, timeoutSearch);
     }
-    document.addEventListener('keydown', function (e) {
-        if (e.which === 27) {
-            const popupActiveSearch = document.querySelector('.popup_search.open');
-            popupCloseSearch(popupActiveSearch);
-        }
-    });
 
     // Скрипт для попапа "Корзина"
     const popupCartLinks = document.querySelectorAll('.popup-cart-link');
@@ -262,6 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 bodyLockCart();
             }
             currentPopupCart.classList.add('open');
+
             currentPopupCart.addEventListener('click', function (e) {
                 if (!e.target.closest('.cart_popup__content')) {
                     popupCloseCart(e.target.closest('.popup_cart'));
@@ -314,13 +311,6 @@ document.addEventListener('DOMContentLoaded', () => {
             unlockCart = true;
         }, timeoutCart);
     }
-    
-    document.addEventListener('keydown', function (e) { 
-        if (e.which === 27) {
-            const popupActiveCart = document.querySelector('.popup_cart.open');
-            popupCloseCart(popupActiveCart);
-        }
-    });
 
     (function () {
         if (!Element.prototype.closest) {

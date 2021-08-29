@@ -59,3 +59,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+
+jQuery(document).ready(function() {
+
+    // Маска на инпут сохранения номера телефона клиент
+    $("#phoneMaskAccount").mask("+38 (999) 999-99-99");
+
+});

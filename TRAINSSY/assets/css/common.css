@@ -11,6 +11,7 @@ body {
   
 body.lock {
     overflow: hidden;
+    padding-right: 12px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -100,6 +101,10 @@ button::-moz-focus-inner {
 ::-webkit-scrollbar-thumb {
     background: #535257;
     margin-top: 3px;
+}
+
+.content.popup {
+    
 }
 
 .overlay {
@@ -376,19 +381,20 @@ button::-moz-focus-inner {
     transition: all 1s ease;
     margin-bottom: 20px;
     cursor: pointer;
-    padding: 31px 40px 31px 40px;
+    padding: 27px 40px 20px 40px;
+    border-radius: 4px;
 }
 
 .card_image {
     width: 190px;
-    height: 178px;
-    border: 1px solid #EBEBEB;
+    height: 190px;
+    border-radius: 6px;
     margin: 22px 0 15px 0;
 }
 
 .card_description {
     color: #7D7D7D;
-    margin-bottom: 25px;
+    display: flex;
 }
 
 .card_description ul li {
@@ -402,13 +408,17 @@ button::-moz-focus-inner {
 }
 
 .goods_wrapper_down {
+    display: flex;
     width: 190px;
+    margin-top: 25px;
 }
 
-.card_goodsvalue {
-    font-size: 15px;
-    font-weight: 900;
+.goods_wrapper_down .goods_price {
     margin-left: 6px;
+}
+
+.goods_price .current {
+    font-weight: 900;
 }
 
 .card_cta {
@@ -417,14 +427,19 @@ button::-moz-focus-inner {
     height: 19px;
 }
 
-.card_description_special {
-    margin-bottom: 10px;
+.goods_wrapper_down.special {
+    margin-top: 10px;
 }
 
-.card_striked_goodsvalue {
+.goods_price .previous {
     font-size: 11px;
     text-decoration: line-through;
     margin-left: 80px;
+    visibility: hidden;
+}
+
+.goods_price .previous.active {
+    visibility: visible;
 }
 
 .card-cta_img.special {
@@ -556,7 +571,7 @@ button::-moz-focus-inner {
     height: 100vh;
     display: flex;
     background-color: #EFEFEF;
-    border-left: 2px solid #c4c4c4;
+    border-left: 2px solid #dedede;
     transition: 0.5s;
     transform: translateX(+100%);
 }
@@ -573,15 +588,16 @@ button::-moz-focus-inner {
 .navbar_mobile,
 .navbar_mobile_category {
     display: flex;
-    height: 100%;
+    height: 100vh;
     flex-direction: column;
     overflow: scroll;
     overflow-x: hidden;
+    position: fixed;
 }
 
 .navbar_mobile li,
 .navbar_mobile_category li{
-    border: .7px solid #C4C4C4;
+    border: .7px solid #dedede;
     border-left: 0px;
     border-bottom: 0px;
     border-right: 0px;
@@ -720,6 +736,7 @@ button::-moz-focus-inner {
     display: block;
     opacity: 0;
     transition: 0.3s;
+    flex-shrink: 0;
 }
 
 .checkbox.real:checked + .checkbox.fake::before {
@@ -815,7 +832,7 @@ button::-moz-focus-inner {
     width: 18px;
     height: 18px;
     cursor: pointer;
-    margin-top: 6px;
+    margin-top: 4px;
 }
 
 .search-popup__result-showcase {
@@ -1125,6 +1142,7 @@ button::-moz-focus-inner {
 }
 .search-button__line {
     background: #000;
+    margin: 0;
 }
 
 .search-button__smallimg {
@@ -1276,7 +1294,7 @@ button::-moz-focus-inner {
     }
     .card_main.card_finded {
         width: 290px;
-        padding: 31px 50px 31px 50px;
+        padding: 27px 50px 20px 50px;
         margin-right: 18px;
     }
     .search-popup__result-showcase {
@@ -1319,6 +1337,10 @@ button::-moz-focus-inner {
     .additional-goods__slider {
         display: block;
     }
+    body.lock {
+        overflow: hidden;
+        padding-right: 0;
+    }
     .header-main {
         padding: 0;
     }
@@ -1344,11 +1366,11 @@ button::-moz-focus-inner {
         -ms-transform: none;
         transform: none;
     }
-    .card_main.card_special_adaptive {
+    .card_main.col-adaptive {
         width: 330px;
     }
-    .card_main.card_special_adaptive {
-        padding: 31px 70px 31px 70px;
+    .card_main.col-adaptive {
+        padding: 27px 70px 20px 70px;
         margin-bottom: 30px;
     }
     .footer {
@@ -1377,7 +1399,7 @@ button::-moz-focus-inner {
     }
     .card_main.card_finded {
         width: 323.5px;
-        padding: 31px 66.75px 31px 66.75px;
+        padding: 27px 66.75px 20px 66.75px;
         margin-right: 25px;
         margin-bottom: 35px;
     }
@@ -1428,9 +1450,9 @@ button::-moz-focus-inner {
     .navbar__authorization-link__caption {
         padding-top: 2.5px;
     }
-    .card_main.card_special_adaptive {
+    .card_main.col-adaptive {
         width: 260px;
-        padding: 31px 35px 31px 35px;
+        padding: 27px 35px 20px 35px;
         margin-bottom: 10px;
     }
     .search-history {
@@ -1438,7 +1460,7 @@ button::-moz-focus-inner {
     }
     .card_main.card_finded {
         width: 245px;
-        padding: 31px 12.5px 31px 27.5px;
+        padding: 27px 12.5px 20px 27.5px;
         margin-bottom: 20px;
         margin-right: 10px;
     }
@@ -1520,7 +1542,7 @@ button::-moz-focus-inner {
     }
     .card_main.card_finded {
         width: 350px;
-        padding: 31px 80px 31px 80px;
+        padding: 27px 80px 20px 80px;
         margin-bottom: 20px;
         margin-right: 10px;
         margin-left: auto;
@@ -1588,7 +1610,7 @@ button::-moz-focus-inner {
     }
     .card_main.card_finded {
         width: 320px;
-        padding: 31px 65px 31px 65px;
+        padding: 27px 65px 20px 65px;
         margin-bottom: 23px;
         margin-left: auto;
         margin-right: auto;
@@ -1653,7 +1675,7 @@ button::-moz-focus-inner {
     }
     .card_main.card_finded {
         width: 270px;
-        padding: 31px 40px 31px 40px;
+        padding: 27px 40px 20px 40px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1690,7 +1712,7 @@ button::-moz-focus-inner {
 @media screen and (max-width: 320px) {
     .card_main.card_finded {
         width: 285px;
-        padding: 31px 47.5px 31px 47.5px;
+        padding: 27px 47.5px 20px 47.5px;
         margin-left: auto;
         margin-right: auto;
     }
