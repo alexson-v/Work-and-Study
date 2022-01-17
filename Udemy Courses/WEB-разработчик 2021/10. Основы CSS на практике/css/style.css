@@ -1,0 +1,25 @@
+/* @import 'css/buttons.css'; */
+
+/* селектор {
+    свойство: значение;
+    свойство: значение;
+    свойство: значение;
+} */
+
+h2 {
+    color: red;
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.dedication {
+    color: #4B0082;
+    font-weight: bold;
+}
+
+#main-heading {
+    color: rgb(0, 256, 256);
+    text-align: center;
+}
