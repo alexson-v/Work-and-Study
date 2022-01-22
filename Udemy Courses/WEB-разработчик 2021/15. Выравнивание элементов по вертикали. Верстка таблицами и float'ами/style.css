@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    /* float: left; Float - это свойство CSS, которое отвечает за обтекание текстом какого-нибудь элемента */
+}
+
+.card-box .card {
+    display: inline-block; /* Без этого vertical-align работать не будет */
+    vertical-align: top; /* top, middle, bottom и т. д.  */
+    background-color: green;
+    padding: 30px;
+    margin: 50px;
+    width: 300px;
+    height: 300px;
+}

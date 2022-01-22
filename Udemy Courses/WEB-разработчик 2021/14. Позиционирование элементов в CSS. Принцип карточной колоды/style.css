@@ -1,0 +1,55 @@
+/* Позиционирование элементов в CSS (static, relative, absolute, fixed, inherit) */
+
+nav {
+    position: static; /* Самое простое, обычное позиционирование. Стоит по-умолчанию у всех элементов */
+    /* position: relative; - Разрешает себя позиционировать в пределах всей страницы (top, right, left, bottom) */
+    top: 10px;
+    right: 130px;
+    bottom: 10px;
+    left: 10px;
+    /* position: absolute; - Позволяет расположить элемент абсолютно в любом месте */
+    right: 0;
+    bottom: 0;
+    /* position: fixed; - Элемент просто-напросто "приклеился" к монитору и ездит вместе со скроллом страницы */
+}
+
+.example {
+    background-color: green;
+    /* position: relative; - Элемент становится родительским относительно div.box в плане позиционирования */
+    height: 500px;
+}
+
+.example .box {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    /* position: absolute; - Можно смещать абсолютно относительно родителя div.example */
+    top: 100px;
+    right: 100px;
+    /* position: inherit; - Очень популярное значение в абсолютно разных свойствах CSS. Унаследование свойства родительского элемента */
+}
+
+/* Принцип карточной колоды на странице */
+
+.card-desk {
+    position: relative;
+    margin-top: 100px;
+    background-color: #aeaeae;
+    height: 1500px;
+}
+
+.card-desk .card {
+    display: inline-block;
+    background-color: green;
+    width: 300px;
+    height: 300px;
+    top: 30px;
+    z-index: 5; /* Применяется, если нужно поменять расположение абсолютных элементов по оси Z. Свойство также принимает отрицательные значения */
+}
+
+.card.special {
+    position: absolute;
+    left: 30px;
+    background-color: red;
+    z-index: 10;
+}
