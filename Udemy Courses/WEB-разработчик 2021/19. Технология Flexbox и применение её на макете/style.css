@@ -1,0 +1,30 @@
+body {
+    background: #efefef;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+section.flex-blocks {
+    display: flex; /* Расположить дочерние элементы в горизонтальную линию */
+    flex-wrap: wrap;
+    justify-content: center; /* Выровнять все дочерние элементы по центру */
+    justify-content: space-between; /* Ровное распределение элементов по всей ширине контейнера */
+    justify-content: space-around; /* Одинаковые отступы слева и справа у каждого элемента контейнера */
+    align-items: center; /* Центрировать флекс-элементы по вертикали */
+    height: 800px;
+    background: #fff;
+}
+
+section.flex-blocks .flex-box {
+    width: 150px;
+    height: 300px;
+    margin: 15px;
+    background: rgb(255, 123, 123);
+    border: 4px solid #000;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
