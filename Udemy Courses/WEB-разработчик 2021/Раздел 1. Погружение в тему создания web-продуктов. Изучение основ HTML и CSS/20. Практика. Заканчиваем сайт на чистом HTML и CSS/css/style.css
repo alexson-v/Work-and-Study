@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box; /* Правильное отображение ширины и высоты с учётом margin и padding */
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+section.promo {
+    height: 870px;
+    background: url('../img/bg/main_bg.jpg') center center/cover no-repeat;
+    /* Поставив слэш между этими частями значения, можно решить часовую проблему поиска "неотображаемого фона" */
+
+    padding: 38px 0 59px 0;
+}
+
+.logo .logo_img { /* Наследование */
+    display: block;
+    margin: 0 auto; /* не забывать, что применяется только к блочным элементам */
+}
+
+.logo .logo_text {
+    margin-top: 14px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 53px;
+    font-weight: 900;
+}
+
+.title {
+    color: #f9bf3b;
+    font-size: 41px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2.title {
+    margin-top: 30px;
+    font-weight: 900;
+}
+
+.simple .title_big {
+    color: #fff;
+    font-size: 80px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 21px;
+}
+
+section.promo .promo_text {
+    padding: 0 13px;
+    margin-top: 23px; /* Лучше всего унифицировтаь практику задания отступов. Использовать только margin-top и margin-right */
+    color: #fff;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+}
+
+section.promo .promo_text span {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #f9bf3b;
+}
+
+.promo_btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 73px;
+    width: 313px;
+    height: 72px;
+    /* box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.18); */
+    border: 4px solid rgba(0, 0, 0, 0.23);
+    background-image: linear-gradient(to top, #2798B9 0%, #3AB6DA 100%); /* Таким свойством можно задавать не только изображения, но и градиенты */
+    color: #fff;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none; /* Убрать стандартную обводку у элемента */
+}
+
+.more {
+    margin-top: 73px;
+}
+
+.more .more_text {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.more .more_img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 13px;
+}
+
+section.waiting {
+    min-height: 604px;
+    background-color: #efefef;
+    padding: 85px 0 75px 0;
+}
+
+section.waiting .waiting_header,
+section.finish .finish_header {
+    color: #252525;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+section.finish .finish_header {
+    color: #fff;
+}
+
+section.waiting .waiting_divider,
+section.finish .finish_divider {
+    width: 217px;
+    height: 4px;
+    background-color: #f9bf3b;
+    margin: 0 auto;
+    margin-top: 18px;
+}
+
+section.waiting .waiting_subheader {
+    margin-top: 17px;
+    color: #4a4a4a;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+}
+
+section.waiting .waiting_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+section.waiting .waiting_wrapper .waiting_item {
+    width: 339px;
+    text-align: center;
+}
+
+section.waiting .waiting_wrapper .waiting_item .waiting_img {
+    width: 100%;
+}
+
+section.waiting .waiting_wrapper .waiting_item .waiting_descr {
+    margin-top: 33px;
+    color: #4a4a4a;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+section.optimization {
+    min-height: 550px;
+    padding: 102px 0 107px 0;
+}
+
+section.optimization .optimization_header {
+    margin-left: 391px;
+    color: #299cbd;
+    font-size: 29px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+section.optimization .optimization_text {
+    margin: 25px 0 0 391px;
+    color: #4a4a4a;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 27px;
+}
+
+section.optimization .optimization_text span {
+    font-weight: 700;
+}
+
+section.optimization .optimization_img {
+    position: absolute;
+    top: -54px;
+    left: -240px;
+    z-index: -1;
+}
+
+section.finish {
+    min-height: 447px;
+    padding: 86px 0 79px 0;
+    background: url('../img/bg/second_bg.png') center center/cover no-repeat;
+}
+
+section.finish .finish_wrapper {
+    margin-top: 41px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.finish .finish_item {
+    width: 204px;
+}
+
+section.finish .finish_item .finish_round {
+    display: flex; /* Выровнять иконки по центру круга (используя 3 свойства) */
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 115px;
+    height: 115px;
+    background-color: #b4e2ff;
+    border-radius: 50%;
+}
+
+section.finish .finish_item .finish_descr {
+    margin-top: 25px;
+    text-align: center;
+    color: #efefef;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+section.bonus {
+    min-height: 631px;
+    padding: 85px 0 88px 0;
+    text-align: center;
+    background: #EFEFEF;
+}
+
+section.bonus .bonus_img {
+    width: 154px;
+    height: 174px;
+}
+
+section.bonus .bonus_text {
+    display: block;
+    margin: 0 auto;
+    margin-top: 45px;
+    width: 1130px;
+    color: #252525;
+    font-size: 30px;
+    line-height: 43px;
+    font-family: Roboto;
+}
+
+section.bonus .promo_btn {
+    margin-top: 51px;
+}
+
+section.first-webinar {
+    height: 514px;
+    padding: 81px 0 52.5px;
+    text-align: center;
+}
+
+section.first-webinar .first-webinar_img {
+    width: 342px;
+}
+
+section.first-webinar .first-webinar_title {
+    margin-top: 36px;
+    font-size: 30px;
+    color: #252525;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+section.first-webinar .first-webinar_undertitle {
+    margin-top: 30px;
+    color: #299CBD;
+    font-weight: 900;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+section.first-webinar .first-webinar_text {
+    margin-top: 24.5px;
+    font-size: 23px;
+    color: #4A4A4A;
+}
+
+.footer {
+    min-height: 169px;
+    padding: 57px 0 69px 0;
+    text-align: center;
+    background: #1A1A1A;
+    font-size: 15px;
+    font-weight: 300;
+    color: #888888;
+}
+
+.footer .links-bundle a {
+    text-decoration: underline;
+    color: #888888;
+}
+
+.footer .contact-us {
+    margin-top: 10px;
+}
