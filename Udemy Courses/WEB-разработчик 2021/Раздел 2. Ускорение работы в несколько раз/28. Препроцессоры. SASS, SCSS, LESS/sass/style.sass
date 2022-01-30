@@ -1,0 +1,19 @@
+$text_color: green
+@mixin box
+    display: block
+    width: 250px
+    height: 200px
+    background-color: red
+h1
+    color: $text_color
+    font-size: 50px // При использовании SASS можно отказаться от фигурных скобок и точек с запятыми
+h2
+    color: blue
+.block
+    background-color: green
+    h3
+        color: white // Так работает вложенность элементов в препроцессоре SASS
+    &_color // Приставка заменяется на обычный амперсант &
+        background-color: #fff
+        button
+            @include box

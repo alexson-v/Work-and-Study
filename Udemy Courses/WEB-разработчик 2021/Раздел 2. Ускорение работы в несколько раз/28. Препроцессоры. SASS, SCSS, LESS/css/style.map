@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../sass/style.sass"
+	],
+	"sourcesContent": [
+		"$text_color: green;\n@mixin box {\n    display: block;\n    width: 250px;\n    height: 200px;\n    background-color: red; }\nh1 {\n    color: $text_color;\n    font-size: 50px; } // При использовании SASS можно отказаться от фигурных скобок и точек с запятыми\nh2 {\n    color: blue; }\n.block {\n    background-color: black;\n    h3 {\n        color: white; } // Так работает вложенность элементов в препроцессоре SASS\n    &_color { // Приставка заменяется на обычный амперсант &\n        background-color: #fff;\n        button {\n            @include box; } } }\n"
+	],
+	"names": [],
+	"mappings": ";;AAMA,AAAA,EAAE,CAAC;EACC,KAAK,EAPI,KAAK;EAQd,SAAS,EAAE,IAAI;CAAG;;;AACtB,AAAA,EAAE,CAAC;EACC,KAAK,EAAE,IAAI;CAAG;;;AAClB,AAAA,MAAM,CAAC;EACH,gBAAgB,EAAE,KAAK;CAMI;;;AAP/B,AAEI,MAFE,CAEF,EAAE,CAAC;EACC,KAAK,EAAE,KAAK;CAAG;;;AAClB,AAAD,YAAO,CAAC;EACJ,gBAAgB,EAAE,IAAI;CAED;;;AAHxB,AAEG,YAFG,CAEH,MAAM,CAAC;EAfX,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,GAAG;CAaE"
+}
