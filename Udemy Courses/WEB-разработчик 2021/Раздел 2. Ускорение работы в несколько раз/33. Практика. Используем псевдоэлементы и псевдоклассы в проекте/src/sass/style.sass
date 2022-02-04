@@ -39,9 +39,8 @@ header
     &_item
         border-right: 2px dotted black
         padding-right: 28px
-
-    &:last-child
-        border-right: none
+        &:last-child
+            border-right: none
 
     &_link
         color: $second_color
@@ -364,3 +363,86 @@ section.benefits .benefits_item
         &:hover
             color: #1FBAD6
 
+.footer
+    padding: 11px 20px
+    .line
+        width: 300px
+        height: 5px
+        margin: 0 auto
+        background: #1FBAD6
+    .wrapper
+        display: flex
+        align-items: center
+        &_element
+            display: flex
+            width: 33%
+        &_element:nth-child(2)
+            justify-content: center
+        &_element:nth-child(3)
+            justify-content: flex-end
+
+    &_social-media
+        display: flex
+        justify-content: space-between
+        width: 165px
+        .circle
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 35px
+            height: 35px
+            background-color: #070716
+            border-radius: 50%
+            &:hover
+                text-decoration: none
+            i
+                color: #fff
+
+            
+    &_navi
+        text-align: center
+        ul
+            display: flex
+            justify-content: space-between
+            margin-bottom: 0
+            list-style-type: none
+            padding: 0
+            font-weight: 300
+            li
+                text-transform: uppercase
+        .footer_first-navi-list
+            margin: 0 auto
+            width: 375px
+            margin-top: 32px
+            font-size: 15px
+            li
+                a
+                    color: #070716
+        .footer_second-navi-list
+            width: 400px
+            margin-top: 12.5px
+            font-size: 11px
+            li
+                a
+                    color: #999999
+        .switch_lang
+            margin-top: 32px
+            color: #1FBAD6
+            font-size: 11px
+            font-weight: 400
+            text-transform: uppercase
+            cursor: pointer
+            &:hover
+                text-decoration: underline
+    
+    &_app
+        display: flex
+        justify-content: space-between
+        width: 296px
+        a
+            display: block
+            width: 94px
+            border-radius: 4px
+            img
+                width: inherit
+                height: inherit
