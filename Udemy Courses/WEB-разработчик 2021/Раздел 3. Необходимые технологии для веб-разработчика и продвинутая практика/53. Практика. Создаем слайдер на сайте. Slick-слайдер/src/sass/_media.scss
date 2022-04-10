@@ -1,0 +1,151 @@
+@media (max-width: 992px) {
+    .container {
+        margin: 0 25px;
+    }
+}
+
+@media (max-width: 900px) {
+    .promo {
+        background-position: left;
+    }
+    .benefits {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item {
+            margin-top: 40px;
+            max-width: 600px;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .header {
+        &__official {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        margin: 0 15px;
+    }
+    .header {
+        &__logo {
+            margin-right: 20px;
+        }
+        &__phone {
+            font-size: 15px;
+        }
+    }
+    .promo {
+        &__wrapper {
+            align-items: center;
+        }
+        &__header {
+            font-size: 7vw;
+        }
+        &__subheader {
+            margin-top: 3vw;
+            font-size: 5vw;
+            line-height: 5vw;
+            text-align: center;
+        }
+        &__icons {
+            width: 380px;
+        }
+        &__icon {
+            width: 33%;
+        }
+    }
+    .consultation {
+        min-height: 610px;
+        padding: 75px 0 65px 0;
+        &__descr {
+            font-size: 16px;
+        }
+        .feed-form {
+            width: 100%;
+        }
+    }
+    .section-title_left {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 425px) {
+    .header {
+        &__phone {
+            font-size: 12px;
+        }
+        .button {
+            width: 120px;
+            font-size: 11px;
+            margin-top: 3px;
+        }
+    }
+    .promo {
+        &__wrapper {
+            .button {
+                width: 100%;
+            }
+        }
+    }
+    .section-title {
+        font-size: 24px;
+    }
+    .benefits {
+        padding: 50px 0 45px 0;
+        &__wrapper {
+            margin-top: 40px;
+        }
+        &__subtitle {
+            margin-top: 30px;
+        }
+    }
+    .consultation {
+        min-height: 510px;
+        padding: 50px 0;
+        background-position: -800px;
+        &__descr {
+            font-size: 14px;
+        }
+    }
+    .section-title {
+        font-size: 20px;
+    }
+    .feed-form {
+        input {
+            height: 45px;
+            font-size: 13px;
+        }
+    }
+    .button_submit {
+        height: 50px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 390px) {
+    .promo {
+        padding-bottom: 70px;
+        background-position: 10%;
+        &__icons {
+            flex-direction: column;
+            width: auto;
+            margin-top: 40px;
+        }
+        &__icon {
+            width: 100%;
+            margin-top: 30px;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}
