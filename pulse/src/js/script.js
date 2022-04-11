@@ -5,10 +5,10 @@ $(document).ready(function(){
         nextArrow: '<button type="button" class="slick-next"><img src="img/slider/chevron-right-solid.png"></button>',
         responsive: [
             {
-                breakpoint: 992,
+                breakpoint: 900,
                 settings: {
-                    dots: true,
-                    arrows: false
+                    arrows: false,
+                    dots: true
                 }
             }
         ]
