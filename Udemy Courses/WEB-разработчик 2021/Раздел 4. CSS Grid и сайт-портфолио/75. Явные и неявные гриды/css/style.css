@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid-container {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 80px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    grid-template-rows: repeat(2, minmax(260px, auto));
+    grid-auto-rows: 260px;
+    gap: 60px;
+}
+
+.grid-elem .grid-elem__img {
+    width: 100%;
+}
+
+.grid-elem .grid-elem__text {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
