@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+    grid-template-rows: repeat(3, minmax(100px, auto));
+    grid-auto-rows: repeat(3, minmax(100px, auto));
+    /*  Колонки и строки можно также именовать, давать им имена:
+        grid-template-columns: [col1-s] 150px [col2-s] 150px ... ;
+        --
+        Аналогично с grid-template-rows: [row1-s] 150px [row2-s] 150px ... ;
+    */
+    gap: 10px;
+}
+
+.grid-elem {
+    background-color: rgba(1, 1, 96, 1);
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    font-size: 26px;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+/*  Позиционирование элементов происходит по номерам линий, которые сформированы колонками и рядами.
+    ---
+    ! В ранних уроках все CSS-свойства гридов прописывались в контейнере.
+    Сейчас речь идёт о стилизации его элементов.
+*/
+
+#first {
+    grid-column-start: 1; /* С какой линии начать элемент */
+    grid-column-end: 3; /* На какой линии элемент закончится */
+
+    /*  Это можно заменить комбинированным свойством - grid-column: 1 / 3;
+        ---
+        Даже если линии будут иметь название, индекс никуда не пропадает. Можно дальше обращаться к линиям по их номерам.
+        
+        Но если идет обращение по названию, то оно будет иметь именно такой вид:
+        grid-column: col1-s/col3-s;
+        или
+        grid-row: row3-s;
+    */
+}
+
+#second {
+    grid-column-start: 2;
+    /* Дальше аналогично, только со строками */
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#third {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: 4; /* Конечную точку иногда можно не указывать. По-умолчанию она указывается на следующей линии. */
+}

@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 300px));
+    grid-template-rows: repeat(3, minmax(100px, auto));
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+
+    /*  Это альтернативный вариант размещения грид-элементов в сетке.
+        Альтернативный к грид-линиям, его можно встретить на практике.
+    */
+
+    grid-template-areas:
+    "header header header"
+    "blog blog message"
+    "footer footer .";
+    /*  Имена прописываются в грид-контейнере в "кавычках".
+        Повторно прописывая имя в кавычке, это дает грид-элементу занять +1 колонку.
+        ---
+        ! В таком синтаксисе нельзя оставлять дыры. Иначе вся вёрстка слетит.
+        Но если всё-таки необходимо оставить пустое место, нужно вместо имени поставить точку "."
+        ---
+        ! Блок должен иметь прямоугольный вид. Сделать неординарные формы не получится. Но в то же
+        время возможно делать вертикальные блоки, просто указав имя грид-элемента на строке ниже.
+    */
+}
+
+.grid-elem {
+    background-color: rgba(1, 1, 96, 1);
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    font-size: 26px;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+#header {
+    /*  Через свойство grid-area записывается CSS-имя элемента.
+        Теперь это имя можно использовать при расстановке элементов по сетке.
+    */
+    grid-area: header;
+}
+
+#blog {
+    grid-area: blog;
+}
+
+#message {
+    grid-area: message;
+}
+
+#footer {
+    grid-area: footer;
+    /*  Создаём из грид-элемента ещё один грид-контейнер (подсетку), перед этим предварительно
+        положив в него грид-элементы второго порядка.
+        ---
+        ! По-умолчанию свойства родительского контейнера не будут наследоваться.
+        Это можно обойти, если у элемента прописать display: subgrid;
+        Но проблема в том, что это значение поддерживается браузерами лишь на 3%.
+    */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.orange {
+    background-color: orange;
+}
+
+/* Адаптация гридов ничем не отличается от обычной адаптации. */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, minmax(100px, auto));
+        grid-template-areas:
+        "header header"
+        "blog blog"
+        "message message"
+        "footer footer";
+    }
+}

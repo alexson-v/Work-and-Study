@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+    grid-template-rows: repeat(3, minmax(100px, auto));
+    grid-auto-rows: repeat(3, minmax(100px, auto));
+    gap: 10px;
+    align-items: center;
+    /*  Свойство align-items в контейнере указывает свойство align-self к каждому его
+        непосредственному дочернему элементу.
+        ---
+        Т.е. чтобы каждому элементу не задавать свойство align-self: ... ; можно задать его
+        один раз в контейнере через align-items: ... ;
+    */
+    justify-items: center; /* Свойство идентично к предыдущему, только отвечает за выравнивание строк. */
+
+    place-items: center center;
+    /*  Комбинирование выравниваний элементов контейнера.
+        Т.е. place-items: "justify-items(x)" + "align-items(y)";
+    */
+
+
+    justify-content: center;
+    align-content: center;
+    /*  Свойства justify-content и align-content отвечают за выравнивание !всей сетки!
+        по горизонтали и вертикали соответственно.
+        Значения: center, space-around, space-between.
+    */
+    place-content: center center; /* Комбинирование двух предыдущих свойств. */
+}
+
+.grid-elem {
+    background-color: rgba(1, 1, 96, 1);
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    font-size: 26px;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+#first {
+    /* Это выравнивание очень похоже на выравнивание по flex'ам. Только значения без приставки flex-... */
+    align-self: center;
+    /*  Свойство align-self задается именно элементу контейнера, имеет следующие значения:
+        ---
+        start, end - перемещает элемент в начало/конец по поперечной оси;
+        stretch - стоит у элементов по-умолчанию, растягивает блоки по всей области;
+        center - элемент становится по центру доступной ему области.
+    */
+    justify-self: center;
+    /*  Если предыдущее свойство относилось к колонкам, то justify-self - к строкам.
+        Принимает точно такие-же значение, как и его предыдущий брат.
+    */
+
+    place-self: center center;
+    /*  Комбинирование выравниваний частного элемента контейнера.
+        Т.е. place-self: "justify-self(x)" + "align-self(y)";
+    */
+}

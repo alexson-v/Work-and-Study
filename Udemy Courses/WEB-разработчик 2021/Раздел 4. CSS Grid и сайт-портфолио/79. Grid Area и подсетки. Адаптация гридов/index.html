@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>79. Grid Area и подсетки. Адаптация гридов</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="grid-container">
+        <!-- К каждому грид-элементу можно дать своё имя (через id), а потом использовать
+             это имя при расстановке элементов. Это называется ASC2 Syntax, он тоже встречается
+             в реальных проектах. -->
+        <div id="header" class="grid-elem">1</div>
+        <div id="blog" class="grid-elem">2</div>
+        <div id="message" class="grid-elem">3</div>
+        <div id="footer" class="grid-elem">
+            <div class="grid-elem orange"></div>
+            <div class="grid-elem orange"></div>
+            <div class="grid-elem orange"></div>
+        </div>
+    </div>
+</body>
+</html>
