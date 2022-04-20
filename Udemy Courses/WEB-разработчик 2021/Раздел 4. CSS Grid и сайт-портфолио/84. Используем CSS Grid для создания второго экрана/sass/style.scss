@@ -10,10 +10,6 @@
     padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-}
-
 .container {
     width: 1140px;
     margin: 0 auto;
@@ -23,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 60px;
     height: 3px;
     background: $main-color;
-    margin: 25px auto 0 auto;
+    margin-top: 25px;
 }
 
 @import 'blocks/promo';
@@ -32,5 +28,3 @@ h1, h2, h3, h4, h5, h6 {
 @import 'blocks/sidepanel';
 @import 'blocks/menu';
 @import 'blocks/about';
-@import 'blocks/resume';
-@import 'blocks/skills';

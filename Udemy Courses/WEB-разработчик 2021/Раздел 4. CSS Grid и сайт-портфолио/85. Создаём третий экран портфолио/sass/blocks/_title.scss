@@ -2,16 +2,6 @@
     font-weight: bold;
     font-size: 36px;
     line-height: 60px;
-    &_center {
-        position: relative;
-        text-align: center;
-        @include before_circle;
-        &:before {
-            top: -7px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
     &_fsz14 {
         font-size: 14px;
         line-height: 21px;
@@ -29,11 +19,5 @@
     }
     &_fsz48 {
         font-size: 48px;
-    }
-}
-
-.subtitle {
-    &_center {
-        text-align: center;
     }
 }
