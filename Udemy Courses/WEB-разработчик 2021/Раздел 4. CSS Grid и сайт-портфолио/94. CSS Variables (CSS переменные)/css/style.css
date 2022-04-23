@@ -1,0 +1,38 @@
+:root {
+    /*  Это корневой псевдокласс. Всё, что в нём прописывается, стоит выше html-тэга.
+        Сюда как раз и можно положить CSS переменные.
+    */
+    --text-color: red;
+    --big-text: 20px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 20px;
+}
+
+.wrapper {
+    --text-color: blue; /* CSS переменная объявляется через два дефиса */
+}
+
+.element {
+    width: 500px;
+    margin: 20px;
+    color: var(--text-color, red); /* Применение переменной происходит через var() -> variable */
+}
+
+.element.big {
+    font-size: var(--big-text);
+}
+
+@media (max-width: 600px) {
+    :root {
+        --text-color: yellow;
+        --big-text: 15px; /* CSS переменные можно адаптировать с помощью media-правил. */
+    }
+}
