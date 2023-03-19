@@ -102,7 +102,7 @@ wrapper.appendChild(div);
  */
 wrapper.insertBefore(div, hearts[0]);
 
-// 3) Метод replaceChild() – удалить элемент-ребёнка родителя.
+// 3) Метод removeChild() – удалить элемент-ребёнка родителя.
 wrapper.removeChild(hearts[2]);
 
 // 4) Метод replaceChild() – заменить элемент-ребёнка родителя другим элементом. Использует в работе два аргумента.
