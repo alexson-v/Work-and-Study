@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>45. События и их обработчики</title>
+		<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+        <!-- Первый вариант назначения обработчика событий – через HTML-атрибут -->
+        <button onclick="alert('Клик успешно сработал!');" id="btn">Нажми меня</button>
+        <!-- Если говорить честно, в реальных проектах такой подход используется очень редко.
+             Применять его категорически не рекомендуется. Он подходит лишь для очень малых
+             скриптов и тестовых проектов. -->
+
+		<button>Нажми меня</button>
+		<button>Нажми меня</button>
+        <button>Нажми меня</button>
+        <button>Нажми меня</button>
+
+        <!-- Тут демонстрируется явление "всплытие событий" -->
+        <div class="overlay">
+            <button>Нажми меня</button>
+        </div>
+
+    	<a href="https://www.youtube.com/">https://www.youtube.com/</a>
+
+		<script src="script.js"></script>
+  </body>
+</html>
